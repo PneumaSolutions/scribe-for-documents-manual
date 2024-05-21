@@ -1,0 +1,74 @@
+---
+title: Controlli della riunione
+---
+
+import Windows from "~/components/platform/Windows.astro"
+import MacOS from "~/components/platform/MacOS.astro"
+
+Una volta all'interno della riunione, il contenuto delle diapositive viene presentato in sincronia con lo screenshare del presentatore. Quando viene presentata una nuova diapositiva, si verifica quanto segue:
+1. Viene emesso un segnale acustico.
+1. Il contenuto si presenta sullo schermo e viene letto da uno screen reader esistente.
+
+### Controlli e funzioni della riunione
+
+Scribe for Meetings offre diversi modi per controllare il rendering. Questi pulsanti cliccabili hanno anche scorciatoie da tastiera facili da usare. I controlli includono:
+* Sospendi presentazione: Mette in pausa la presentazione dal vivo, mantenendo il posto alla diapositiva attualmente visualizzata.      
+    * Anche se le nuove diapositive non saranno annunciate in tempo reale, non si perderanno perché Scribe for Meetings sta ancora osservando silenziosamente la presentazione per gli aggiornamenti.
+    * Quando una presentazione viene sospesa, questo controllo si trasforma in un pulsante "Vai in diretta".
+* Diapositiva precedente: Va alla diapositiva precedente visualizzata, se disponibile.
+    * Se non c'è una diapositiva precedente, questo pulsante non appare.
+    * Premendo questo pulsante si sospende la presentazione dal vivo.
+    * Se si partecipa a una riunione e la presentazione è già in corso, questo pulsante non consente di tornare alla diapositiva 1.
+* Diapositiva successiva: Passa alla diapositiva successiva, se disponibile.
+    * Se si sta già visualizzando l'ultima diapositiva, questo pulsante non appare.
+    * Premendo questo pulsante si sospende la presentazione dal vivo.
+* Leggi ad alta voce: Inizia a leggere la diapositiva in corso utilizzando la voce del sistema.
+    * L'avvio della modalità di lettura ad alta voce renderà disponibili ulteriori controlli di trasporto (pulsanti di riavvolgimento, riproduzione/pausa e avanzamento rapido) e pulsanti per rallentare o accelerare il discorso.
+* Scarica le diapositive: Permette di scaricare le diapositive in diversi formati.
+    * Questa opzione viene visualizzata solo se l'organizzatore ha consentito il download delle diapositive.
+
+### Scaricare le diapositive
+
+Se l'organizzatore ha consentito il download delle diapositive, Scribe for Meetings offre la possibilità di scaricare le diapositive in diversi formati accessibili. Per scaricare le diapositive, seguire la seguente procedura:
+1. durante una riunione, attivare il link "Scarica diapositive".
+	1. Se non si è effettuato l'accesso, verrà richiesto l'indirizzo e-mail e a quel punto verrà inviato un link di verifica.
+	1. Facendo clic su questo link si accede al sito e si prosegue con il processo di preparazione del download.
+1. Scegliete il formato di file in cui volete che siano presentate le vostre diapositive. Le opzioni disponibili sono:
+    * Una pagina web accessibile, con tutte le stesse caratteristiche della presentazione dal vivo, compresa la lettura ad alta voce
+    * PDF etichettato
+        * Supporta la stampa a caratteri grandi
+    * MP3, con sintesi vocale in una dozzina di lingue
+        * Con questa conversione sono disponibili ulteriori impostazioni per la voce e la velocità di riproduzione.
+    * DAISY, testo più audio
+        * Questa conversione offre ulteriori impostazioni per la voce e la velocità di riproduzione.
+    * EPUB
+    * Microsoft Word
+        * Supporta la stampa a caratteri grandi
+    * Braille
+        * Grado 1 (EBAE)
+        * Grado 2 (EBAE)
+        * Braille inglese unificato (UEB)
+        * e molte altre lingue
+1. Dopo aver personalizzato le impostazioni opzionali associate al formato scelto, fare clic sul pulsante "Prepara download".
+1. Tenete d'occhio la vostra e-mail per il link di download. Per la maggior parte dei formati, l'e-mail arriverà entro pochi minuti. La conversione in audio può richiedere molto più tempo, a seconda della lunghezza della presentazione, perché la sintesi vocale è un processo che richiede più tempo rispetto ad altre conversioni.
+1. Facendo clic sul link si avvia immediatamente il download.
+
+### Riferimento ai comandi da tastiera
+
+La maggior parte dei browser desktop può sfruttare i comandi da tastiera associati alla maggior parte delle funzioni di Scribe For Meetings. Poiché questi comandi possono variare a seconda della piattaforma e del browser, di seguito elenchiamo tutte le possibili scorciatoie.
+
+*Nota per gli utenti di macOS VoiceOver*: Se si utilizza il browser Chrome, i modificatori saranno CTRL e Option. Questo purtroppo causerà un conflitto con VoiceOver, a meno che non si utilizzi il comando passthrough (CTRL+Opzione+Tab) prima di inserire i comandi.
+
+Azione | Windows | Chrome su macOS | Safari su macOS
+--- | --- | --- | ---
+Sospendi presentazione | Alt+Maiuscolo+S | CTRL+Opzione+S | CTRL+S
+Vai in diretta | Alt+Shift+L | CTRL+Opzione+L | CTRL+L
+Diapositiva successiva | Alt+Shift+N | CTRL+Opzione+N | CTRL+N
+Diapositiva precedente | Alt+Shift+P | CTRL+Opzione+P | CTRL+P
+Lettura ad alta voce | Alt+Shift+R | CTRL+Opzione+R | CTRL+R
+Sospendere la lettura ad alta voce | Alt+Shift+P | CTRL+Option+P | CTRL+P
+Continua a leggere ad alta voce | Alt+Shift+C | CTRL+Opzione+C | CTRL+C
+Interrompere la lettura ad alta voce | Alt+Shift+S | CTRL+Option+S | CTRL+S
+Andare indietro | Alt+Shift+B | CTRL+Opzione+B | CTRL+B
+Andare avanti | Alt+Shift+N | CTRL+Opzione+N | CTRL+N
+

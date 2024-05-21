@@ -1,0 +1,74 @@
+---
+title: Controles de reunião
+---
+
+import Windows from "~/components/platform/Windows.astro"
+import MacOS from "~/components/platform/MacOS.astro"
+
+Uma vez dentro da reunião, o conteúdo do slide será apresentado em sincronia com o compartilhamento de tela do apresentador. Quando um novo slide for apresentado, ocorrerá o seguinte:
+1. Você ouvirá um bipe.
+1. O conteúdo será apresentado na tela e lido por um leitor de tela existente.
+
+### Controles e funções da reunião
+
+O Scribe for Meetings oferece várias maneiras de controlar a renderização. Esses botões clicáveis também têm atalhos de teclado fáceis de usar. Os controles incluem:
+* Suspender apresentação: Pausa a apresentação ao vivo, mantendo seu lugar no slide exibido no momento.      
+    * Embora os novos slides não sejam anunciados em tempo real, você não perderá nada, pois o Scribe for Meetings ainda está observando silenciosamente a apresentação em busca de atualizações.
+    * Quando uma apresentação é suspensa, esse controle se transforma em um botão "Go Live".
+* Slide anterior: Vai para o slide anterior exibido, se houver um disponível.
+    * Se não houver um slide anterior, esse botão não será exibido.
+    * Ao pressionar esse botão, a apresentação ao vivo será suspensa.
+    * Observe que, se você participar de uma reunião e a apresentação já estiver em andamento, esse botão não poderá levá-lo de volta ao slide 1.
+* Próximo slide: Vai para o próximo slide, se houver um disponível.
+    * Se você já estiver visualizando o último slide, esse botão não aparecerá.
+    * Ao pressionar esse botão, a apresentação ao vivo será suspensa.
+* Ler em voz alta: Começa a ler o slide atualmente em foco usando a voz de texto para fala do sistema.
+    * Ao iniciar o modo de leitura em voz alta, serão disponibilizados controles de transporte adicionais (botões de retrocesso, reprodução/pausa e avanço rápido), bem como botões para desacelerar ou acelerar a fala.
+* Baixar slides: Permite que você faça o download dos slides em vários formatos diferentes.
+    * Essa opção só será exibida se o organizador tiver permitido o download dos slides.
+
+### Download de slides
+
+Desde que o organizador tenha permitido o download dos slides, o Scribe for Meetings oferece downloads dos slides em vários formatos acessíveis. Para fazer o download dos slides, siga o procedimento abaixo:
+1. enquanto estiver em uma reunião, ative o link "Download Slides".
+	1. Se não estiver conectado, será solicitado seu endereço de e-mail e, nesse momento, você receberá um link de verificação por e-mail.
+	1. Ao clicar nesse link, você fará o login e continuará o processo de preparação do download.
+1. Escolha o formato de arquivo em que deseja que seus slides sejam apresentados. Suas opções incluem:
+    * Uma página da Web acessível, com todos os mesmos recursos da apresentação ao vivo, incluindo leitura em voz alta
+    * PDF com tags
+        * Suporta impressão em letras grandes
+    * MP3, por meio de conversão de texto em fala em cerca de uma dúzia de idiomas
+        * Configurações adicionais para voz e velocidade de fala são oferecidas com essa conversão.
+    * DAISY, texto e áudio
+        * Configurações adicionais de voz e velocidade de fala são oferecidas com essa conversão.
+    * EPUB
+    * Microsoft Word
+        * Suporta impressão em tamanho grande
+    * Braille
+        * Grau 1 (EBAE)
+        * Grau 2 (EBAE)
+        * Braille inglês unificado (UEB)
+        * e muitos outros idiomas
+1. Depois de personalizar todas as configurações opcionais associadas ao formulário escolhido, clique no botão "Preparar download".
+1. Fique atento ao seu e-mail para ver o link de download. Para a maioria dos formatos, o e-mail chegará em alguns minutos. A conversão para áudio pode levar muito mais tempo, dependendo da extensão da apresentação de slides, porque a síntese de fala é um processo mais demorado do que outras conversões.
+1. Ao clicar no link, o download será iniciado instantaneamente.
+
+### Referência de comandos de teclado
+
+A maioria dos navegadores de desktop pode aproveitar os comandos de teclado associados à maioria das funções do Scribe For Meetings. Como esses comandos podem variar de acordo com a plataforma e o navegador, listaremos todos os atalhos possíveis abaixo.
+
+*Observação para usuários do macOS VoiceOver*: Se estiver usando o navegador Chrome, seus modificadores serão CTRL e Option. Infelizmente, isso causará um conflito com o VoiceOver, a menos que o comando de passagem (CTRL+Option+Tab) seja usado antes de inserir os comandos.
+
+Ação | Windows | Chrome no macOS | Safari no macOS
+--- | --- | --- | ---
+Suspender apresentação | Alt+Shift+S | CTRL+Option+S | CTRL+S
+Ir ao vivo | Alt+Shift+L | CTRL+Option+L | CTRL+L
+Próximo Slide | Alt+Shift+N | CTRL+Option+N | CTRL+N
+Slide anterior | Alt+Shift+P | CTRL+Option+P | CTRL+P
+Ler em voz alta | Alt+Shift+R | CTRL+Option+R | CTRL+R
+Pausar a leitura em voz alta | Alt+Shift+P | CTRL+Option+P | CTRL+P
+Continuar lendo em voz alta | Alt+Shift+C | CTRL+Option+C | CTRL+C
+Parar de ler em voz alta | Alt+Shift+S | CTRL+Option+S | CTRL+S
+Voltar para trás | Alt+Shift+B | CTRL+Option+B | CTRL+B
+Ir para frente | Alt+Shift+N | CTRL+Option+N | CTRL+N
+
