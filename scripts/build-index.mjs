@@ -39,12 +39,12 @@ function buildIndex(lang) {
   })
   // 2. Send the dataset in JSON format
   client
-    .index(`sfm-manual-${lang}`)
+    .index(`sfd-manual-${lang}`)
     .addDocuments(JSON.parse(JSON.stringify(data)))
     .then((res) => console.log(res)) //show the result
 }
 
-for (let lang of ["de", "en", "es", "fr", "it", "nl", 
+for (let lang of ["de", "en", "es", "fr", "it", "ja", "nl", 
 "pt", "sv"]) {
   buildIndex(lang)
 }
