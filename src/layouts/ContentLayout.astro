@@ -92,7 +92,7 @@ if (pageIndex < 0) {
               <>
                 <a
                   class="path-prev"
-                  href={`/${lang}/${platform}/${pageOrder[pageIndex - 1]}/`}
+                  role="button" href={`/${lang}/${platform}/${pageOrder[pageIndex - 1]}/`}
                 >
                   <UIString key="footer.previous" />:{" "}
                   {
@@ -108,7 +108,7 @@ if (pageIndex < 0) {
             pageIndex === pageOrder.length - 1 ? null : (
               <a
                 class="path-next"
-                href={`/${lang}/${platform}/${pageOrder[pageIndex + 1]}/`}
+                role="button" href={`/${lang}/${platform}/${pageOrder[pageIndex + 1]}/`}
               >
                 <UIString key="footer.next" />:{" "}
                 {pagesByPath[`${lang}/${pageOrder[pageIndex + 1]}`].data.title}
