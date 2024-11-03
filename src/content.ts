@@ -27,7 +27,6 @@ export const pageOrder: string[] = [
   "systemspecs",
   "remediation",
   "dashboard",
-  "reseller",
   "localization",
   "faq",
   "plans",
