@@ -20,9 +20,6 @@ export interface Props {
 const { data, lang, platform, slug } = Astro.props
 
 const pageIndex = pageOrder.indexOf(slug)
-if (pageIndex < 0) {
-  throw new Error(`page ${slug} not found in navigation order`)
-}
 ---
 
 <html lang={lang}>
@@ -88,7 +85,7 @@ if (pageIndex < 0) {
         </main>
         <footer>
           {
-            pageIndex === 0 ? null : (
+            pageIndex <= 0 ? null : (
               <>
                 <a
                   class="path-prev"
@@ -105,7 +102,7 @@ if (pageIndex < 0) {
             )
           }
           {
-            pageIndex === pageOrder.length - 1 ? null : (
+            (pageIndex < 0 || pageIndex === pageOrder.length - 1) ? null : (
               <a
                 class="path-next"
                 role="button" href={`/${lang}/${platform}/${pageOrder[pageIndex + 1]}/`}
