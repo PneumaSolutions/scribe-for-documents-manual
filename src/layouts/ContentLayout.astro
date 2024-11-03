@@ -85,7 +85,7 @@ const pageIndex = pageOrder.indexOf(slug)
         </main>
         <footer>
           {
-            pageIndex <= 0 ? null : (
+            (pageIndex === -1 || pageIndex === 0) ? null : (
               <>
                 <a
                   class="path-prev"
@@ -102,7 +102,7 @@ const pageIndex = pageOrder.indexOf(slug)
             )
           }
           {
-            (pageIndex < 0 || pageIndex === pageOrder.length - 1) ? null : (
+            (pageIndex === -1 || pageIndex === pageOrder.length - 1) ? null : (
               <a
                 class="path-next"
                 role="button" href={`/${lang}/${platform}/${pageOrder[pageIndex + 1]}/`}
