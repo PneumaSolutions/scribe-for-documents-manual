@@ -14,12 +14,12 @@ Remediating a document through Scribe is an extremely simple and efficient proce
     1. Enter the URL of the document, then press enter or click on the "Preview" button.
         1. Note that this must be the URL to a direct file download, I.E. a URL that ends with a file extension such as .pdf, .jpg, etc. Scribe does not support URL's for  protected downloads that require login information. Protected files must be downloaded manually and then uploaded to Scribe.
 1. Once the preview is ready, you will be presented with the first two pages of the document.
-1. Below the preview, you will find a new section of the page denoted by the "Remediate Full Document" heading. Here is where you can select a conversion format, as well as customize conversion settings that depend on your chosen format via the "Customize Settings" expandable button. The available formats include:
+1. Below the preview, you will find a new section of the page denoted by the "Remediate Full Document" heading. Here is where you can select a conversion format, as well as customize conversion settings that depend on your chosen format via the "Customize Settings" expandable button. Regardless of conversion format, the basic conversion settings allow you to determine whether a document should have image descriptions generated, or whether or not to have math content converted into accessible MathML. The available conversion formats include:
     * Accessible webpage viewed directly on Scribe
     * Tagged PDF
         * Supports large print
     * MP3, via text-to-speech in about a dozen languages
-        * Additional settings for voice and speaking rate are offered with this conversion. To expand them, click the "Customize Settings" button.
+        * Additional settings for voice and speaking rate are offered with this conversion.
     * Braille
         * Grade 1 (EBAE)
         * Grade 2 (EBAE)
@@ -30,7 +30,7 @@ Remediating a document through Scribe is an extremely simple and efficient proce
     * Microsoft Word
         * Supports large print
     * DAISY, text plus audio
-        * Additional settings for voice and speaking rate are offered with this conversion. To expand them, click the "Customize Settings" button.
+        * Additional settings for voice and speaking rate are offered with this conversion.
     * MOBI
 1. Once you have selected your format and configured any additional settings for the chosen format, do one of the following:
     1. Activate the "Next: Pricing Options" button to begin the payment process.
@@ -39,6 +39,22 @@ Remediating a document through Scribe is an extremely simple and efficient proce
 
 That's all there is to it! The final landing page will usually offer a download link to your file within seconds. Certain remediations, however, may take more time to process. This is standard issue for audio and daisy conversions due to the generation of the text to speech, however this may also happen if the document being remediated is quite large. In these cases, you can either leave the page open and wait for the link to appear, or look for an email to arrive with your file downloads.  
 On this landing page, you can convert the document to another format. However, the initially chosen format will not show up in the list of format options as that format has already been used.
+
+#### Remediating Math content
+
+Scribe for Meetings offers the ability to convert print math content into an accessible format that can be read via speech and Braille. The resulting format will be the web-friendly MathML specification. MathML is readily supported by all modern web browsers, as well as most, if not all screen readers. These include:
+* NVDA: via the free [MathCAT](https://addons.nvda-project.org/addons/MathCAT.en.html) addon
+* JAWS: built-in support via Direct embedding of the MathCAT library
+* VoiceOver: Built-in support
+* ChromeVox: Built-in support
+
+Follow these steps to remediate a document containing math content:
+1. Choose your desired conversion format.
+1. Click the "Customize Settings" button.
+1. Check the "Process mathematical notation (beta)" checkbox.
+1. Make any further setting adjustments, then click "Convert".
+
+The resulting output will include the mathematical notation rendered in a fully accessible format.
 
 ### Accessing Documents on a Later Date
 

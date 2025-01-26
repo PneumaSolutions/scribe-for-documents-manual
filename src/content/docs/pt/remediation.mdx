@@ -12,14 +12,14 @@ A correção de um documento por meio do Scribe é um procedimento extremamente 
 1. Uma vez conectado, há duas maneiras de enviar um documento ao Scribe
     1. Clique no botão "File Browse..." (Procurar arquivo...), localize o arquivo em seu computador e, em seguida, clique no botão "Preview" (Visualizar) na página do Scribe.
     1. Digite o URL do documento e pressione Enter ou clique no botão "Preview" (Visualizar).
-        1. Observe que esse deve ser o URL de um download direto de arquivo, ou seja, um URL que termine com uma extensão de arquivo, como .pdf, .jpg etc. O Scribe não pode fornecer informações de login para um download protegido. Os arquivos protegidos devem ser baixados manualmente e depois carregados no Scribe.
+        1. Observe que esse deve ser o URL de um download direto de arquivo, ou seja, um URL que termine com uma extensão de arquivo, como .pdf, .jpg etc. O Scribe não oferece suporte a URLs para downloads protegidos que exijam informações de login. Os arquivos protegidos devem ser baixados manualmente e depois carregados no Scribe.
 1. Quando a visualização estiver pronta, você verá as duas primeiras páginas do documento.
-1. Abaixo da visualização, você encontrará uma nova seção da página indicada pelo título "Remediate Full Document" (Remediar documento completo). É aqui que você pode selecionar um formato de conversão, juntamente com um botão expansível "Customize Settings" (Personalizar configurações) que oferecerá configurações de conversão que dependem do formato escolhido. Os formatos disponíveis incluem:
+1. Abaixo da visualização, você encontrará uma nova seção da página indicada pelo título "Remediate Full Document" (Remediar documento completo). É aqui que você pode selecionar um formato de conversão, bem como personalizar as configurações de conversão que dependem do formato escolhido por meio do botão expansível "Customize Settings" (Personalizar configurações). Independentemente do formato de conversão, as configurações básicas de conversão permitem determinar se um documento deve ter descrições de imagens geradas ou se o conteúdo matemático deve ou não ser convertido em MathML acessível. Os formatos de conversão disponíveis incluem:
     * Página da Web acessível visualizada diretamente no Scribe
     * PDF com tags
         * Suporta impressão em tamanho grande
     * MP3, por meio de conversão de texto em fala em cerca de uma dúzia de idiomas
-        * Configurações adicionais para voz e velocidade de fala são oferecidas com essa conversão. Para expandi-las, clique no botão "Customize Settings" (Personalizar configurações).
+        * Configurações adicionais para voz e velocidade de fala são oferecidas com essa conversão.
     * Braile
         * Grau 1 (EBAE)
         * Grau 2 (EBAE)
@@ -30,16 +30,32 @@ A correção de um documento por meio do Scribe é um procedimento extremamente 
     * Microsoft Word
         * Suporta impressão em tamanho grande
     * DAISY, texto e áudio
-        * Configurações adicionais para voz e velocidade de fala são oferecidas com essa conversão. Para expandi-las, clique no botão "Customize Settings" (Personalizar configurações).
+        * Configurações adicionais para voz e velocidade de fala são oferecidas com essa conversão.
     * MOBI
 1. Depois de selecionar o formato e definir quaisquer configurações adicionais para o formato escolhido, siga um destes procedimentos:
     1. Ative o botão "Next: Pricing Options" (Opções de preços) para iniciar o processo de pagamento.
-        * Você pode optar por comprar uma assinatura, um pacote de páginas pré-pago ou uma única correção sob demanda. A seção [Plans and Purchasing](../plans) abordará os planos em mais detalhes.
+        * Você pode optar por comprar uma assinatura, um pacote de páginas pré-pago ou uma única correção sob demanda. A seção [Planos e compras](.../planos) abordará os planos em mais detalhes.
     1. Se você já tiver uma assinatura ou crédito em conta, ative o botão "Convert" (Converter) para iniciar o processo de correção automatizado. 
 
 Isso é tudo o que há para fazer! A página de destino final geralmente oferecerá um link para download do seu arquivo em segundos. Algumas correções, no entanto, podem levar mais tempo para serem processadas. Esse é um problema padrão para conversões de áudio e daisy devido à geração de texto para fala, mas isso também pode acontecer se o documento que está sendo corrigido for muito grande. Nesses casos, você pode deixar a página aberta e aguardar o aparecimento do link ou aguardar o recebimento de um e-mail com os downloads dos arquivos.  
 Nessa página de destino, você pode converter o documento em outro formato. No entanto, o formato escolhido inicialmente não aparecerá na lista de opções de formato, pois esse formato já foi usado.
 
+#### Remediando o conteúdo de matemática
+
+O Scribe for Meetings oferece a capacidade de converter conteúdo matemático impresso em um formato acessível que pode ser lido por fala e Braille. O formato resultante será a especificação MathML compatível com a Web. O MathML é prontamente compatível com todos os navegadores modernos da Web, bem como com a maioria, se não todos, os leitores de tela. Esses leitores incluem:
+* NVDA: por meio do complemento gratuito [MathCAT](https://addons.nvda-project.org/addons/MathCAT.en.html)
+* JAWS: suporte integrado por meio da incorporação direta da biblioteca MathCAT
+* VoiceOver: Suporte incorporado
+* ChromeVox: Suporte integrado
+
+Siga estas etapas para corrigir um documento com conteúdo matemático:
+1. Escolha o formato de conversão desejado.
+1. Clique no botão "Customize Settings" (Personalizar configurações).
+1. Marque a caixa de seleção "Process mathematical notation (beta)" (Processar notação matemática (beta)).
+1. Faça outros ajustes nas configurações e clique em "Convert" (Converter).
+
+A saída resultante incluirá a notação matemática renderizada em um formato totalmente acessível.
+
 ### Como acessar documentos em uma data posterior
 
-Uma vez conectado à sua conta do Scribe, a seção "Previously Scribed Documents" (Documentos já registrados) exibirá os documentos que já foram corrigidos. Ao clicar em um deles, a visualização será exibida juntamente com os downloads de conversão existentes.
+Uma vez conectado à sua conta do Scribe, a seção "Previously Scribed Documents" (Documentos já escritos) exibirá os documentos que já foram corrigidos. Ao clicar em um deles, a visualização será exibida juntamente com os downloads de conversão existentes.

@@ -12,14 +12,14 @@ Att åtgärda ett dokument med hjälp av Scribe är en mycket enkel och effektiv
 1. När du har loggat in finns det två sätt att skicka ett dokument till Scribe
     1. Klicka på knappen "File Browse...", leta upp filen på din dator och klicka sedan på knappen "Preview" på Scribes webbsida.
     1. Ange dokumentets URL och tryck sedan på Enter eller klicka på knappen "Förhandsgranska".
-        1. Observera att detta måste vara URL:en till en direkt filnedladdning, dvs. en URL som slutar med en filändelse som .pdf, .jpg etc. Scribe kan inte tillhandahålla inloggningsinformation för en skyddad nedladdning. Skyddade filer måste laddas ner manuellt och sedan laddas upp till Scribe.
+        1. Observera att detta måste vara URL:en till en direkt filnedladdning, dvs. en URL som slutar med en filändelse som .pdf, .jpg osv. Scribe stöder inte URL:er för skyddade nedladdningar som kräver inloggningsinformation. Skyddade filer måste laddas ner manuellt och sedan laddas upp till Scribe.
 1. När förhandsgranskningen är klar visas de två första sidorna av dokumentet.
-1. Under förhandsgranskningen hittar du ett nytt avsnitt på sidan som betecknas med rubriken "Remediate Full Document". Här kan du välja ett konverteringsformat, tillsammans med en expanderbar knapp "Anpassa inställningar" som erbjuder konverteringsinställningar som beror på det valda formatet. De tillgängliga formaten inkluderar:
-    * Tillgänglig webbsida som visas direkt i Scribe
+1. Under förhandsgranskningen hittar du ett nytt avsnitt på sidan som betecknas med rubriken "Remediate Full Document". Här kan du välja ett konverteringsformat samt anpassa konverteringsinställningarna som beror på det valda formatet via den expanderbara knappen "Anpassa inställningar". Oavsett konverteringsformat kan du med hjälp av de grundläggande konverteringsinställningarna avgöra om ett dokument ska generera bildbeskrivningar eller om matematiskt innehåll ska konverteras till tillgänglig MathML eller inte. De tillgängliga konverteringsformaten inkluderar:
+    * Tillgänglig webbsida som visas direkt på Scribe
     * Taggad PDF
-        * Stödjer storstilat tryck
+        * Stödjer storstilad utskrift
     * MP3, via text-till-tal på ungefär ett dussin språk
-        * Ytterligare inställningar för röst och talhastighet erbjuds med denna konvertering. För att utöka dem, klicka på knappen "Anpassa inställningar".
+        * Ytterligare inställningar för röst och talhastighet erbjuds med denna konvertering.
     * Punktskrift
         * Årskurs 1 (EBAE)
         * Grad 2 (EBAE)
@@ -30,16 +30,32 @@ Att åtgärda ett dokument med hjälp av Scribe är en mycket enkel och effektiv
     * Microsoft Word
         * Stödjer storstilad utskrift
     * DAISY, text plus ljud
-        * Ytterligare inställningar för röst och talhastighet erbjuds med denna konvertering. Klicka på knappen "Anpassa inställningar" för att utöka dem.
+        * Ytterligare inställningar för röst och talhastighet erbjuds med den här konverteringen.
     * MOBI
 1. När du har valt format och konfigurerat eventuella ytterligare inställningar för det valda formatet gör du något av följande:
     1. Aktivera knappen "Nästa: Prissättningsalternativ" för att påbörja betalningsprocessen.
-        * Du kan välja att köpa en prenumeration, ett förbetalt sidpaket eller en enstaka sanering på begäran. I avsnittet [Planer och inköp](../plans) beskrivs planerna mer i detalj.
+        * Du kan välja att köpa en prenumeration, ett förbetalt sidpaket eller en enstaka sanering på begäran. I avsnittet [Planer och inköp](../planer) beskrivs planerna mer i detalj.
     1. Om du redan har en prenumeration eller kontokredit aktiverar du knappen "Konvertera" för att påbörja den automatiska saneringsprocessen. 
 
-Det är allt som behövs! Den slutliga landningssidan erbjuder vanligtvis en nedladdningslänk till din fil inom några sekunder. Vissa saneringar kan dock ta längre tid att bearbeta. Detta är ett standardproblem för ljud- och daisykonverteringar på grund av genereringen av text till tal, men det kan också hända om dokumentet som åtgärdas är ganska stort. I dessa fall kan du antingen lämna sidan öppen och vänta på att länken ska visas, eller vänta på att få ett e-postmeddelande med dina filnedladdningar.  
+Det är allt som finns att göra! Den slutliga landningssidan erbjuder vanligtvis en nedladdningslänk till din fil inom några sekunder. Vissa saneringar kan dock ta längre tid att bearbeta. Detta är ett standardproblem för ljud- och daisykonverteringar på grund av genereringen av text till tal, men det kan också hända om dokumentet som åtgärdas är ganska stort. I dessa fall kan du antingen lämna sidan öppen och vänta på att länken ska visas, eller vänta på att få ett e-postmeddelande med dina filnedladdningar.  
 På denna landningssida kan du konvertera dokumentet till ett annat format. Det ursprungligen valda formatet kommer dock inte att visas i listan över formatalternativ eftersom det formatet redan har använts.
+
+#### Remediating Math innehåll
+
+Scribe for Meetings erbjuder möjligheten att konvertera utskrivet matematiskt innehåll till ett tillgängligt format som kan läsas via tal och punktskrift. Det resulterande formatet kommer att vara den webbvänliga MathML-specifikationen. MathML stöds av alla moderna webbläsare och av de flesta, om inte alla, skärmläsare. Dessa inkluderar:
+* NVDA: via det kostnadsfria tillägget [MathCAT](https://addons.nvda-project.org/addons/MathCAT.en.html)
+* JAWS: inbyggt stöd via direkt inbäddning av MathCAT-biblioteket
+* VoiceOver: Inbyggt stöd
+* ChromeVox: Inbyggt stöd
+
+Följ dessa steg för att åtgärda ett dokument som innehåller matematiskt innehåll:
+1. Välj önskat konverteringsformat.
+1. Klicka på knappen "Anpassa inställningar".
+1. Markera kryssrutan "Behandla matematisk notation (beta)".
+1. Gör eventuella ytterligare justeringar av inställningarna och klicka sedan på "Konvertera".
+
+Resultatet kommer att innehålla den matematiska notationen i ett fullt tillgängligt format.
 
 ### Åtkomst till dokument vid ett senare datum
 
-När du är inloggad på ditt Scribe-konto visas de dokument som du redan har åtgärdat i avsnittet "Tidigare åtgärdade dokument". Om du klickar på ett av dem visas en förhandsgranskning tillsammans med alla befintliga konverteringsnedladdningar.
+När du är inloggad på ditt Scribe-konto visas de dokument som du redan har åtgärdat i avsnittet "Tidigare åtgärdade dokument". Om du klickar på ett av dem visas en förhandsgranskning av det tillsammans med alla befintliga konverteringsnedladdningar.

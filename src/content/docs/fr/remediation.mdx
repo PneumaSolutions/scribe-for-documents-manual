@@ -9,17 +9,17 @@ La remédiation d'un document par Scribe est une procédure extrêmement simple 
 1. Visitez [scribeit.io](https://scribeit.io)
 1. Pour de meilleurs résultats, nous recommandons de se connecter avant de remédier à un document. Cliquez sur le lien "Log in".
     1. Saisissez votre adresse électronique. Vous recevrez un courriel contenant un lien de vérification qui vous permettra de vous connecter.
-1. Une fois connecté, il existe deux façons d'envoyer un document à Scribe
+1. Une fois connecté, il y a deux façons d'envoyer un document à Scribe
     1. Cliquez sur le bouton "File Browse...", localisez le fichier sur votre ordinateur, puis cliquez sur le bouton "Preview" sur la page Web de Scribe.
     1. Saisissez l'URL du document, puis appuyez sur la touche Entrée ou cliquez sur le bouton "Prévisualiser".
-        1. Notez qu'il doit s'agir de l'URL d'un fichier directement téléchargeable, c'est-à-dire d'une URL se terminant par une extension de fichier telle que .pdf, .jpg, etc. Scribe ne peut pas fournir d'informations de connexion pour un téléchargement protégé. Les fichiers protégés doivent être téléchargés manuellement, puis téléchargés dans Scribe.
+        1. Notez qu'il doit s'agir de l'URL d'un fichier à télécharger directement, c'est-à-dire une URL qui se termine par une extension de fichier telle que .pdf, .jpg, etc. Scribe ne prend pas en charge les URL pour les téléchargements protégés qui nécessitent des informations de connexion. Les fichiers protégés doivent être téléchargés manuellement, puis téléchargés dans Scribe.
 1. Lorsque l'aperçu est prêt, les deux premières pages du document s'affichent.
-1. En dessous de l'aperçu, vous trouverez une nouvelle section de la page marquée par l'en-tête "Remediate Full Document". C'est ici que vous pouvez sélectionner un format de conversion, ainsi qu'un bouton extensible "Personnaliser les paramètres" qui propose des paramètres de conversion en fonction du format choisi. Les formats disponibles sont les suivants
+1. En dessous de l'aperçu, vous trouverez une nouvelle section de la page marquée par l'en-tête "Remediate Full Document" (Remédier au document complet). C'est ici que vous pouvez sélectionner un format de conversion et personnaliser les paramètres de conversion qui dépendent du format choisi à l'aide du bouton extensible "Personnaliser les paramètres". Quel que soit le format de conversion, les paramètres de conversion de base vous permettent de déterminer si un document doit faire l'objet d'une description d'image ou si le contenu mathématique doit être converti en MathML accessible. Les formats de conversion disponibles sont les suivants
     * Page web accessible visualisée directement sur Scribe
     * PDF balisé
-        * Prise en charge des gros caractères
+        * Prend en charge les gros caractères
     * MP3, via la synthèse vocale dans une douzaine de langues
-        * Des paramètres supplémentaires pour la voix et la vitesse d'élocution sont proposés avec cette conversion. Pour les développer, cliquez sur le bouton "Personnaliser les paramètres".
+        * Des paramètres supplémentaires pour la voix et la vitesse d'élocution sont proposés avec cette conversion.
     * Braille
         * Niveau 1 (EBAE)
         * Grade 2 (EBAE)
@@ -30,16 +30,32 @@ La remédiation d'un document par Scribe est une procédure extrêmement simple 
     * Microsoft Word
         * Supporte les gros caractères
     * DAISY, texte et audio
-        * Des paramètres supplémentaires pour la voix et la vitesse d'élocution sont proposés avec cette conversion. Pour les développer, cliquez sur le bouton "Personnaliser les paramètres".
+        * Des paramètres supplémentaires pour la voix et la vitesse d'élocution sont proposés avec cette conversion.
     * MOBI
 1. Une fois que vous avez sélectionné votre format et configuré tous les paramètres supplémentaires pour le format choisi, effectuez l'une des opérations suivantes :
     1. Activez le bouton "Suivant : Options de tarification" pour lancer le processus de paiement.
-        * Vous pouvez choisir d'acheter un abonnement, un pack de pages prépayées ou une remédiation unique à la demande. La section [Plans et achats](../plans) présente les plans de manière plus détaillée.
+        * Vous pouvez choisir d'acheter un abonnement, un pack de pages prépayées ou une remédiation unique à la demande. La section [Plans et achats](.../plans) présente les plans de manière plus détaillée.
     1. Si vous disposez déjà d'un abonnement ou d'un crédit de compte, activez le bouton "Convertir" pour lancer le processus de remédiation automatisée. 
 
 C'est tout ce qu'il y a à faire ! La page de destination finale propose généralement un lien de téléchargement vers votre fichier en quelques secondes. Certaines mesures correctives peuvent toutefois prendre plus de temps. Il s'agit d'un problème courant pour les conversions audio et les conversions de marguerites, en raison de la génération de la synthèse vocale, mais cela peut également se produire si le document à remédier est assez volumineux. Dans ce cas, vous pouvez soit laisser la page ouverte et attendre que le lien apparaisse, soit attendre qu'un courriel vous parvienne avec vos téléchargements de fichiers.  
 Sur cette page de renvoi, vous pouvez convertir le document dans un autre format. Toutefois, le format initialement choisi n'apparaîtra pas dans la liste des options de format, car il a déjà été utilisé.
 
-### Accéder aux documents à une date ultérieure
+#### Contenu de la remédiation en mathématiques
+
+Scribe for Meetings offre la possibilité de convertir le contenu mathématique imprimé dans un format accessible qui peut être lu par la parole et en braille. Le format résultant sera la spécification MathML, conviviale pour le web. MathML est facilement pris en charge par tous les navigateurs modernes, ainsi que par la plupart des lecteurs d'écran, si ce n'est tous. Il s'agit notamment de
+* NVDA : via le module complémentaire gratuit [MathCAT](https://addons.nvda-project.org/addons/MathCAT.en.html)
+* JAWS : prise en charge intégrée via l'intégration directe de la bibliothèque MathCAT
+* VoiceOver : Support intégré
+* ChromeVox : Support intégré
+
+Suivez ces étapes pour remédier à un document contenant du contenu mathématique :
+1. Choisissez le format de conversion souhaité.
+1. Cliquez sur le bouton "Personnaliser les paramètres".
+1. Cochez la case "Traiter la notation mathématique (bêta)".
+1. Effectuez d'autres réglages, puis cliquez sur "Convertir".
+
+Le résultat comprendra la notation mathématique rendue dans un format entièrement accessible.
+
+### Accès aux documents à une date ultérieure
 
 Une fois connecté à votre compte Scribe, une section "Documents précédemment scribés" affichera les documents que vous avez déjà remédiés. En cliquant sur l'un d'entre eux, vous obtiendrez son aperçu ainsi que tous les téléchargements de conversion existants.
