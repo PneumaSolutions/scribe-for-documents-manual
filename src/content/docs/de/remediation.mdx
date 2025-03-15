@@ -7,42 +7,52 @@ import MacOS from "~/components/platform/MacOS.astro"
 
 Die Überarbeitung eines Dokuments durch Scribe ist ein äußerst einfaches und effizientes Verfahren.
 1. Besuchen Sie [scribeit.io](https://scribeit.io)
-1. Um beste Ergebnisse zu erzielen, empfehlen wir Ihnen, sich vor der Bearbeitung eines Dokuments anzumelden. Klicken Sie auf den Link "Anmelden".
+1. Um beste Ergebnisse zu erzielen, empfehlen wir Ihnen, sich vor der Korrektur eines Dokuments anzumelden. Klicken Sie auf den Link "Anmelden".
     1. Geben Sie Ihre E-Mail-Adresse ein. Sie erhalten eine E-Mail mit einem Bestätigungslink, mit dem Sie sich anmelden können.
 1. Sobald Sie eingeloggt sind, haben Sie zwei Möglichkeiten, ein Dokument an Scribe zu senden
     1. Klicken Sie auf die Schaltfläche "Datei suchen...", suchen Sie die Datei auf Ihrem Computer und klicken Sie dann auf die Schaltfläche "Vorschau" auf der Scribe-Webseite.
+        1. Unterstützte Dateitypen sind PDF, jpg, png, docx oder jede andere Datei, die für sich allein stehen kann, d.h. nicht von zusätzlichen Komponenten abhängig ist. HTML-Dateien werden also nicht unterstützt.
     1. Geben Sie die URL des Dokuments ein und drücken Sie dann die Eingabetaste oder klicken Sie auf die Schaltfläche "Vorschau".
         1. Beachten Sie, dass es sich dabei um die URL eines direkten Dateidownloads handeln muss, d.h. eine URL, die mit einer Dateierweiterung wie .pdf, .jpg, etc. endet. Scribe unterstützt keine URLs für geschützte Downloads, die Login-Informationen erfordern. Geschützte Dateien müssen manuell heruntergeladen und dann in Scribe hochgeladen werden.
 1. Sobald die Vorschau fertig ist, werden Ihnen die ersten beiden Seiten des Dokuments angezeigt.
-1. Unterhalb der Vorschau finden Sie einen neuen Bereich der Seite mit der Überschrift "Remediate Full Document". Hier können Sie ein Konvertierungsformat auswählen und die Konvertierungseinstellungen, die von dem gewählten Format abhängen, über die erweiterbare Schaltfläche "Einstellungen anpassen" anpassen. Unabhängig vom Konvertierungsformat können Sie mit den grundlegenden Konvertierungseinstellungen festlegen, ob für ein Dokument Bildbeschreibungen erstellt werden sollen oder ob mathematische Inhalte in barrierefreies MathML konvertiert werden sollen oder nicht. Zu den verfügbaren Konvertierungsformaten gehören:
+1. Unterhalb der Vorschau finden Sie einen neuen Bereich auf der Seite mit der Überschrift "Remediate Full Document". Hier können Sie ein Konvertierungsformat auswählen und die Konvertierungseinstellungen, die von dem gewählten Format abhängen, über die ausklappbare Schaltfläche "Einstellungen anpassen" anpassen. Unabhängig vom Konvertierungsformat können Sie mit den grundlegenden Konvertierungseinstellungen festlegen, ob für ein Dokument Bildbeschreibungen erstellt werden sollen oder ob mathematische Inhalte in barrierefreies MathML konvertiert werden sollen oder nicht. Zu den verfügbaren Konvertierungsformaten gehören:
     * Barrierefreie Webseite, die direkt auf Scribe angezeigt wird
     * Getaggte PDF
         * Unterstützt Großdruck
     * MP3, über Text-to-Speech in etwa einem Dutzend Sprachen
-        * Zusätzliche Einstellungen für Stimme und Sprechgeschwindigkeit werden bei dieser Konvertierung angeboten.
+        * Zusätzliche Einstellungen für Dialekt, Stimme und/oder Geneder und Sprechgeschwindigkeit werden bei dieser Konvertierung angeboten.
     * Braille
         * Grad 1 (EBAE)
         * Grad 2 (EBAE)
-        * Einheitliche englische Brailleschrift (UEB)
+        * Vereinheitlichte Englische Brailleschrift (UEB)
         * und viele andere Sprachen
     * Webseite zum Herunterladen
     * EPUB
     * Microsoft Word
-        * Unterstützt Großdruck
+        * Unterstützt Großdruck und Sprachdialektoptionen
     * DAISY, Text plus Audio
         * Bei dieser Konvertierung werden zusätzliche Einstellungen für Stimme und Sprechgeschwindigkeit angeboten.
     * MOBI
 1. Nachdem Sie Ihr Format ausgewählt und alle zusätzlichen Einstellungen für das gewählte Format konfiguriert haben, führen Sie einen der folgenden Schritte aus:
     1. Aktivieren Sie die Schaltfläche "Weiter: Preisoptionen", um den Zahlungsvorgang zu starten.
         * Sie können wählen, ob Sie ein Abonnement, ein im Voraus bezahltes Seitenpaket oder eine einzelne Korrektur auf Abruf kaufen möchten. Im Abschnitt [Pläne und Kauf](../Pläne) werden die Pläne im Detail beschrieben.
-    1. Wenn Sie bereits über ein Abonnement oder ein Guthaben verfügen, aktivieren Sie die Schaltfläche "Konvertieren", um den automatischen Sanierungsprozess zu starten. 
+    1. Wenn Sie bereits über ein Abonnement oder Guthaben verfügen, aktivieren Sie die Schaltfläche "Konvertieren", um den automatischen Korrekturprozess zu starten. 
 
 Das war's schon! Die endgültige Landing Page bietet in der Regel innerhalb von Sekunden einen Download-Link zu Ihrer Datei an. Bestimmte Abhilfemaßnahmen können jedoch mehr Zeit in Anspruch nehmen. Dies ist bei Audio- und Daisy-Konvertierungen aufgrund der Generierung von Text in Sprache üblich, kann aber auch vorkommen, wenn das zu behebende Dokument recht groß ist. In diesen Fällen können Sie entweder die Seite geöffnet lassen und warten, bis der Link angezeigt wird, oder Sie erhalten eine E-Mail mit den heruntergeladenen Dateien.  
 Auf dieser Zielseite können Sie das Dokument in ein anderes Format konvertieren. Das ursprünglich gewählte Format wird jedoch nicht in der Liste der Formatoptionen angezeigt, da dieses Format bereits verwendet wurde.
 
-#### Nachbesserung von Mathematikinhalten
+#### Umwandlung von Text in Sprache
 
-Scribe for Documents bietet die Möglichkeit, gedruckte mathematische Inhalte in ein barrierefreies Format zu konvertieren, das per Sprache und Braille gelesen werden kann. Das resultierende Format ist die webfreundliche MathML-Spezifikation. MathML wird von allen modernen Webbrowsern sowie von den meisten, wenn nicht sogar allen Bildschirmleseprogrammen unterstützt. Dazu gehören:
+Scribe for Documents verfügt über ein umfangreiches, natürliches Text-zu-Sprache-System, das Ihnen eine ungeahnte Kontrolle über die Art und Weise bietet, wie Ihre Audio-Konvertierungen dargestellt werden. Wenn Sie die DAISY- oder Audio-Konvertierungsoptionen auswählen, erscheinen die Sprachoptionen, wenn Sie auf "Einstellungen anpassen" drücken.
+Die verfügbaren Einstellungen sind wie folgt:
+* Sprache
+* Geschlecht: Wenn die Sprache auf automatische Erkennung eingestellt ist, können Sie wählen, ob das Dokument mit einer männlichen, weiblichen oder neutralen Stimme gelesen werden soll.
+* Dialekt: Wenn Sie eine bestimmte Sprache auswählen, werden mehrere Dialektoptionen verfügbar.
+* Stimme: Für jeden Dialekt gibt es mehrere Stimmen zur Auswahl. Mit der Schaltfläche "Probe abspielen" können Sie sofort eine Probe der gewählten Stimme erzeugen.
+
+#### Wiederholung von Mathematikinhalten
+
+Scribe for Documents bietet die Möglichkeit, gedruckte mathematische Inhalte in ein zugängliches Format zu konvertieren, das per Sprache und Braille gelesen werden kann. Das resultierende Format ist die webfreundliche MathML-Spezifikation. MathML wird von allen modernen Webbrowsern sowie von den meisten, wenn nicht sogar allen Bildschirmleseprogrammen unterstützt. Dazu gehören:
 * NVDA: über das kostenlose Addon [MathCAT](https://addons.nvda-project.org/addons/MathCAT.en.html)
 * JAWS: integrierte Unterstützung durch direkte Einbettung der MathCAT-Bibliothek
 * VoiceOver: Eingebaute Unterstützung
@@ -58,4 +68,4 @@ Die resultierende Ausgabe enthält die mathematische Notation, die in einem voll
 
 ### Zugriff auf Dokumente zu einem späteren Zeitpunkt
 
-Wenn Sie in Ihrem Scribe-Konto eingeloggt sind, werden in der Rubrik "Zuvor beschriebene Dokumente" die Dokumente angezeigt, die Sie bereits bearbeitet haben. Wenn Sie auf eines dieser Dokumente klicken, wird dessen Vorschau zusammen mit allen vorhandenen Konvertierungsdownloads angezeigt.
+Sobald Sie in Ihrem Scribe-Konto eingeloggt sind, werden in der Rubrik "Zuvor geschriebene Dokumente" die Dokumente angezeigt, die Sie bereits bearbeitet haben. Wenn Sie auf eines dieser Dokumente klicken, wird dessen Vorschau zusammen mit allen vorhandenen Konvertierungsdownloads angezeigt.

@@ -11,15 +11,16 @@ Att åtgärda ett dokument med hjälp av Scribe är en mycket enkel och effektiv
     1. Ange din e-postadress. Du kommer att få ett e-postmeddelande med en verifieringslänk som loggar in dig.
 1. När du har loggat in finns det två sätt att skicka ett dokument till Scribe
     1. Klicka på knappen "File Browse...", leta upp filen på din dator och klicka sedan på knappen "Preview" på Scribes webbsida.
-    1. Ange dokumentets URL och tryck sedan på Enter eller klicka på knappen "Förhandsgranska".
-        1. Observera att detta måste vara URL:en till en direkt filnedladdning, dvs. en URL som slutar med en filändelse som .pdf, .jpg osv. Scribe stöder inte URL:er för skyddade nedladdningar som kräver inloggningsinformation. Skyddade filer måste laddas ner manuellt och sedan laddas upp till Scribe.
+        1. Filtyper som stöds är PDF, jpg, png, docx eller någon annan fil som kan stå på egna ben, dvs. som inte är beroende av ytterligare komponenter. Därför stöds inte html-filer.
+    1. Ange dokumentets URL och tryck sedan på enter eller klicka på knappen "Förhandsgranska".
+        1. Observera att detta måste vara URL:en till en direkt filnedladdning, d.v.s. en URL som slutar med ett filtillägg som .pdf, .jpg, etc. Scribe stöder inte URL:er för skyddade nedladdningar som kräver inloggningsinformation. Skyddade filer måste laddas ner manuellt och sedan laddas upp till Scribe.
 1. När förhandsgranskningen är klar visas de två första sidorna av dokumentet.
 1. Under förhandsgranskningen hittar du ett nytt avsnitt på sidan som betecknas med rubriken "Remediate Full Document". Här kan du välja ett konverteringsformat samt anpassa konverteringsinställningarna som beror på det valda formatet via den expanderbara knappen "Anpassa inställningar". Oavsett konverteringsformat kan du med hjälp av de grundläggande konverteringsinställningarna avgöra om ett dokument ska generera bildbeskrivningar eller om matematiskt innehåll ska konverteras till tillgänglig MathML eller inte. De tillgängliga konverteringsformaten inkluderar:
     * Tillgänglig webbsida som visas direkt på Scribe
     * Taggad PDF
         * Stödjer storstilad utskrift
     * MP3, via text-till-tal på ungefär ett dussin språk
-        * Ytterligare inställningar för röst och talhastighet erbjuds med denna konvertering.
+        * Ytterligare inställningar för dialekt, röst och/eller geneder och talhastighet erbjuds med denna konvertering.
     * Punktskrift
         * Årskurs 1 (EBAE)
         * Grad 2 (EBAE)
@@ -28,7 +29,7 @@ Att åtgärda ett dokument med hjälp av Scribe är en mycket enkel och effektiv
     * Nedladdningsbar webbsida
     * EPUB
     * Microsoft Word
-        * Stödjer storstilad utskrift
+        * Stödjer alternativ för storstil och språkdialekter
     * DAISY, text plus ljud
         * Ytterligare inställningar för röst och talhastighet erbjuds med den här konverteringen.
     * MOBI
@@ -40,9 +41,18 @@ Att åtgärda ett dokument med hjälp av Scribe är en mycket enkel och effektiv
 Det är allt som finns att göra! Den slutliga landningssidan erbjuder vanligtvis en nedladdningslänk till din fil inom några sekunder. Vissa saneringar kan dock ta längre tid att bearbeta. Detta är ett standardproblem för ljud- och daisykonverteringar på grund av genereringen av text till tal, men det kan också hända om dokumentet som åtgärdas är ganska stort. I dessa fall kan du antingen lämna sidan öppen och vänta på att länken ska visas, eller vänta på att få ett e-postmeddelande med dina filnedladdningar.  
 På denna landningssida kan du konvertera dokumentet till ett annat format. Det ursprungligen valda formatet kommer dock inte att visas i listan över formatalternativ eftersom det formatet redan har använts.
 
-#### Remediating Math innehåll
+#### Konvertering av text till tal
 
-Scribe for Documents erbjuder möjligheten att konvertera utskrivet matematiskt innehåll till ett tillgängligt format som kan läsas via tal och punktskrift. Det resulterande formatet kommer att vara den webbvänliga MathML-specifikationen. MathML stöds av alla moderna webbläsare och av de flesta, om inte alla, skärmläsare. Dessa inkluderar:
+Scribe for Documents har ett omfattande och naturligt text-till-tal-system som ger dig oöverträffad kontroll över hur dina ljudkonverteringar presenteras. När du väljer DAISY- eller ljudkonvertering visas talalternativen när du trycker på "Anpassa inställningar".
+De tillgängliga inställningarna är följande:
+* Språk
+* Kön: När språket är inställt på automatisk detektering kan du välja om dokumentet ska läsas upp med en manlig, kvinnlig eller neutral röst.
+* Dialekt: När du väljer ett visst språk blir flera dialektalternativ tillgängliga.
+* Röst: Varje dialekt har flera röster att välja mellan. Med knappen "Play Sample" kan du direkt generera ett prov av den valda rösten.
+
+#### Omarbetning av matematikinnehåll
+
+Scribe for Documents erbjuder möjligheten att konvertera tryckt matematiskt innehåll till ett tillgängligt format som kan läsas via tal och punktskrift. Det resulterande formatet är den webbvänliga MathML-specifikationen. MathML stöds av alla moderna webbläsare och av de flesta, om inte alla, skärmläsare. Dessa inkluderar:
 * NVDA: via det kostnadsfria tillägget [MathCAT](https://addons.nvda-project.org/addons/MathCAT.en.html)
 * JAWS: inbyggt stöd via direkt inbäddning av MathCAT-biblioteket
 * VoiceOver: Inbyggt stöd

@@ -11,15 +11,16 @@ Remediar un documento a través de Scribe es un procedimiento extremadamente sen
     1. Introduzca su dirección de correo electrónico. Recibirá un correo electrónico con un enlace de verificación que le permitirá iniciar sesión.
 1. Una vez conectado, hay dos formas de enviar un documento a Scribe
     1. Haga clic en el botón "Examinar archivo...", localice el archivo en su ordenador y, a continuación, haga clic en el botón "Vista previa" de la página web de Scribe.
+        1. Los tipos de archivo admitidos son PDF, jpg, png, docx o cualquier otro archivo que pueda funcionar por sí solo, es decir, que no dependa de componentes adicionales. Por lo tanto, no se admiten archivos html.
     1. Introduzca la URL del documento y pulse Intro o haga clic en el botón "Vista previa".
-        1. Tenga en cuenta que debe tratarse de la URL de un archivo descargado directamente, es decir, una URL que termine con una extensión de archivo como .pdf, .jpg, etc. Scribe no puede proporcionar información de acceso para una descarga protegida. Los archivos protegidos deben descargarse manualmente y luego cargarse en Scribe.
+        1. Tenga en cuenta que debe ser la URL de un archivo descargado directamente, es decir, una URL que termine con una extensión de archivo como .pdf, .jpg, etc. Scribe no admite URL para descargas protegidas que requieran información de inicio de sesión. Los archivos protegidos deben descargarse manualmente y luego cargarse en Scribe.
 1. Una vez que la vista previa esté lista, se le presentarán las dos primeras páginas del documento.
-1. Debajo de la vista previa, encontrará una nueva sección de la página indicada por el encabezado "Remediar documento completo". Aquí es donde puede seleccionar un formato de conversión, junto con un botón desplegable "Personalizar ajustes" que ofrecerá ajustes de conversión que dependen del formato elegido. Los formatos disponibles son:
+1. Debajo de la vista previa, encontrará una nueva sección de la página indicada por el encabezado "Remediar documento completo". Aquí es donde puede seleccionar un formato de conversión, así como personalizar los ajustes de conversión que dependen del formato elegido mediante el botón desplegable "Personalizar ajustes". Independientemente del formato de conversión, los ajustes básicos de conversión le permiten determinar si un documento debe tener descripciones de imagen generadas, o si debe tener o no contenido matemático convertido a MathML accesible. Los formatos de conversión disponibles incluyen:
     * Página web accesible vista directamente en Scribe
     * PDF etiquetado
         * Compatible con letra grande
     * MP3, mediante conversión de texto a voz en una docena de idiomas
-        * Con esta conversión se ofrecen ajustes adicionales para la voz y la velocidad de habla. Para ampliarlos, haga clic en el botón "Personalizar ajustes".
+        * Con esta conversión se ofrecen ajustes adicionales para dialecto, voz y/o geneder, y velocidad de habla.
     * Braille
         * Grado 1 (EBAE)
         * Grado 2 (EBAE)
@@ -28,22 +29,30 @@ Remediar un documento a través de Scribe es un procedimiento extremadamente sen
     * Página web descargable
     * EPUB
     * Microsoft Word
-        * Admite letra grande
+        * Admite letra grande y opciones de dialecto lingüístico
     * DAISY, texto más audio
-        * Con esta conversión se ofrecen ajustes adicionales para la voz y la velocidad de habla. Para ampliarlos, haz clic en el botón "Personalizar ajustes".
+        * Con esta conversión se ofrecen ajustes adicionales para la voz y la velocidad de habla.
     * MOBI
 1. Una vez seleccionado el formato y configurados los ajustes adicionales para el formato elegido, realice una de las siguientes acciones:
     1. Active el botón "Siguiente: Opciones de precio" para iniciar el proceso de pago.
-        * Puede elegir entre comprar una suscripción, un paquete de páginas prepago o una única corrección a petición. La sección [Planes y compras](../plans) tratará los planes con más detalle.
+        * Puede elegir entre comprar una suscripción, un paquete de páginas prepago o una única corrección a petición. La sección [Planes y compras](../planes) tratará los planes con más detalle.
     1. Si ya dispone de una suscripción o de crédito en su cuenta, active el botón "Convertir" para iniciar el proceso de corrección automática. 
 
 Eso es todo La página de destino final normalmente ofrecerá un enlace de descarga a su archivo en cuestión de segundos. Sin embargo, algunas correcciones pueden tardar más tiempo en procesarse. Esto es habitual en las conversiones de audio y margarita debido a la generación del texto a voz, pero también puede ocurrir si el documento que se está corrigiendo es bastante grande. En estos casos, puede dejar la página abierta y esperar a que aparezca el enlace, o esperar a recibir un correo electrónico con las descargas de los archivos.  
 En esta página de destino, puede convertir el documento a otro formato. Sin embargo, el formato elegido inicialmente no aparecerá en la lista de opciones de formato, ya que ese formato ya ha sido utilizado.
 
+#### Conversión de texto a voz
 
-#### Recuperación de contenidos de Matemáticas
+Scribe for Documents cuenta con un amplio y natural sistema de conversión de texto a voz, que ofrece un control sin precedentes sobre cómo se presentan sus conversiones de audio. Cuando seleccione las opciones de conversión DAISY o Audio, aparecerán las opciones de voz al pulsar "Personalizar ajustes".
+Los ajustes disponibles son los siguientes
+* Idioma
+* Idioma: Cuando el idioma está configurado para detectarse automáticamente, puede elegir si el documento se lee con voz masculina, femenina o neutra.
+* Dialecto: Al elegir un idioma específico, aparecen varias opciones de dialecto.
+* Voz: Cada dialecto viene con varias voces para elegir. El botón "Reproducir muestra" permite generar instantáneamente una muestra de la voz elegida.
 
-Scribe for Documents ofrece la posibilidad de convertir contenidos matemáticos impresos en un formato accesible que pueda leerse mediante voz y Braille. El formato resultante será la especificación MathML de fácil uso en la web. MathML es compatible con todos los navegadores web modernos, así como con la mayoría, si no todos, los lectores de pantalla. Entre ellos se incluyen:
+#### Remediar contenidos de Matemáticas
+
+Scribe for Documents ofrece la posibilidad de convertir el contenido matemático impreso en un formato accesible que pueda leerse mediante voz y Braille. El formato resultante será la especificación MathML apta para la web. MathML es compatible con todos los navegadores web modernos, así como con la mayoría, si no todos, los lectores de pantalla. Entre ellos se incluyen:
 * NVDA: a través del complemento gratuito [MathCAT](https://addons.nvda-project.org/addons/MathCAT.en.html)
 * JAWS: soporte integrado a través de la incrustación directa de la biblioteca MathCAT
 * VoiceOver: Soporte integrado
@@ -57,6 +66,6 @@ Sigue estos pasos para corregir un documento con contenido matemático:
 
 El resultado incluirá la notación matemática en un formato totalmente accesible.
 
-### Acceso a documentos en una fecha posterior
+### Acceso posterior a los documentos
 
-Una vez iniciada la sesión en su cuenta de Scribe, en la sección "Documentos suscritos anteriormente" se mostrarán los documentos que ya ha corregido. Al hacer clic en uno de ellos, aparecerá su vista previa junto con las descargas de conversión existentes.
+Una vez iniciada la sesión en su cuenta de Scribe, la sección "Documentos anteriormente convertidos" mostrará los documentos que ya ha convertido. Al hacer clic en uno de ellos, aparecerá su vista previa junto con las descargas de conversión existentes.
