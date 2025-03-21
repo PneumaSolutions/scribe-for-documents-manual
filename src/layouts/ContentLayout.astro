@@ -32,6 +32,7 @@ const pageIndex = pageOrder.indexOf(slug)
     <div>
       <h1>Scribe for Documents</h1>
       <LanguageSwitcher origLang={lang} platform={platform} slug={slug} />
+      <PlatformSwitcher lang={lang} platform={platform} slug={slug} />
       <form role="search" action={`/${lang}/${platform}/search/`} method="get">
         <label for="q"><UIString key="search.label" /></label>
         <input type="text" name="q" id="q" required />
