@@ -11,6 +11,7 @@ A correção de um documento por meio do Scribe é um procedimento extremamente 
     1. Digite seu endereço de e-mail. Você receberá um e-mail com um link de verificação que fará seu login.
 1. Uma vez conectado, há duas maneiras de enviar um documento ao Scribe
     1. Clique no botão "File Browse..." (Procurar arquivo...), localize o arquivo em seu computador e, em seguida, clique no botão "Preview" (Visualizar) na página do Scribe.
+        1. Os tipos de arquivo compatíveis incluem PDF, jpg, png, docx ou qualquer outro arquivo que possa se manter sozinho, ou seja, que não dependa de componentes adicionais. Dessa forma, não há suporte para arquivos html.
     1. Digite o URL do documento e pressione Enter ou clique no botão "Preview" (Visualizar).
         1. Observe que esse deve ser o URL de um download direto de arquivo, ou seja, um URL que termine com uma extensão de arquivo, como .pdf, .jpg etc. O Scribe não oferece suporte a URLs para downloads protegidos que exijam informações de login. Os arquivos protegidos devem ser baixados manualmente e depois carregados no Scribe.
 1. Quando a visualização estiver pronta, você verá as duas primeiras páginas do documento.
@@ -19,7 +20,7 @@ A correção de um documento por meio do Scribe é um procedimento extremamente 
     * PDF com tags
         * Suporta impressão em tamanho grande
     * MP3, por meio de conversão de texto em fala em cerca de uma dúzia de idiomas
-        * Configurações adicionais para voz e velocidade de fala são oferecidas com essa conversão.
+        * Configurações adicionais para dialeto, voz e/ou gênero e velocidade de fala são oferecidas com essa conversão.
     * Braile
         * Grau 1 (EBAE)
         * Grau 2 (EBAE)
@@ -28,22 +29,38 @@ A correção de um documento por meio do Scribe é um procedimento extremamente 
     * Página da Web para download
     * EPUB
     * Microsoft Word
-        * Suporta impressão em tamanho grande
+        * Suporta impressão em tamanho grande e opções de dialeto de idioma
     * DAISY, texto e áudio
         * Configurações adicionais para voz e velocidade de fala são oferecidas com essa conversão.
     * MOBI
-1. Depois de selecionar o formato e definir quaisquer configurações adicionais para o formato escolhido, siga um desses procedimentos:
+1. Depois de selecionar o formato e definir quaisquer configurações adicionais para o formato escolhido, siga um destes procedimentos:
     1. Ative o botão "Next: Pricing Options" (Opções de preços) para iniciar o processo de pagamento.
         * Você pode optar por comprar uma assinatura, um pacote de páginas pré-pago ou uma única correção sob demanda. A seção [Planos e compras](.../planos) abordará os planos em mais detalhes.
-    1. Se você já tiver uma assinatura ou crédito em conta, ative o botão "Convert" (Conversor) para iniciar o processo de correção automatizado. 
+    1. Se você já tiver uma assinatura ou crédito em conta, ative o botão "Convert" (Converter) para iniciar o processo de correção automatizado. 
 
 Isso é tudo o que há para fazer! A página de destino final geralmente oferecerá um link para download do seu arquivo em segundos. Algumas correções, no entanto, podem levar mais tempo para serem processadas. Esse é um problema padrão para conversões de áudio e daisy devido à geração de texto para fala, mas isso também pode acontecer se o documento que está sendo corrigido for muito grande. Nesses casos, você pode deixar a página aberta e aguardar o aparecimento do link ou aguardar o recebimento de um e-mail com os downloads dos arquivos.  
 Nessa página de destino, você pode converter o documento em outro formato. No entanto, o formato escolhido inicialmente não aparecerá na lista de opções de formato, pois esse formato já foi usado.
 
-#### Remediando o conteúdo de matemática
+#### Conversão de texto em fala
 
-O Scribe for Documents oferece a capacidade de converter conteúdo matemático impresso em um formato acessível que pode ser lido por fala e Braille. O formato resultante será a especificação MathML compatível com a Web. O MathML é prontamente compatível com todos os navegadores modernos da Web, bem como com a maioria, se não todos, os leitores de tela. Esses leitores incluem:
-* NVDA: por meio do complemento gratuito [MathCAT] (https://addons.nvda-project.org/addons/MathCAT.en.html)
+O Scribe for Documents apresenta um sistema extenso e natural de conversão de texto em fala, oferecendo um controle sem precedentes sobre como as conversões de áudio são apresentadas. Quando você selecionar as opções de conversão DAISY ou Áudio, as opções de fala serão exibidas ao pressionar "Customize Settings" (Personalizar configurações).
+As configurações disponíveis são as seguintes:
+* Idioma
+* Gênero: Quando o idioma estiver definido para detecção automática, você poderá escolher se o documento será lido com uma voz masculina, feminina ou neutra.
+* Dialeto: Ao escolher um idioma específico, várias opções de dialeto ficam disponíveis.
+* Voz: Cada dialeto vem com várias vozes para escolher. O botão "Play Sample" permite que você gere instantaneamente uma amostra da voz escolhida.
+* Taxa de fala: estão disponíveis as opções 1X, 1.5X e 2X
+
+Quando um documento é convertido em qualquer um dos formatos compatíveis com fala, um tempo estimado para a conclusão começará a ser exibido quando o processo atingir o estágio de conversão de fala. Observe que esse tempo é apenas uma estimativa, e o tempo real para a conclusão pode variar com base em vários fatores. Dessa forma, o tempo real pode ser mais rápido do que o estimado, mas foram feitos todos os esforços para garantir que o Scribe não subestime o tempo de conclusão.
+
+##### Nota sobre vozes multilíngues
+
+Descobriu-se que as vozes multilíngues ocasionalmente mudam de idioma sem serem solicitadas. Em outras palavras, se você tiver um documento usando apenas um idioma, sem nenhuma indicação da necessidade de mudar de idioma, as vozes multilíngues ainda poderão decidir mudar por conta própria, sem nenhum motivo claro. Infelizmente, esse é um problema conhecido que está fora do nosso controle. Dessa forma, para documentos conhecidos como sendo de um único idioma, recomendamos usar as vozes de um único idioma para obter melhores resultados. Essas vozes ainda fornecerão inflexão extremamente natural, mas não correrão o risco de mudar de idioma inesperadamente.
+
+#### Remediação de conteúdo de matemática
+
+O Scribe for Documents oferece a capacidade de converter conteúdo matemático impresso em um formato acessível que pode ser lido por voz e Braille. O formato resultante será a especificação MathML compatível com a Web. O MathML é prontamente suportado por todos os navegadores modernos da Web, bem como pela maioria dos leitores de tela, se não todos. Esses leitores incluem:
+* NVDA: por meio do complemento gratuito [MathCAT](https://addons.nvda-project.org/addons/MathCAT.en.html)
 * JAWS: suporte integrado por meio da incorporação direta da biblioteca MathCAT
 * VoiceOver: Suporte incorporado
 * ChromeVox: Suporte integrado
@@ -51,11 +68,11 @@ O Scribe for Documents oferece a capacidade de converter conteúdo matemático i
 Siga estas etapas para corrigir um documento com conteúdo matemático:
 1. Escolha o formato de conversão desejado.
 1. Clique no botão "Customize Settings" (Personalizar configurações).
-1. Marque a caixa de seleção "Processar notação matemática (beta)" (Processar notação matemática (beta)).
+1. Marque a caixa de seleção "Process mathematical notation (beta)" (Processar notação matemática (beta)).
 1. Faça outros ajustes nas configurações e clique em "Convert" (Converter).
 
 A saída resultante incluirá a notação matemática renderizada em um formato totalmente acessível.
 
-### Como acessar documentos em um dado posterior
+### Como acessar documentos em uma data posterior
 
 Uma vez conectado à sua conta do Scribe, a seção "Previously Scribed Documents" (Documentos já escritos) exibirá os documentos que já foram corrigidos. Ao clicar em um deles, a visualização será exibida juntamente com os downloads de conversão existentes.

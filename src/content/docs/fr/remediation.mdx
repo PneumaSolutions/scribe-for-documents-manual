@@ -15,12 +15,12 @@ La remédiation d'un document par Scribe est une procédure extrêmement simple 
     1. Saisissez l'URL du document, puis appuyez sur la touche "Entrée" ou cliquez sur le bouton "Aperçu".
         1. Notez qu'il doit s'agir de l'URL d'un fichier à télécharger directement, c'est-à-dire une URL qui se termine par une extension de fichier telle que .pdf, .jpg, etc. Scribe ne prend pas en charge les URL pour les téléchargements protégés qui nécessitent des informations de connexion. Les fichiers protégés doivent être téléchargés manuellement, puis téléchargés dans Scribe.
 1. Lorsque l'aperçu est prêt, les deux premières pages du document s'affichent.
-1. En dessous de l'aperçu, vous trouverez une nouvelle section de la page marquée par l'en-tête "Remediate Full Document". C'est ici que vous pouvez sélectionner un format de conversion et personnaliser les paramètres de conversion qui dépendent du format choisi à l'aide du bouton extensible "Personnaliser les paramètres". Quel que soit le format de conversion, les paramètres de conversion de base vous permettent de déterminer si un document doit faire l'objet d'une description d'image ou si le contenu mathématique doit être converti en MathML accessible. Les formats de conversion disponibles sont les suivants
+1. En dessous de l'aperçu, vous trouverez une nouvelle section de la page marquée par l'en-tête "Remediate Full Document" (Remédier au document complet). C'est ici que vous pouvez sélectionner un format de conversion et personnaliser les paramètres de conversion qui dépendent du format choisi à l'aide du bouton extensible "Personnaliser les paramètres". Quel que soit le format de conversion, les paramètres de conversion de base vous permettent de déterminer si un document doit faire l'objet d'une description d'image ou si le contenu mathématique doit être converti en MathML accessible. Les formats de conversion disponibles sont les suivants
     * Page web accessible visualisée directement sur Scribe
     * PDF balisé
         * Prend en charge les gros caractères
     * MP3, via la synthèse vocale dans une douzaine de langues
-        * Des paramètres supplémentaires pour le dialecte, la voix et/ou le générique, et la vitesse d'élocution sont proposés avec cette conversion.
+        * Des paramètres supplémentaires pour le dialecte, la voix et/ou le sexe, et le débit de parole sont proposés avec cette conversion.
     * Braille
         * Niveau 1 (EBAE)
         * Grade 2 (EBAE)
@@ -48,11 +48,18 @@ Les paramètres disponibles sont les suivants :
 * Langue
 * Genre : Lorsque la langue est détectée automatiquement, vous pouvez choisir si le document est lu avec une voix masculine, féminine ou neutre.
 * Dialecte : Lorsque vous choisissez une langue spécifique, plusieurs options de dialecte sont disponibles.
-* Voix : Chaque dialecte est accompagné de plusieurs voix. Le bouton "Jouer un échantillon" permet de générer instantanément un échantillon de la voix choisie.
+* Voix : Chaque dialecte est accompagné de plusieurs voix. Le bouton "Jouer un échantillon" vous permet de générer instantanément un échantillon de la voix choisie.
+* Vitesse d'élocution : les options 1X, 1,5X et 2X sont disponibles
+
+Lorsqu'un document est converti dans l'un des formats de reconnaissance vocale, une estimation du temps nécessaire à l'achèvement du processus s'affiche dès que le processus atteint l'étape de la conversion vocale. Notez que ce délai n'est qu'une estimation et que le délai réel peut varier en fonction d'un certain nombre de facteurs. Ainsi, le temps réel peut être plus rapide que l'estimation, mais tous les efforts ont été faits pour s'assurer que Scribe ne sous-estime pas le temps nécessaire à l'achèvement.
+
+##### Note sur les voix multilingues
+
+Il a été constaté que les voix multilingues changent parfois de langue sans qu'on le leur demande. En d'autres termes, si vous avez un document n'utilisant qu'une seule langue, sans aucune indication de la nécessité de changer de langue, les voix multilingues peuvent quand même décider de changer d'elles-mêmes sans raison claire. Il s'agit malheureusement d'un problème connu sur lequel nous n'avons aucun contrôle. Par conséquent, pour les documents connus comme étant unilingues, nous recommandons d'utiliser les voix unilingues pour obtenir les meilleurs résultats. Ces voix fourniront toujours une inflexion extrêmement naturelle, mais ne risqueront pas de changer de langue de manière inattendue.
 
 #### Remédiation au contenu mathématique
 
-Scribe for Documents offre la possibilité de convertir le contenu mathématique imprimé dans un format accessible qui peut être lu par la parole et en braille. Le format résultant sera la spécification MathML conviviale pour le web. MathML est facilement pris en charge par tous les navigateurs modernes, ainsi que par la plupart des lecteurs d'écran, si ce n'est tous. Il s'agit notamment de
+Scribe for Documents offre la possibilité de convertir le contenu mathématique imprimé dans un format accessible qui peut être lu par la parole et le braille. Le format résultant sera la spécification MathML conviviale pour le web. MathML est facilement pris en charge par tous les navigateurs modernes, ainsi que par la plupart des lecteurs d'écran, si ce n'est tous. Il s'agit notamment de
 * NVDA : via le module complémentaire gratuit [MathCAT](https://addons.nvda-project.org/addons/MathCAT.en.html)
 * JAWS : prise en charge intégrée via l'intégration directe de la bibliothèque MathCAT
 * VoiceOver : Support intégré
@@ -64,7 +71,7 @@ Suivez ces étapes pour remédier à un document contenant du contenu mathémati
 1. Cochez la case "Traiter la notation mathématique (bêta)".
 1. Effectuez d'autres réglages, puis cliquez sur "Convertir".
 
-Le résultat comprendra la notation mathématique dans un format entièrement accessible.
+Le résultat comprendra la notation mathématique rendue dans un format entièrement accessible.
 
 ### Accès aux documents à une date ultérieure
 

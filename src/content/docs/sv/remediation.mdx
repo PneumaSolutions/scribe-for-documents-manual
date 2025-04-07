@@ -20,7 +20,7 @@ Att åtgärda ett dokument med hjälp av Scribe är en mycket enkel och effektiv
     * Taggad PDF
         * Stödjer storstilad utskrift
     * MP3, via text-till-tal på ungefär ett dussin språk
-        * Ytterligare inställningar för dialekt, röst och/eller geneder och talhastighet erbjuds med denna konvertering.
+        * Ytterligare inställningar för dialekt, röst och/eller kön och talhastighet erbjuds med denna konvertering.
     * Punktskrift
         * Årskurs 1 (EBAE)
         * Grad 2 (EBAE)
@@ -48,9 +48,16 @@ De tillgängliga inställningarna är följande:
 * Språk
 * Kön: När språket är inställt på automatisk detektering kan du välja om dokumentet ska läsas upp med en manlig, kvinnlig eller neutral röst.
 * Dialekt: När du väljer ett visst språk blir flera dialektalternativ tillgängliga.
-* Röst: Varje dialekt har flera röster att välja mellan. Med knappen "Play Sample" kan du direkt generera ett prov av den valda rösten.
+* Röst: Varje dialekt har flera röster att välja mellan. Med knappen "Spela prov" kan du direkt generera ett prov av den valda rösten.
+* Talhastighet: alternativen 1X, 1,5X och 2X finns tillgängliga
 
-#### Omarbetning av matematikinnehåll
+När ett dokument konverteras till något av de talstödjande formaten visas en uppskattad tidsåtgång när processen har nått talkonverteringsstadiet. Observera att denna tid endast är en uppskattning och att den faktiska tiden kan variera beroende på ett antal faktorer. Den faktiska tiden kan därför vara kortare än den uppskattade, men vi har gjort allt vi kan för att Scribe inte ska underskatta tiden för slutförande.
+
+##### Notering om flerspråkiga röster
+
+Det har visat sig att de flerspråkiga rösterna ibland byter språk helt utan uppmaning. Med andra ord, om du har ett dokument med endast ett språk och det inte finns några indikationer på att du behöver byta språk, kan de flerspråkiga rösterna ändå välja att byta språk på egen hand utan någon tydlig anledning. Detta är tyvärr ett känt problem som ligger utanför vår kontroll. För dokument som är kända för att vara enspråkiga rekommenderar vi därför att du använder de enspråkiga rösterna för bästa resultat. Dessa röster kommer fortfarande att ge extremt naturlig böjning, men riskerar inte att oväntat byta språk.
+
+#### Innehåll för att åtgärda matematik
 
 Scribe for Documents erbjuder möjligheten att konvertera tryckt matematiskt innehåll till ett tillgängligt format som kan läsas via tal och punktskrift. Det resulterande formatet är den webbvänliga MathML-specifikationen. MathML stöds av alla moderna webbläsare och av de flesta, om inte alla, skärmläsare. Dessa inkluderar:
 * NVDA: via det kostnadsfria tillägget [MathCAT](https://addons.nvda-project.org/addons/MathCAT.en.html)
