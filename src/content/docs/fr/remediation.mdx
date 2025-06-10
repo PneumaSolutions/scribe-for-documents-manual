@@ -14,30 +14,36 @@ La remédiation d'un document par Scribe est une procédure extrêmement simple 
         1. Les types de fichiers pris en charge sont les suivants : PDF, jpg, png, docx, ou tout autre fichier qui peut se suffire à lui-même, c'est-à-dire qui ne dépend pas d'autres composants. Les fichiers html ne sont donc pas pris en charge.
     1. Saisissez l'URL du document, puis appuyez sur la touche "Entrée" ou cliquez sur le bouton "Aperçu".
         1. Notez qu'il doit s'agir de l'URL d'un fichier à télécharger directement, c'est-à-dire une URL qui se termine par une extension de fichier telle que .pdf, .jpg, etc. Scribe ne prend pas en charge les URL pour les téléchargements protégés qui nécessitent des informations de connexion. Les fichiers protégés doivent être téléchargés manuellement, puis téléchargés dans Scribe.
-1. Une fois le document chargé, vous verrez les deux premières pages du document, ou le document entier si vous disposez d'un crédit.
+1. Une fois le document chargé, vous verrez les deux premières pages du document, ou le document entier si vous disposez d'un crédit de page.
     1. Notez que le document entier subit ce que l'on appelle une conversion en continu, ce qui signifie que le contenu du document remplira progressivement la page jusqu'à ce que la conversion soit terminée.
-1. Sous le contenu du document, vous trouverez un bouton "Remédier au document complet". L'activation de ce bouton vous permet de sélectionner un format de conversion via un menu, ainsi que de personnaliser les paramètres de conversion qui dépendent du format choisi. Quel que soit le format de conversion, les paramètres de conversion de base vous permettent de déterminer si un document doit faire l'objet d'une description d'image ou si le contenu mathématique doit être converti en MathML accessible. Les formats de conversion disponibles sont les suivants
+1. Sous le contenu du document, vous trouverez un bouton "Remédier au document entier". L'activation de ce bouton vous permet de sélectionner un format de conversion via un menu, ainsi que de personnaliser les paramètres de conversion qui dépendent du format choisi. Quel que soit le format de conversion, les paramètres de conversion de base vous permettent de déterminer si un document doit faire l'objet d'une description d'image ou si le contenu mathématique doit être converti en MathML accessible. Les formats de conversion disponibles sont les suivants
     * Page web accessible visualisée directement sur Scribe
     * PDF balisé
         * Prend en charge les gros caractères
     * MP3, via la synthèse vocale dans une douzaine de langues
-        * Des paramètres supplémentaires pour le dialecte, la voix et/ou le sexe, et le débit de parole sont proposés avec cette conversion.
+        * Des paramètres supplémentaires pour le dialecte, la voix et/ou le sexe, et la vitesse d'élocution sont proposés avec cette conversion.
     * Braille
-        * Niveau 1 (EBAE)
-        * Grade 2 (EBAE)
-        * Braille anglais unifié (UEB)
-        * et de nombreuses autres langues
+        * Les tables prises en charge sont les suivantes :
+            * Grade 1 (EBAE)
+            * Grade 2 (EBAE)
+            * Braille anglais unifié (UEB)
+            * Braille informatique
+            * et de nombreuses autres langues
+        * Les paramètres supplémentaires comprennent :
+            * Les cellules braille par ligne (40 par défaut)
+            * Si le braille doit être divisé en pages
+                * Nombre de lignes par page (ne s'affiche que si le fractionnement des pages est activé)
     * Page web téléchargeable
     * EPUB
     * Microsoft Word
-        * Supporte les gros caractères et les options de dialectes linguistiques
+        * Prend en charge les options de gros caractères et de dialectes linguistiques
     * DAISY, texte et audio
         * Des paramètres supplémentaires pour la voix et la vitesse d'élocution sont proposés avec cette conversion.
     * MOBI
 1. Une fois que vous avez sélectionné votre format et configuré tous les paramètres supplémentaires pour le format choisi, effectuez l'une des opérations suivantes :
-    1. Activez le bouton "Suivant : Options de tarification" pour lancer le processus de paiement.
-        * Vous pouvez choisir d'acheter un abonnement, un pack de pages prépayées ou une remédiation unique à la demande. La section [Plans et achats](.../plans) présente les plans de manière plus détaillée.
-    1. Si vous disposez déjà d'un abonnement ou d'un crédit de compte, activez le bouton "Convertir" pour lancer le processus de remédiation automatisée. 
+    1. Activez le bouton "Suivant : Options de tarification" pour lancer la procédure de paiement.
+        * Vous pouvez choisir d'acheter des pages à la carte ou de souscrire un abonnement annuel. La section [Plans et achats] (.../plans) présente les plans de manière plus détaillée.
+    1. Si vous disposez déjà d'un abonnement ou d'un crédit de compte, activez le bouton "Convertir" pour lancer le processus de remédiation automatisé. 
 
 C'est tout ce qu'il y a à faire ! La page de destination finale propose généralement un lien de téléchargement vers votre fichier en quelques secondes. Certaines mesures correctives peuvent toutefois prendre plus de temps. Il s'agit d'un problème courant pour les conversions audio et les conversions de marguerites, en raison de la génération de la synthèse vocale, mais cela peut également se produire si le document à remédier est assez volumineux. Dans ce cas, vous pouvez soit laisser la page ouverte et attendre que le lien apparaisse, soit attendre qu'un courriel vous parvienne avec vos téléchargements de fichiers.  
 Sur cette page de renvoi, vous pouvez convertir le document dans un autre format. Toutefois, le format initialement choisi n'apparaîtra pas dans la liste des options de format, car il a déjà été utilisé.
@@ -68,8 +74,7 @@ Scribe for Documents offre la possibilité de convertir le contenu mathématique
 
 Suivez ces étapes pour remédier à un document contenant du contenu mathématique :
 1. Choisissez le format de conversion souhaité.
-1. Cliquez sur le bouton "Personnaliser les paramètres".
-1. Cochez la case "Traiter la notation mathématique (bêta)".
+1. dans l'écran de personnalisation, cochez la case "Traiter la notation mathématique (bêta)".
 1. Effectuez d'autres réglages, puis cliquez sur "Convertir".
 
 Le résultat comprendra la notation mathématique dans un format entièrement accessible.

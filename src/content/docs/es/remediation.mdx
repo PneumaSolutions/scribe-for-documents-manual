@@ -14,7 +14,7 @@ Remediar un documento a través de Scribe es un procedimiento extremadamente sen
         1. Los tipos de archivo admitidos son PDF, jpg, png, docx o cualquier otro archivo que pueda funcionar por sí solo, es decir, que no dependa de componentes adicionales. Por lo tanto, no se admiten archivos html.
     1. Introduzca la URL del documento y pulse Intro o haga clic en el botón "Vista previa".
         1. Tenga en cuenta que debe ser la URL de un archivo descargado directamente, es decir, una URL que termine con una extensión de archivo como .pdf, .jpg, etc. Scribe no admite URL para descargas protegidas que requieran información de inicio de sesión. Los archivos protegidos deben descargarse manualmente y luego cargarse en Scribe.
-1. Una vez cargado el documento, se le presentarán las dos primeras páginas del documento, o el documento completo si dispone de crédito.
+1. Una vez cargado el documento, se le presentarán las dos primeras páginas del documento, o el documento completo si dispone de crédito de páginas.
     1. Tenga en cuenta que todo el documento pasa por lo que se conoce como conversión de flujo, lo que significa que el contenido del documento llenará gradualmente la página hasta que se complete la conversión.
 1. Debajo del contenido del documento, encontrará un botón "Remediar documento completo". Al activar este botón podrás seleccionar un formato de conversión a través de un menú, así como personalizar los ajustes de conversión que dependen del formato elegido. Independientemente del formato de conversión, los ajustes básicos de conversión le permiten determinar si un documento debe tener descripciones de imagen generadas, o si debe o no tener contenido matemático convertido a MathML accesible. Los formatos de conversión disponibles incluyen:
     * Página web accesible vista directamente en Scribe
@@ -23,10 +23,16 @@ Remediar un documento a través de Scribe es un procedimiento extremadamente sen
     * MP3, mediante conversión de texto a voz en una docena de idiomas
         * Con esta conversión se ofrecen ajustes adicionales de dialecto, voz y/o género, y velocidad de habla.
     * Braille
-        * Grado 1 (EBAE)
-        * Grado 2 (EBAE)
-        * Braille inglés unificado (UEB)
-        * y muchos otros idiomas
+        * Las tablas compatibles son:
+            * Grado 1 (EBAE)
+            * Grado 2 (EBAE)
+            * Braille inglés unificado (UEB)
+            * Braille informático
+            * y muchos otros idiomas
+        * Entre los ajustes adicionales se incluyen:
+            * Celdas Braille por línea (40 por defecto)
+            * Si se divide el Braille en páginas
+                * Número de líneas por página (sólo se muestra si está activada la división en páginas)
     * Página web descargable
     * EPUB
     * Microsoft Word
@@ -36,8 +42,8 @@ Remediar un documento a través de Scribe es un procedimiento extremadamente sen
     * MOBI
 1. Una vez seleccionado el formato y configurados los ajustes adicionales para el formato elegido, realice una de las siguientes acciones:
     1. Active el botón "Siguiente: Opciones de precio" para iniciar el proceso de pago.
-        * Puede elegir entre comprar una suscripción, un paquete de páginas prepago o una única corrección a petición. La sección [Planes y compras](../planes) tratará los planes con más detalle.
-    1. Si ya dispone de una suscripción o de crédito en su cuenta, active el botón "Convertir" para iniciar el proceso de corrección automática. 
+        * Puede elegir entre comprar páginas a la carta o adquirir una suscripción anual. En la sección [Planes y compras](../planes) encontrará información más detallada sobre los planes.
+    1. Si ya dispone de una suscripción o de crédito en su cuenta, active el botón "Convertir" para iniciar el proceso de pago automático. 
 
 Eso es todo La página de destino final normalmente ofrecerá un enlace de descarga a su archivo en cuestión de segundos. Sin embargo, algunas correcciones pueden tardar más tiempo en procesarse. Esto es habitual en las conversiones de audio y margarita debido a la generación del texto a voz, pero también puede ocurrir si el documento que se está corrigiendo es bastante grande. En estos casos, puede dejar la página abierta y esperar a que aparezca el enlace, o esperar a recibir un correo electrónico con las descargas de los archivos.  
 En esta página de destino, puede convertir el documento a otro formato. Sin embargo, el formato elegido inicialmente no aparecerá en la lista de opciones de formato, ya que ese formato ya ha sido utilizado.
@@ -68,9 +74,8 @@ Scribe for Documents ofrece la posibilidad de convertir el contenido matemático
 
 Sigue estos pasos para corregir un documento con contenido matemático:
 1. Elige el formato de conversión que desees.
-1. Haga clic en el botón "Personalizar configuración".
-1. Marca la casilla "Procesar notación matemática (beta)".
-1. Realice los ajustes necesarios y haga clic en "Convertir".
+1. en la pantalla de personalización, marque la casilla "Procesar notación matemática (beta)".
+1. Realice cualquier otro ajuste de configuración y, a continuación, haga clic en "Convertir".
 
 El resultado incluirá la notación matemática en un formato totalmente accesible.
 

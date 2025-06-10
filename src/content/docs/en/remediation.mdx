@@ -14,7 +14,7 @@ Remediating a document through Scribe is an extremely simple and efficient proce
         1. Supported filetypes include PDF, jpg, png, docx, or any other file that can stand on its own, I.E. is not dependent on additional components. As such, html files are not supported.
     1. Enter the URL of the document, then press enter or click on the "Preview" button.
         1. Note that this must be the URL to a direct file download, I.E. a URL that ends with a file extension such as .pdf, .jpg, etc. Scribe does not support URL's for  protected downloads that require login information. Protected files must be downloaded manually and then uploaded to Scribe.
-1. Once the document is loaded, you will be presented with the first two pages of the document, or the entire document if you have credit.
+1. Once the document is loaded, you will be presented with the first two pages of the document, or the entire document if you have page credit.
     1. Note that the entire document goes through what is known as a streaming conversion, which means that the document's content will gradually fill the page until the conversion is complete.
 1. Below the document content, you will find a "Remediate Full Document" button. Activating this button will allow you to select a conversion format via a menu, as well as customize conversion settings that depend on your chosen format. Regardless of conversion format, the basic conversion settings allow you to determine whether a document should have image descriptions generated, or whether or not to have math content converted into accessible MathML. The available conversion formats include:
     * Accessible webpage viewed directly on Scribe
@@ -23,10 +23,16 @@ Remediating a document through Scribe is an extremely simple and efficient proce
     * MP3, via text-to-speech in about a dozen languages
         * Additional settings for dialect, voice and/or gender, and speaking rate are offered with this conversion.
     * Braille
-        * Grade 1 (EBAE)
-        * Grade 2 (EBAE)
-        * Unified English Braille (UEB)
-        * and many other languages
+        * Supported Tables include:
+            * Grade 1 (EBAE)
+            * Grade 2 (EBAE)
+            * Unified English Braille (UEB)
+            * Computer Braille
+            * and many other languages
+        * Additional settings include:
+            * Braille cells per line (40 by default)
+            * Whether to split Braille into pages
+                * Number of lines per page (only shows if page splitting is enabled)
     * Downloadable web page
     * EPUB
     * Microsoft Word
@@ -36,7 +42,7 @@ Remediating a document through Scribe is an extremely simple and efficient proce
     * MOBI
 1. Once you have selected your format and configured any additional settings for the chosen format, do one of the following:
     1. Activate the "Next: Pricing Options" button to begin the payment process.
-        * You can choose to buy a subscription, a prepaid page pack, or a single on-demand remediation. The [Plans and Purchasing](../plans) section will cover the plans in more detail.
+        * You can choose to purchase pages À la carte, or buy an annual subscription. The [Plans and Purchasing](../plans) section will cover the plans in more detail.
     1. If you already have a subscription or account credit, activate the "Convert" button to begin the automated remediation process. 
 
 That's all there is to it! The final landing page will usually offer a download link to your file within seconds. Certain remediations, however, may take more time to process. This is standard issue for audio and daisy conversions due to the generation of the text to speech, however this may also happen if the document being remediated is quite large. In these cases, you can either leave the page open and wait for the link to appear, or look for an email to arrive with your file downloads.  
@@ -68,8 +74,7 @@ Scribe for Documents offers the ability to convert print math content into an ac
 
 Follow these steps to remediate a document containing math content:
 1. Choose your desired conversion format.
-1. Click the "Customize Settings" button.
-1. Check the "Process mathematical notation (beta)" checkbox.
+1. from within the customization screen, check the "Process mathematical notation (beta)" checkbox.
 1. Make any further setting adjustments, then click "Convert".
 
 The resulting output will include the mathematical notation rendered in a fully accessible format.
