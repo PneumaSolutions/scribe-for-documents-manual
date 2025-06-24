@@ -6,19 +6,20 @@ import Windows from "~/components/platform/Windows.astro"
 import MacOS from "~/components/platform/MacOS.astro"
 
 Att åtgärda ett dokument med hjälp av Scribe är en mycket enkel och effektiv procedur.
-1. Besök [scribeit.io] (https://scribeit.io)
+1. Besök [scribeit.io](https://scribeit.io)
 1. För bästa resultat rekommenderar vi att du loggar in innan du åtgärdar ett dokument. Klicka på länken "Logga in".
     1. Ange din e-postadress. Du kommer att få ett e-postmeddelande med en verifieringslänk som loggar in dig.
 1. När du har loggat in finns det två sätt att skicka ett dokument till Scribe
-    1. Klicka på knappen "File Browse...", leta upp filen på din dator och klicka sedan på knappen "Preview" på Scribes webbsida.
+    1. Klicka på knappen "File Browse...", leta reda på filen på din dator och klicka sedan på knappen "Start" på Scribes webbsida.
         1. Filtyper som stöds är PDF, jpg, png, docx eller någon annan fil som kan stå på egna ben, dvs. som inte är beroende av ytterligare komponenter. Därför stöds inte html-filer.
     1. Ange dokumentets URL och tryck sedan på enter eller klicka på knappen "Förhandsgranska".
         1. Observera att detta måste vara URL:en till en direkt filnedladdning, d.v.s. en URL som slutar med ett filtillägg som .pdf, .jpg, etc. Scribe stöder inte URL:er för skyddade nedladdningar som kräver inloggningsinformation. Skyddade filer måste laddas ner manuellt och sedan laddas upp till Scribe.
-1. När förhandsgranskningen är klar visas de två första sidorna av dokumentet.
-1. Under förhandsgranskningen hittar du ett nytt avsnitt på sidan som betecknas med rubriken "Remediate Full Document". Här kan du välja ett konverteringsformat samt anpassa konverteringsinställningarna som beror på det valda formatet via den expanderbara knappen "Anpassa inställningar". Oavsett konverteringsformat kan du med hjälp av de grundläggande konverteringsinställningarna avgöra om ett dokument ska generera bildbeskrivningar eller om matematiskt innehåll ska konverteras till tillgänglig MathML eller inte. De tillgängliga konverteringsformaten inkluderar:
+1. När dokumentet har laddats visas de två första sidorna av dokumentet, eller hela dokumentet om du har kredit.
+    1. Observera att hela dokumentet genomgår en så kallad streamingkonvertering, vilket innebär att dokumentets innehåll gradvis kommer att fylla sidan tills konverteringen är klar.
+1. Under dokumentinnehållet hittar du en knapp för att "åtgärda hela dokumentet". Om du aktiverar den här knappen kan du välja ett konverteringsformat via en meny och anpassa konverteringsinställningarna beroende på vilket format du har valt. Oavsett konverteringsformat kan du med hjälp av de grundläggande konverteringsinställningarna avgöra om ett dokument ska ha bildbeskrivningar som genereras i det applikationsspråk som du har valt eller om matematiskt innehåll ska konverteras till tillgänglig MathML. De tillgängliga konverteringsformaten inkluderar:
     * Tillgänglig webbsida som visas direkt på Scribe
     * Taggad PDF
-        * Stödjer storstilad utskrift
+        * Stödjer storstilat tryck
     * MP3, via text-till-tal på ungefär ett dussin språk
         * Ytterligare inställningar för dialekt, röst och/eller kön och talhastighet erbjuds med denna konvertering.
     * Punktskrift
@@ -35,7 +36,7 @@ Att åtgärda ett dokument med hjälp av Scribe är en mycket enkel och effektiv
     * MOBI
 1. När du har valt format och konfigurerat eventuella ytterligare inställningar för det valda formatet gör du något av följande:
     1. Aktivera knappen "Nästa: Prissättningsalternativ" för att påbörja betalningsprocessen.
-        * Du kan välja att köpa en prenumeration, ett förbetalt sidopaket eller en enstaka sanering på begäran. I avsnittet [Planer och inköp](../planer) beskrivs planerna mer i detalj.
+        * Du kan välja att köpa en prenumeration, ett förbetalt sidpaket eller en enstaka sanering på begäran. I avsnittet [Planer och inköp](../planer) beskrivs planerna mer i detalj.
     1. Om du redan har en prenumeration eller kontokredit aktiverar du knappen "Konvertera" för att påbörja den automatiska saneringsprocessen. 
 
 Det är allt som finns att göra! Den slutliga landningssidan erbjuder vanligtvis en nedladdningslänk till din fil inom några sekunder. Vissa saneringar kan dock ta längre tid att bearbeta. Detta är ett standardproblem för ljud- och daisykonverteringar på grund av genereringen av text till tal, men det kan också hända om dokumentet som åtgärdas är ganska stort. I dessa fall kan du antingen lämna sidan öppen och vänta på att länken ska visas, eller vänta på att få ett e-postmeddelande med dina filnedladdningar.  
@@ -51,7 +52,7 @@ De tillgängliga inställningarna är följande:
 * Röst: Varje dialekt har flera röster att välja mellan. Med knappen "Spela prov" kan du direkt generera ett prov av den valda rösten.
 * Talhastighet: alternativen 1X, 1,5X och 2X finns tillgängliga
 
-När ett dokument konverteras till något av de talstödjande formaten visas en uppskattad tidsåtgång när processen har nått talkonverteringsstadiet. Observera att denna tid endast är en uppskattning och att den faktiska tiden kan variera beroende på ett antal faktorer. Den faktiska tiden kan därför vara kortare än den uppskattade, men vi har gjort allt vi kan för att att Scribe inte ska underskatta tiden för slutförande.
+När ett dokument konverteras till något av de talstödjande formaten visas en uppskattad tidsåtgång när processen har nått talkonverteringsstadiet. Observera att denna tid endast är en uppskattning och att den faktiska tiden kan variera beroende på ett antal faktorer. Den faktiska tiden kan därför vara kortare än den uppskattade, men vi har gjort allt vi kan för att Scribe inte ska underskatta tiden för slutförande.
 
 ##### Notering om flerspråkiga röster
 
