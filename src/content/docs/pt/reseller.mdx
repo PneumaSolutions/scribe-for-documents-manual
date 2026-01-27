@@ -5,34 +5,65 @@ title: Painel de controle do revendedor
 import Windows from "~/components/platform/Windows.astro"
 import MacOS from "~/components/platform/MacOS.astro"
 
-Se a sua organização estiver configurada como revendedor, você verá um Reseller Dashboard no menu de navegação da página inicial da sua conta. Esse painel permitirá que você gerencie as organizações filhas da sua organização.  
-Quando estiver no painel, você terá uma visão geral de quantos créditos estão em sua conta principal, bem como quantos foram transferidos.
+Se sua organização estiver configurada como revendedora, você verá um Painel do revendedor no menu de navegação da página inicial da sua conta. Esse painel permitirá que você gerencie as organizações subordinadas à sua organização.  
+No painel, você terá uma visão geral de quantos créditos há na sua conta principal, bem como quantos foram transferidos.
 
 ### Adicionando uma organização
 
-Antes de poder transferir créditos, você precisará adicionar uma organização secundária. Clique no link "Add organization" (Adicionar organização) para iniciar o processo.  
-Ao adicionar uma organização, será solicitado que você forneça o nome, o domínio e o e-mail da pessoa de contato principal. Opcionalmente, é possível adicionar o nome e o sobrenome da pessoa de contato principal. Depois de definir o idioma da organização, clique em "Save" (Salvar).  
-Observe que o Scribe for Documents não enviará automaticamente um e-mail para a pessoa de contato principal. O sistema presume que você, como titular da conta principal, está lidando com as comunicações com a pessoa de contato principal da organização para a qual você está revendendo. Portanto, você precisará entrar em contato com ela a respeito da nova conta.
+Antes de transferir créditos, você precisará adicionar uma organização subsidiária. Clique no link “Adicionar organização” para iniciar o processo.  
+Ao adicionar uma organização, você deverá fornecer o nome, o domínio e o e-mail da pessoa de contato principal. Opcionalmente, você pode adicionar o nome e o sobrenome da pessoa de contato principal. Depois de definir o idioma da organização, clique em “Salvar”.  
+Observe que o Scribe for Documents não enviará automaticamente um e-mail para a pessoa de contato principal. O sistema presume que você, como titular da conta principal, está lidando com as comunicações com a pessoa de contato principal da organização para a qual você está revendendo. Portanto, você precisará entrar em contato com ela sobre a nova conta.
 
 ### Gerenciando organizações
 
-Depois de adicionar pelo menos uma organização secundária, você verá uma seção "Customer Organizations" (Organizações de clientes) com uma lista das organizações sob o seu guarda-chuva. Clique em uma organização para gerenciá-la.   
+Depois de adicionar pelo menos uma organização secundária, você verá uma seção “Organizações de clientes” com uma tabela das organizações sob sua responsabilidade. Cada organização contém os seguintes atributos:
+* O título da organização, apresentado como um link para sua página de gerenciamento
+* Uma coluna de status (veja abaixo informações sobre o status da organização)
+* Créditos restantes
+* Páginas convertidas
+* Status de avaliação (se houver)
+* Um botão para arquivar ou desarquivar a organização (ative a caixa de seleção “Mostrar arquivados” nos controles de filtro para revelar as organizações arquivadas)
+
+
+### Página da organização
+
+
+Ao clicar no link de uma organização, você será direcionado para a página da organização, onde poderá realizar várias tarefas de gerenciamento específicas para essa organização.
+
+
+#### Editando uma organização
+
+Clicar no link “Editar detalhes da organização” permitirá que você edite o nome da organização, bem como seu domínio.
+
+Modificando o status de uma organização
+
+Uma lista suspensa de Status do cliente é oferecida para categorizar e filtrar facilmente as organizações de acordo com seu nível de integração. O status de cada organização é inicialmente não definido, permitindo que você determine seu status ao longo das várias etapas. Os status disponíveis incluem:
+* Prospecto
+* Teste
+* Observe que selecionar esse status não inicia um teste para a organização
+* Cliente
+* Perda
+
+Conforme mencionado acima, a coluna Status do cliente foi projetada para facilitar a filtragem e a manutenção de registros. Como tal, ela não muda com base nas ações realizadas em uma organização, nem a escolha de um status realiza qualquer ação em uma organização.
 
 #### Gerenciamento de créditos
 
-Você pode adicionar ou remover créditos de página da organização clicando nos respectivos links para fazer isso. Ao adicionar ou remover créditos de página, você será solicitado a inserir o valor desejado por meio do controle de rotação. Quando a ação for concluída, você receberá um detalhamento de quantos créditos a organização secundária tem agora, em comparação com a quantidade de créditos restantes em sua conta principal.  
+Você pode adicionar ou remover créditos de página da organização clicando nos respectivos links para fazer isso. Ao adicionar ou remover créditos de página, você será solicitado a inserir a quantidade desejada por meio do controle giratório. Depois que a ação for concluída, você receberá um detalhamento de quantos créditos a organização secundária tem agora, em comparação com a quantidade de créditos restantes em sua conta principal.  
 
-#### Trials
+#### Testes
 
-Ao clicar no link "Start a Trial" (Iniciar um teste), você poderá iniciar um período de teste para a organização afiliada. Ao conceder um período de avaliação, você será solicitado a informar a quantidade de páginas que gostaria de depositar na conta da organização, bem como a duração do período de avaliação. Defina os valores de acordo com sua preferência e, em seguida, clique no botão "Add Pages" (Adicionar páginas) para concluir o processo de ativação.  
-Uma avaliação pode durar até 30 dias, inicialmente ou por meio de extensão. Você pode depositar até 200 páginas gratuitamente, ou seja, elas não serão retiradas do saldo de crédito da sua conta. Todas as páginas que excederem esse limite serão retiradas do saldo de sua conta; no entanto, todas as páginas não utilizadas serão depositadas novamente em sua conta quando o período de avaliação expirar. Digamos, por exemplo, que você conceda a uma organização infantil um período de avaliação de 15 dias com 500 páginas. As primeiras 200 páginas são gratuitas, e as 300 restantes são retiradas de sua conta. Se a organização infantil usar 300 páginas e ficar com 200 no momento em que o período de avaliação expirar, as 200 páginas restantes dos 300 créditos sacados serão depositadas de volta em sua conta.  
-Caso deseje estender o período de avaliação de uma organização, você poderá fazê-lo por meio do link "Extend Trial" (Estender avaliação). No entanto, você só poderá estendê-lo até o total de 30 dias.
+Clicar no link “Iniciar um teste” permitirá que você inicie um período de teste para sua organização secundária. Ao conceder um período de teste, será solicitado que você informe a quantidade de páginas que deseja depositar na conta da organização, bem como a duração do período de teste. Defina os valores de acordo com sua preferência e clique no botão “Adicionar páginas” para concluir o processo de ativação.  
+Um período de avaliação pode durar até 30 dias, seja inicialmente ou por meio de prorrogação. Você pode depositar até 200 páginas gratuitamente, ou seja, elas não serão retiradas do saldo de crédito da sua conta. Quaisquer páginas que excedam esse limite serão retiradas do saldo da sua conta; no entanto, quaisquer páginas não utilizadas serão depositadas de volta na sua conta quando o período de avaliação expirar. Digamos, por exemplo, que você conceda a uma organização subsidiária um período de avaliação de 15 dias com 500 páginas. As primeiras 200 páginas são gratuitas e as 300 restantes são debitadas da sua conta. Se a organização subsidiária usar 300 páginas e ainda tiver 200 quando o período de avaliação expirar, as 200 páginas restantes dos 300 créditos debitados serão depositadas de volta na sua conta.  
+Se você desejar estender o período de avaliação de uma organização, poderá fazê-lo através do link “Estender avaliação”. No entanto, você só poderá estendê-lo até um total de 30 dias.
 
-### Prazos de crédito de página
 
-As datas de expiração dos créditos de página de sua conta, bem como as de suas organizações filhas, são determinadas pelo contrato de revendedor.  
-Qualquer avaliação com uma contagem de créditos que exceda 200, retirando assim créditos de sua conta, reembolsará qualquer crédito não utilizado de volta à conta principal de sua organização após a expiração.
+
+
+### Prazos dos créditos de página
+
+As datas de validade dos créditos de página da sua conta, bem como das suas organizações subsidiárias, são determinadas pelo seu contrato de revendedor.  
+Qualquer avaliação com uma contagem de créditos superior a 200, retirando assim créditos da sua conta, reembolsará qualquer crédito não utilizado na conta principal da sua organização após o vencimento.
 
 ### Suporte ao revendedor
 
-Todas as perguntas relacionadas ao painel ou ao seu contrato de revendedor podem ser enviadas por meio do nosso [formulário de contato] (https://pneumasolutions.com/contact/)
+Quaisquer dúvidas relacionadas ao painel ou ao seu contrato de revendedor podem ser enviadas através do nosso [formulário de contato](https://pneumasolutions.com/contact/).

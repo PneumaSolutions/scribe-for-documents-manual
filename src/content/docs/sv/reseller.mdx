@@ -5,34 +5,62 @@ title: Kontrollpanel för återförsäljare
 import Windows from "~/components/platform/Windows.astro"
 import MacOS from "~/components/platform/MacOS.astro"
 
-Om din organisation är konfigurerad som återförsäljare kommer du att se en Reseller Dashboard i navigeringsmenyn på ditt kontos landningssida. Med den här instrumentpanelen kan du hantera underordnade organisationer under din organisation.  
-När du är på instrumentpanelen får du en översikt över hur många krediter som finns på ditt huvudkonto, samt hur många som har överförts.
+Om din organisation är upprättad som återförsäljare kommer du att se en återförsäljardashboard i navigeringsmenyn på din kontos startsida. Denna dashboard gör det möjligt för dig att hantera underordnade organisationer under din organisation.  
+När du är på dashboarden får du en översikt över hur många krediter som finns på ditt huvudkonto, samt hur många som har överförts.
 
 ### Lägga till en organisation
 
-Innan du kan överföra poäng måste du lägga till en barnorganisation. Klicka på länken "Lägg till organisation" för att påbörja processen.  
-När du lägger till en organisation måste du ange dess namn, domän och e-postadressen till den primära kontaktpersonen. Du kan eventuellt lägga till den primära kontaktpersonens för- och efternamn. När du har angett organisationens språk klickar du på "Spara".  
-Observera att Scribe for Documents inte automatiskt skickar e-post till den primära kontaktpersonen. Systemet förutsätter att du som huvudkontoinnehavare sköter kommunikationen med den primära kontaktpersonen i den organisation som du säljer till. Du måste alltså kontakta dem angående deras nya konto.
+Innan du kan överföra krediter måste du lägga till en underorganisation. Klicka på länken &quot;Lägg till organisation&quot; för att påbörja processen.
+När du lägger till en organisation måste du ange dess namn, domän och e-postadress till den primära kontaktpersonen. Du kan också välja att lägga till den primära kontaktpersonens för- och efternamn. När du har ställt in organisationens språk klickar du på &quot;Spara&quot;.  
+Observera att Scribe for Documents inte automatiskt skickar ett e-postmeddelande till den primära kontaktpersonen. Systemet antar att du, som huvudkontoinnehavare, sköter kommunikationen med den primära kontaktpersonen för den organisation som du säljer vidare till. Du måste därför kontakta dem angående deras nya konto.
 
-### Hantering av organisationer
+### Hantera organisationer
 
-När du har lagt till minst en underordnad organisation visas avsnittet "Customer Organizations" med en lista över de organisationer som ingår i ditt paraply. Klicka på en organisation för att hantera den.   
+När du har lagt till minst en underorganisation visas avsnittet &quot;Kundorganisationer&quot; med en tabell över organisationer under ditt paraply. Varje organisation innehåller följande attribut:
+* Organisationens titel, som visas som en länk till dess administrationssida
+* En statuskolumn (se nedan för information om organisationsstatus)
+* Återstående krediter
+* Konverterade sidor
+* Provstatus (om sådan finns)
+* En knapp för att arkivera eller avarkivera organisationen (aktivera kryssrutan &quot;Visa arkiverade&quot; i filterkontrollerna för att visa arkiverade organisationer)
+
+### Organisationssida
+
+När du klickar på en organisations länk visas organisationens sida, där du kan utföra olika administrativa uppgifter för den specifika organisationen.
+
+#### Redigera en organisation
+
+Genom att klicka på länken &quot;Redigera organisationsuppgifter&quot; kan du redigera organisationens namn och domän.
+
+
+#### Ändra en organisations status
+
+En rullgardinsmeny för kundstatus finns för att enkelt kunna kategorisera och filtrera organisationer efter deras onboarding-nivå. Varje organisations status är initialt osatt, vilket gör att du kan bestämma deras status genom de olika stadierna. Tillgängliga statusar inkluderar:
+* Prospekt
+* Provperiod
+* Observera att valet av denna status inte innebär att en provperiod inleds för organisationen
+* Kund
+* Förlorad
+
+Som nämnts ovan är kolumnen Kundstatus utformad för att underlätta filtrering och dokumentation. Den ändras därför inte baserat på åtgärder som utförs på en organisation, och valet av status medför inte heller några åtgärder på en organisation.
 
 #### Hantera krediter
 
-Du kan lägga till eller ta bort sidkrediter från organisationen genom att klicka på respektive länk för att göra det. När du lägger till eller tar bort sidkrediter uppmanas du att ange önskat belopp via snurrkontrollen. När åtgärden är slutförd får du en uppdelning av hur många krediter barnorganisationen nu har jämfört med hur många krediter som finns kvar på ditt huvudkonto.  
+Du kan lägga till eller ta bort sidkrediter från organisationen genom att klicka på respektive länk. När du lägger till eller tar bort sidkrediter ombeds du ange önskat belopp via rullgardinsmenyn. När åtgärden är klar får du en översikt över hur många krediter underorganisationen nu har jämfört med det antal krediter som finns kvar på ditt huvudkonto.  
 
-#### Försök
+#### Provperioder
 
-Om du klickar på länken "Starta en testperiod" kan du starta en testperiod för din barnorganisation. När du beviljar en testperiod kommer du att bli ombedd att ange hur många sidor du vill sätta in på organisationens konto samt hur lång testperioden ska vara. Ställ in värdena efter eget tycke och klicka sedan på knappen "Lägg till sidor" för att slutföra aktiveringsprocessen.  
-En provperiod kan vara i upp till 30 dagar, antingen initialt eller genom förlängning. Du kan lägga in upp till 200 sidor kostnadsfritt, dvs. de dras inte från ditt kontos kreditbalans. Alla sidor som överskrider detta tröskelvärde kommer att dras från ditt kontosaldo, men alla oanvända sidor kommer att sättas in på ditt konto igen när provperioden löper ut. Låt oss till exempel säga att du ger en barnorganisation en 15-dagars provperiod med 500 sidor. De första 200 sidorna är kostnadsfria och de återstående 300 sidorna dras från ditt konto. Om barnorganisationen använder 300 sidor och har 200 kvar när provperioden löper ut, kommer de återstående 200 sidorna av de 300 uttagna krediterna att sättas in på ditt konto igen.  
-Om du vill förlänga en organisations provperiod kan du göra det via länken "Förläng provperiod". du kan dock bara förlänga den upp till totalt 30 dagar.
+Genom att klicka på länken &quot;Starta en provperiod&quot; kan du starta en provperiod för din underorganisation. När du beviljar en provperiod kommer du att bli ombedd att ange hur många sidor du vill sätta in på organisationens konto, samt provperiodens längd. Ange de värden du önskar och klicka sedan på knappen &quot;Lägg till sidor&quot; för att slutföra aktiveringsprocessen.  
+En provperiod kan pågå i upp till 30 dagar, antingen från början eller genom förlängning. Du kan sätta in upp till 200 sidor gratis, det vill säga de dras inte från kreditsaldot på ditt konto. Alla sidor som överskrider denna gräns dras från ditt kontosaldo, men alla oanvända sidor sätts tillbaka på ditt konto när provperioden löper ut. Låt oss säga att du till exempel beviljar en underorganisation en 15-dagars provperiod med 500 sidor. De första 200 sidorna är gratis och de återstående 300 dras från ditt konto. Om underorganisationen använder 300 sidor och har 200 kvar när provperioden löper ut, kommer de återstående 200 sidorna av de 300 dragna krediterna att återföras till ditt konto.  
+Om du vill förlänga en organisations provperiod kan du göra det via länken &quot;Förläng provperiod&quot;. Du kan dock bara förlänga den upp till totalt 30 dagar.
 
-### Tidsramar för sidkreditering
 
-Utgångsdatum för sidkrediterna för ditt konto, liksom för dina barnorganisationer, bestäms av ditt återförsäljaravtal.  
-Varje testversion med ett kreditantal som överstiger 200, vilket innebär att krediter dras från ditt konto, kommer att återbetala all oanvänd kredit tillbaka till din organisations huvudkonto när det löper ut.
 
-### Support för återförsäljare
+### Tidsramar för sidkrediter
 
-Eventuella förfrågningar om instrumentpanelen eller ditt återförsäljaravtal kan skickas via vårt [kontaktformulär] (https://pneumasolutions.com/contact/)
+Utgångsdatum för sidkrediterna för ditt konto, liksom för dina underordnade organisationer, bestäms av ditt återförsäljaravtal.  
+Alla provperioder med ett kreditantal som överstiger 200, och som därmed drar krediter från ditt konto, återbetalar alla outnyttjade krediter till din organisations huvudkonto vid utgången.
+
+### Återförsäljarsupport
+
+Alla frågor angående instrumentpanelen eller ditt återförsäljaravtal kan skickas via vårt [kontaktformulär.](https://pneumasolutions.com/contact/)

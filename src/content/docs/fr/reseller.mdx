@@ -5,34 +5,63 @@ title: Tableau de bord du revendeur
 import Windows from "~/components/platform/Windows.astro"
 import MacOS from "~/components/platform/MacOS.astro"
 
-Si votre organisation est configurée en tant que revendeur, vous verrez un tableau de bord revendeur dans le menu de navigation de la page d'accueil de votre compte. Ce tableau de bord vous permettra de gérer les organisations enfants de votre organisation.  
-Une fois sur le tableau de bord, vous aurez un aperçu du nombre de crédits présents sur votre compte principal, ainsi que du nombre de crédits transférés.
+Si votre organisation est configurée en tant que revendeur, vous verrez un tableau de bord Revendeur dans le menu de navigation de la page d&#x27;accueil de votre compte. Ce tableau de bord vous permettra de gérer les organisations enfants sous votre organisation.  
+Une fois sur le tableau de bord, vous aurez un aperçu du nombre de crédits disponibles sur votre compte principal, ainsi que du nombre de crédits transférés.
 
-### Ajouter une organisation
-
-Avant de pouvoir transférer des crédits, vous devez ajouter une organisation enfant. Cliquez sur le lien "Ajouter une organisation" pour commencer le processus.  
-Lors de l'ajout d'une organisation, vous devrez indiquer son nom, son domaine et l'adresse électronique de la personne de contact principale. Vous pouvez éventuellement ajouter le nom et le prénom de la personne de contact principale. Après avoir défini la langue de l'organisation, cliquez sur "Enregistrer".  
-Notez que Scribe for Documents n'enverra pas automatiquement de courrier électronique à la personne de contact principale. Le système suppose que c'est vous, en tant que titulaire principal du compte, qui vous occupez des communications avec la personne de contact principale de l'organisation à laquelle vous revendez. Vous devrez donc les contacter au sujet de leur nouveau compte.
+### Ajouter une organisation  
+  
+Avant de pouvoir transférer des crédits, vous devez ajouter une organisation enfant. Cliquez sur le lien « Ajouter une organisation » pour lancer le processus.  
+Lorsque vous ajoutez une organisation, vous devez fournir son nom, son domaine et l&#x27;adresse e-mail de la personne de contact principale. Vous pouvez également ajouter le prénom et le nom de la personne de contact principale. Après avoir défini la langue de l&#x27;organisation, cliquez sur « Enregistrer ».  
+Notez que Scribe for Documents n&#x27;enverra pas automatiquement d&#x27;e-mail à la personne de contact principale. Le système part du principe que vous, en tant que titulaire du compte principal, gérez les communications avec la personne de contact principale de l&#x27;organisation à laquelle vous revendez. Vous devrez donc la contacter au sujet de son nouveau compte.
 
 ### Gestion des organisations
 
-Une fois que vous avez ajouté au moins une organisation enfant, vous verrez une section "Organisations clientes" avec une liste des organisations sous votre égide. Cliquez sur une organisation pour la gérer.   
+Une fois que vous avez ajouté au moins une organisation enfant, vous verrez apparaître une section « Organisations clientes » avec un tableau des organisations sous votre égide. Chaque organisation contient les attributs suivants :
+* Le titre de l&#x27;organisation, présenté sous forme de lien vers sa page de gestion
+* Une colonne d&#x27;état (voir ci-dessous pour plus d&#x27;informations sur l&#x27;état de l&#x27;organisation)
+* Crédits restants
+* Pages converties
+* État de l&#x27;essai (le cas échéant)
+* Un bouton pour archiver ou désarchiver l&#x27;organisation (cochez la case « Afficher les organisations archivées » dans les contrôles de filtre pour afficher les organisations archivées)
+
+
+### Page de l&#x27;organisation
+
+En cliquant sur le lien d&#x27;une organisation, vous accédez à la page de l&#x27;organisation, qui vous permet d&#x27;effectuer diverses tâches de gestion pour cette organisation spécifique.
+
+
+#### Modification d&#x27;une organisation
+
+En cliquant sur le lien « Modifier les détails de l&#x27;organisation », vous pouvez modifier le nom de l&#x27;organisation ainsi que son domaine.
+
+#### Modification du statut d&#x27;une organisation
+
+Un menu déroulant « Statut du client » est proposé afin de classer et filtrer facilement les organisations en fonction de leur niveau d&#x27;intégration. Le statut de chaque organisation est initialement défini sur « Non défini », ce qui vous permet de déterminer leur statut tout au long des différentes étapes. Les statuts disponibles sont les suivants :
+* Prospect
+* Essai
+* Notez que la sélection de ce statut ne lance pas réellement un essai pour l&#x27;organisation
+* Client
+* Perdu
+
+Comme mentionné ci-dessus, la colonne Statut du client est conçue pour faciliter le filtrage et la tenue des registres. À ce titre, elle ne change pas en fonction des actions effectuées sur une organisation, et le choix d&#x27;un statut n&#x27;entraîne aucune action sur une organisation.
 
 #### Gestion des crédits
 
-Vous pouvez ajouter ou supprimer des crédits de page de l'organisation en cliquant sur les liens correspondants. Lorsque vous ajoutez ou supprimez des crédits de page, il vous est demandé de saisir le montant souhaité à l'aide du bouton de rotation. Une fois l'action terminée, vous obtiendrez une ventilation du nombre de crédits dont dispose désormais l'organisation enfant, par rapport au nombre de crédits restants dans votre compte principal.  
+Vous pouvez ajouter ou supprimer des crédits de page de l&#x27;organisation en cliquant sur les liens correspondants. Lorsque vous ajoutez ou supprimez des crédits de page, vous serez invité à saisir le montant souhaité à l&#x27;aide du contrôle de rotation. Une fois l&#x27;action terminée, vous obtiendrez un récapitulatif du nombre de crédits dont dispose désormais l&#x27;organisation enfant, par rapport au nombre de crédits restants sur votre compte principal.  
 
 #### Essais
 
-En cliquant sur le lien "Démarrer un essai", vous pourrez lancer une période d'essai pour votre organisation d'enfants. Lorsque vous accordez une période d'essai, il vous sera demandé le nombre de pages que vous souhaitez déposer sur le compte de l'organisation, ainsi que la durée de la période d'essai. Définissez les valeurs à votre convenance, puis cliquez sur le bouton "Ajouter des pages" pour terminer le processus d'activation.  
-Une période d'essai peut durer jusqu'à 30 jours, que ce soit initialement ou par extension. Vous pouvez déposer gratuitement jusqu'à 200 pages, c'est-à-dire qu'elles ne seront pas prélevées sur le solde créditeur de votre compte. Les pages qui dépassent ce seuil seront prélevées sur le solde de votre compte, mais les pages non utilisées seront redéposées sur votre compte à l'expiration de la période d'essai. Supposons, par exemple, que vous accordiez à une organisation d'enfants une période d'essai de 15 jours avec 500 pages. Les 200 premières pages sont gratuites et les 300 pages restantes sont prélevées sur votre compte. Si l'organisation d'enfants utilise 300 pages et qu'il lui en reste 200 à l'expiration de la période d'essai, les 200 pages restantes sur les 300 pages prélevées seront reversées sur votre compte.  
-Si vous souhaitez prolonger la période d'essai d'une organisation, vous pouvez le faire en cliquant sur le lien "Prolonger l'essai". Cependant, vous ne pouvez prolonger la période d'essai que jusqu'à un total de 30 jours.
+En cliquant sur le lien « Commencer un essai », vous pouvez lancer une période d&#x27;essai pour votre organisation enfant. Lorsque vous accordez une période d&#x27;essai, vous serez invité à indiquer le nombre de pages que vous souhaitez déposer sur le compte de l&#x27;organisation, ainsi que la durée de la période d&#x27;essai. Définissez les valeurs de votre choix, puis cliquez sur le bouton « Ajouter des pages » pour terminer le processus d&#x27;activation.  
+Une période d&#x27;essai peut durer jusqu&#x27;à 30 jours, initialement ou par prolongation. Vous pouvez déposer jusqu&#x27;à 200 pages gratuitement, c&#x27;est-à-dire qu&#x27;elles ne seront pas prélevées sur le solde de crédit de votre compte. Toutes les pages qui dépassent ce seuil seront prélevées sur le solde de votre compte, mais les pages inutilisées seront reversées sur votre compte à l&#x27;expiration de la période d&#x27;essai. Supposons, par exemple, que vous accordiez à une organisation fille une période d&#x27;essai de 15 jours avec 500 pages. Les 200 premières pages sont gratuites et les 300 restantes sont déduites de votre compte. Si l&#x27;organisation fille utilise 300 pages et qu&#x27;il lui en reste 200 à l&#x27;expiration de la période d&#x27;essai, les 200 pages restantes sur les 300 crédits déduits seront recréditées sur votre compte.  
+Si vous souhaitez prolonger la période d&#x27;essai d&#x27;une organisation, vous pouvez le faire via le lien « Prolonger la période d&#x27;essai ». Cependant, vous ne pouvez la prolonger que jusqu&#x27;à un total de 30 jours.
 
-### Délais de crédit de page
 
-Les dates d'expiration des crédits de page pour votre compte, ainsi que pour les organisations de vos enfants, sont déterminées par votre contrat de revendeur.  
-Tout essai dont le nombre de crédits est supérieur à 200, et qui retire donc des crédits de votre compte, remboursera les crédits inutilisés sur le compte principal de votre organisation à l'expiration.
+
+### Durée de validité des crédits de pages
+
+Les dates d&#x27;expiration des crédits de pages pour votre compte, ainsi que celles de vos organisations enfants, sont déterminées par votre contrat de revendeur.  
+Tout essai dont le nombre de crédits dépasse 200, entraînant ainsi le retrait de crédits de votre compte, donnera lieu au remboursement des crédits inutilisés sur le compte principal de votre organisation à l&#x27;expiration.
 
 ### Assistance aux revendeurs
 
-Toute question concernant le tableau de bord ou votre contrat de revendeur peut être envoyée via notre [formulaire de contact] (https://pneumasolutions.com/contact/)
+Toute question concernant le tableau de bord ou votre contrat de revendeur peut être envoyée via notre [formulaire de contact](https://pneumasolutions.com/contact/).

@@ -5,34 +5,63 @@ title: Cruscotto rivenditore
 import Windows from "~/components/platform/Windows.astro"
 import MacOS from "~/components/platform/MacOS.astro"
 
-Se la vostra organizzazione è impostata come rivenditore, vedrete una Dashboard rivenditore nel menu di navigazione della pagina di destinazione del vostro account. Questa dashboard consente di gestire le organizzazioni figlio della propria organizzazione.  
-Una volta entrati nella dashboard, si avrà una panoramica di quanti crediti sono presenti nel proprio account principale e di quanti ne sono stati trasferiti.
+Se la tua organizzazione è configurata come rivenditore, vedrai una dashboard rivenditore nel menu di navigazione della pagina di destinazione del tuo account. Questa dashboard ti consentirà di gestire le organizzazioni figlie sotto la tua organizzazione.  
+Una volta nella dashboard, ti verrà fornita una panoramica di quanti crediti sono presenti nel tuo account principale e quanti sono stati trasferiti.
 
-### Aggiunta di un'organizzazione
+### Aggiunta di un&#x27;organizzazione
 
-Prima di poter trasferire i crediti, è necessario aggiungere un'organizzazione figlia. Fare clic sul link "Aggiungi organizzazione" per iniziare la procedura.  
-Quando si aggiunge un'organizzazione, è necessario fornire il nome, il dominio e l'e-mail della persona di contatto principale. È possibile aggiungere facoltativamente il nome e il cognome del referente principale. Dopo aver impostato la lingua dell'organizzazione, fare clic su "Salva".  
-Si noti che Scribe for Documents non invia automaticamente un'e-mail al referente principale. Il sistema presuppone che siate voi, in quanto titolari dell'account principale, a gestire le comunicazioni con il referente principale dell'organizzazione a cui state rivendendo. Pertanto, dovrete contattarli per quanto riguarda il loro nuovo account.
+Prima di poter trasferire i crediti, dovrai aggiungere un&#x27;organizzazione secondaria. Clicca sul link &quot;Aggiungi organizzazione&quot; per avviare la procedura.
+Quando aggiungi un&#x27;organizzazione, ti verrà richiesto di fornire il suo nome, il dominio e l&#x27;indirizzo e-mail del referente principale. Facoltativamente, puoi aggiungere il nome e il cognome del referente principale. Dopo aver impostato la lingua dell&#x27;organizzazione, clicca su &quot;Salva&quot;.  
+Tieni presente che Scribe for Documents non invierà automaticamente un&#x27;e-mail al referente principale. Il sistema presume che tu, in qualità di titolare dell&#x27;account principale, gestisca le comunicazioni con il referente principale dell&#x27;organizzazione a cui rivendi. Pertanto, dovrai contattarlo per informarlo del suo nuovo account.
 
 ### Gestione delle organizzazioni
 
-Una volta aggiunta almeno un'organizzazione figlia, verrà visualizzata una sezione "Organizzazioni clienti" con un elenco delle organizzazioni sotto il proprio ombrello. Fare clic su un'organizzazione per gestirla.   
+Dopo aver aggiunto almeno un&#x27;organizzazione figlia, vedrai una sezione &quot;Organizzazioni clienti&quot; con una tabella delle organizzazioni sotto la tua egida. Ogni organizzazione contiene i seguenti attributi:
+* Il titolo dell&#x27;organizzazione, presentato come link alla sua pagina di gestione
+* Una colonna di stato (vedi sotto per informazioni sullo stato dell&#x27;organizzazione)
+* Crediti rimanenti
+* Pagine convertite
+* Stato di prova (se presente)
+* Un pulsante per archiviare o ripristinare l&#x27;organizzazione (attiva la casella di controllo &quot;Mostra archiviati&quot; nei controlli del filtro per visualizzare le organizzazioni archiviate)
+
+
+### Pagina dell&#x27;organizzazione
+
+Cliccando sul link di un&#x27;organizzazione si accede alla pagina dell&#x27;organizzazione, che consente di eseguire varie attività di gestione per l&#x27;organizzazione specifica.
+
+
+#### Modifica di un&#x27;organizzazione
+
+Facendo clic sul link &quot;Modifica dettagli organizzazione&quot; è possibile modificare il nome dell&#x27;organizzazione e il suo dominio.
+
+#### Modifica dello stato di un&#x27;organizzazione
+
+È disponibile un menu a discesa Stato cliente che consente di classificare e filtrare facilmente le organizzazioni in base al loro livello di onboarding. Lo stato di ciascuna organizzazione è inizialmente non impostato, consentendo di determinarne lo stato nelle varie fasi. Gli stati disponibili includono:
+* Potenziale cliente
+* Prova
+* Si noti che la selezione di questo stato non avvia effettivamente una prova per l&#x27;organizzazione
+* Cliente
+* Abbandonato
+
+Come menzionato sopra, la colonna Stato cliente è progettata per facilitare il filtraggio e la conservazione dei dati. Pertanto, non cambia in base alle azioni eseguite su un&#x27;organizzazione, né la scelta di uno stato comporta alcuna azione su un&#x27;organizzazione.
 
 #### Gestione dei crediti
 
-È possibile aggiungere o rimuovere crediti di pagina dall'organizzazione facendo clic sui rispettivi link. Quando si aggiungono o rimuovono crediti di pagina, viene richiesto di inserire l'importo desiderato tramite il controllo di rotazione. Una volta completata l'azione, verrà visualizzata una ripartizione del numero di crediti dell'organizzazione figlio rispetto al numero di crediti rimanenti nell'account principale.  
+È possibile aggiungere o rimuovere crediti pagina dall&#x27;organizzazione facendo clic sui rispettivi link. Quando si aggiungono o si rimuovono crediti pagina, verrà richiesto di inserire l&#x27;importo desiderato tramite il controllo spin. Una volta completata l&#x27;azione, verrà fornito un dettaglio del numero di crediti attualmente disponibili per l&#x27;organizzazione secondaria rispetto all&#x27;importo dei crediti rimanenti nel proprio account principale.  
 
 #### Prove
 
-Facendo clic sul link "Avvia una prova" è possibile avviare un periodo di prova per l'organizzazione figlio. Quando si concede un periodo di prova, viene richiesto il numero di pagine che si desidera depositare sul conto dell'organizzazione e la durata del periodo di prova. Impostare i valori a proprio piacimento, quindi fare clic sul pulsante "Aggiungi pagine" per completare il processo di attivazione.  
-Il periodo di prova può durare fino a 30 giorni, sia inizialmente che come estensione. È possibile depositare gratuitamente fino a 200 pagine, che non verranno cioè prelevate dal saldo del credito dell'account. Le pagine che superano questa soglia verranno prelevate dal saldo del vostro conto, ma quelle non utilizzate verranno nuovamente depositate sul vostro conto alla scadenza del periodo di prova. Supponiamo, ad esempio, di concedere a un'organizzazione per bambini una prova di 15 giorni con 500 pagine. Le prime 200 pagine sono gratuite e le restanti 300 vengono prelevate dal vostro conto. Se l'organizzazione per bambini utilizza 300 pagine e gliene restano 200 alla scadenza del periodo di prova, le restanti 200 pagine dei 300 crediti prelevati saranno versate nuovamente sul vostro conto.  
-Se si desidera prolungare la prova di un'organizzazione, è possibile farlo tramite il link "Estendi prova". Tuttavia, è possibile prolungarla solo fino a un totale di 30 giorni.
+Facendo clic sul link &quot;Avvia una prova&quot; potrai avviare un periodo di prova per la tua organizzazione secondaria. Quando concedi un periodo di prova, ti verrà chiesto il numero di pagine che desideri depositare nell&#x27;account dell&#x27;organizzazione, nonché la durata del periodo di prova. Imposta i valori a tuo piacimento, quindi fai clic sul pulsante &quot;Aggiungi pagine&quot; per completare il processo di attivazione.  
+Una prova può durare fino a 30 giorni, sia inizialmente che tramite proroga. Puoi depositare fino a 200 pagine gratuitamente, ovvero non verranno prelevate dal saldo del tuo account. Qualsiasi pagina che superi questa soglia verrà prelevata dal saldo del tuo account, tuttavia, le pagine non utilizzate verranno riaccreditate sul tuo account alla scadenza del periodo di prova. Supponiamo, ad esempio, che concediate a un&#x27;organizzazione figlia una prova di 15 giorni con 500 pagine. Le prime 200 pagine sono gratuite, mentre le restanti 300 vengono addebitate sul vostro account. Se l&#x27;organizzazione figlia utilizza 300 pagine e ne rimangono 200 alla scadenza del periodo di prova, le restanti 200 pagine dei 300 crediti addebitati verranno riaccreditate sul vostro account.  
+Se desideri prolungare il periodo di prova di un&#x27;organizzazione, puoi farlo tramite il link &quot;Prolunga periodo di prova&quot;. Tuttavia, puoi prolungarlo solo fino a un massimo di 30 giorni.
 
-### Tempi di accredito delle pagine
 
-Le date di scadenza dei crediti di pagina per il vostro account e per quelli delle vostre organizzazioni figlio sono determinate dal vostro contratto di rivendita.  
-Qualsiasi prova con un numero di crediti superiore a 200, che quindi sottrae crediti al vostro account, rimborserà i crediti non utilizzati all'account principale della vostra organizzazione alla scadenza.
 
-### Assistenza ai rivenditori
+### Tempistiche dei crediti pagina
 
-Qualsiasi richiesta relativa al dashboard o al vostro contratto di rivenditore può essere inviata tramite il nostro [modulo di contatto] (https://pneumasolutions.com/contact/)
+Le date di scadenza dei crediti pagina per il tuo account, così come quelli delle tue organizzazioni figlie, sono determinate dal tuo contratto di rivenditore.  
+Qualsiasi prova con un numero di crediti superiore a 200, che comporta quindi il prelievo di crediti dal tuo account, rimborserà i crediti non utilizzati sull&#x27;account principale della tua organizzazione alla scadenza.
+
+### Assistenza rivenditori
+
+Qualsiasi richiesta di informazioni relativa alla dashboard o al tuo contratto di rivendita può essere inviata tramite il nostro [modulo di contatto](https://pneumasolutions.com/contact/).

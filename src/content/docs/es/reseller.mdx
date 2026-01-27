@@ -5,57 +5,65 @@ title: Panel del distribuidor
 import Windows from "~/components/platform/Windows.astro"
 import MacOS from "~/components/platform/MacOS.astro"
 
-Remediar un documento a través de Scribe es un procedimiento extremadamente sencillo y eficaz.
-1. Visite [scribeit.io](https://scribeit.io)
-1. Para obtener los mejores resultados, recomendamos iniciar sesión antes de remediar un documento. Haga clic en el enlace "Iniciar sesión".
-    1. Introduzca su dirección de correo electrónico. Recibirá un correo electrónico con un enlace de verificación que le permitirá iniciar sesión.
-1. Una vez conectado, hay dos formas de enviar un documento a Scribe
-    1. Haga clic en el botón "Examinar archivo...", localice el archivo en su ordenador y, a continuación, haga clic en el botón "Vista previa" de la página web de Scribe.
-    1. Introduzca la URL del documento y pulse Intro o haga clic en el botón "Vista previa".
-        1. Tenga en cuenta que debe tratarse de la URL de un archivo descargado directamente, es decir, una URL que termine con una extensión de archivo como .pdf, .jpg, etc. Scribe no admite URL para descargas protegidas que requieran información de inicio de sesión. Los archivos protegidos deben descargarse manualmente y luego cargarse en Scribe.
-1. Una vez que la vista previa esté lista, se le presentarán las dos primeras páginas del documento.
-1. Debajo de la vista previa, encontrará una nueva sección de la página indicada por el encabezado "Remediar documento completo". Aquí es donde puede seleccionar un formato de conversión, así como personalizar los ajustes de conversión que dependen del formato elegido mediante el botón desplegable "Personalizar ajustes". Independientemente del formato de conversión, los ajustes básicos de conversión le permiten determinar si un documento debe tener descripciones de imagen generadas, o si debe tener o no contenido matemático convertido a MathML accesible. Los formatos de conversión disponibles incluyen:
-    * Página web accesible vista directamente en Scribe
-    * PDF etiquetado
-        * Compatible con letra grande
-    * MP3, mediante conversión de texto a voz en una docena de idiomas
-        * Con esta conversión se ofrecen ajustes adicionales para la voz y la velocidad de habla.
-    * Braille
-        * Grado 1 (EBAE)
-        * Grado 2 (EBAE)
-        * Braille inglés unificado (UEB)
-        * y muchos otros idiomas
-    * Página web descargable
-    * EPUB
-    * Microsoft Word
-        * Admite letra grande
-    * DAISY, texto más audio
-        * Con esta conversión se ofrecen ajustes adicionales para la voz y la velocidad de habla.
-    * MOBI
-1. Una vez seleccionado el formato y configurados los ajustes adicionales para el formato elegido, realice una de las siguientes acciones:
-    1. Active el botón "Siguiente: Opciones de precio" para iniciar el proceso de pago.
-        * Puede elegir entre comprar una suscripción, un paquete de páginas prepago o una única corrección a petición. La sección [Planes y compras](../planes) tratará los planes con más detalle.
-    1. Si ya dispone de una suscripción o de crédito en su cuenta, active el botón "Convertir" para iniciar el proceso de corrección automática. 
+Si su organización está configurada como revendedora, verá un panel de control para revendedores en el menú de navegación de la página de inicio de su cuenta. Este panel le permitirá gestionar las organizaciones secundarias que dependen de su organización.  
+Una vez en el panel, se le mostrará un resumen del número de créditos que hay en su cuenta principal, así como los que se han transferido.
 
-Eso es todo La página de destino final normalmente ofrecerá un enlace de descarga a su archivo en cuestión de segundos. Sin embargo, algunas correcciones pueden tardar más tiempo en procesarse. Esto es habitual en las conversiones de audio y margarita debido a la generación del texto a voz, pero también puede ocurrir si el documento que se está corrigiendo es bastante grande. En estos casos, puede dejar la página abierta y esperar a que aparezca el enlace, o esperar a recibir un correo electrónico con las descargas de los archivos.  
-En esta página de destino, puede convertir el documento a otro formato. Sin embargo, el formato elegido inicialmente no aparecerá en la lista de opciones de formato, ya que ese formato ya ha sido utilizado.
+### Añadir una organización
 
-#### Remediar el contenido de Matemáticas
+Antes de poder transferir créditos, deberá añadir una organización secundaria. Haga clic en el enlace «Añadir organización» para iniciar el proceso.  
+Al añadir una organización, se le pedirá que proporcione su nombre, el dominio y el correo electrónico de la persona de contacto principal. Opcionalmente, puede añadir el nombre y los apellidos de la persona de contacto principal. Después de establecer el idioma de la organización, haga clic en «Guardar».  
+Tenga en cuenta que Scribe for Documents no enviará automáticamente un correo electrónico a la persona de contacto principal. El sistema asume que usted, como titular de la cuenta principal, se encarga de las comunicaciones con la persona de contacto principal de la organización a la que está revendiendo. Por lo tanto, deberá ponerse en contacto con ellos en relación con su nueva cuenta.
 
-Scribe for Meetings ofrece la posibilidad de convertir contenido matemático impreso en un formato accesible que pueda leerse mediante voz y Braille. El formato resultante será la especificación MathML de fácil uso en la web. MathML es compatible con todos los navegadores web modernos, así como con la mayoría, si no todos, los lectores de pantalla. Entre ellos se incluyen:
-* NVDA: a través del complemento gratuito [MathCAT](https://addons.nvda-project.org/addons/MathCAT.en.html)
-* JAWS: soporte integrado a través de la incrustación directa de la biblioteca MathCAT
-* VoiceOver: Soporte integrado
-* ChromeVox: Soporte integrado
+### Gestión de organizaciones
 
-Sigue estos pasos para corregir un documento con contenido matemático:
-1. Elige el formato de conversión que desees.
-1. Haga clic en el botón "Personalizar configuración".
-1. Marca la casilla "Procesar notación matemática (beta)".
-1. Realice los ajustes necesarios y haga clic en "Convertir".
+Una vez que haya añadido al menos una organización secundaria, verá una sección «Organizaciones de clientes» con una tabla de organizaciones bajo su paraguas. Cada organización contiene los siguientes atributos:
+* El título de la organización, presentado como un enlace a su página de gestión.
+* Una columna de estado (consulte a continuación la información sobre el estado de la organización).
+* Créditos restantes.
+* Páginas convertidas.
+* Estado de la prueba (si lo hay).
+* Un botón para archivar o desarchivar la organización (active la casilla «Mostrar archivadas» en los controles de filtro para mostrar las organizaciones archivadas).
 
-El resultado incluirá la notación matemática en un formato totalmente accesible.
 
-### Acceso posterior a los documentos
+### Página de la organización
 
-Una vez iniciada la sesión en su cuenta de Scribe, la sección "Documentos anteriormente convertidos" mostrará los documentos que ya ha convertido. Al hacer clic en uno de ellos, aparecerá su vista previa junto con las descargas de conversión existentes.
+Al hacer clic en el enlace de una organización, se muestra la página de la organización, lo que le permite realizar diversas tareas de gestión para esa organización específica.
+
+
+#### Edición de una organización
+
+Al hacer clic en el enlace «Editar detalles de la organización», podrá editar el nombre de la organización, así como su dominio.
+
+
+#### Modificar el estado de una organización
+
+
+Se ofrece un menú desplegable de estado del cliente para categorizar y filtrar fácilmente las organizaciones según su nivel de incorporación. El estado de cada organización está inicialmente sin configurar, lo que le permite determinar su estado a lo largo de las distintas etapas. Los estados disponibles son:
+* Prospecto
+* Prueba
+* Tenga en cuenta que seleccionar este estado no inicia realmente una prueba para la organización
+* Cliente
+* Abandonado
+
+Como se ha mencionado anteriormente, la columna «Estado del cliente» está diseñada para facilitar el filtrado y el mantenimiento de registros. Por lo tanto, no cambia en función de las acciones realizadas en una organización, ni la elección de un estado realiza ninguna acción en una organización.
+
+#### Gestión de créditos
+
+Puede añadir o eliminar créditos de página de la organización haciendo clic en los enlaces correspondientes. Al añadir o eliminar créditos de página, se le pedirá que introduzca la cantidad deseada mediante el control giratorio. Una vez completada la acción, se le proporcionará un desglose de los créditos que tiene ahora la organización secundaria, frente a la cantidad de créditos que quedan en su cuenta principal.  
+
+#### Pruebas
+
+Al hacer clic en el enlace «Iniciar una prueba», podrá iniciar un periodo de prueba para su organización secundaria. Al conceder un periodo de prueba, se le pedirá la cantidad de páginas que desea depositar en la cuenta de la organización, así como la duración del periodo de prueba. Establezca los valores que desee y, a continuación, haga clic en el botón «Añadir páginas» para completar el proceso de activación.  
+Una prueba puede durar hasta 30 días, ya sea inicialmente o mediante una prórroga. Puede depositar hasta 200 páginas de forma gratuita, es decir, no se deducirán del saldo de crédito de su cuenta. Las páginas que superen este límite se deducirán del saldo de su cuenta, sin embargo, las páginas no utilizadas se volverán a depositar en su cuenta cuando expire el período de prueba. Supongamos, por ejemplo, que concede a una organización secundaria una prueba de 15 días con 500 páginas. Las primeras 200 páginas son gratuitas y las 300 restantes se deducen de su cuenta. Si la organización secundaria utiliza 300 páginas y le quedan 200 cuando expira la prueba, las 200 páginas restantes de los 300 créditos deducidos se devolverán a su cuenta.  
+Si desea ampliar el periodo de prueba de una organización, puede hacerlo a través del enlace «Ampliar periodo de prueba». Sin embargo, solo puede ampliarlo hasta un total de 30 días.
+
+
+
+### Plazos de los créditos de páginas
+
+Las fechas de caducidad de los créditos de páginas de su cuenta, así como las de sus organizaciones secundarias, vienen determinadas por su contrato de distribuidor.  
+Cualquier prueba con un recuento de créditos que supere los 200, lo que supone la retirada de créditos de su cuenta, reembolsará los créditos no utilizados a la cuenta principal de su organización al vencimiento.
+
+### Asistencia para distribuidores
+
+Cualquier consulta relacionada con el panel de control o su acuerdo de distribución puede enviarse a través de nuestro [formulario de contacto](https://pneumasolutions.com/contact/).
