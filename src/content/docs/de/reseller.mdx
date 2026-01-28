@@ -5,34 +5,64 @@ title: Dashboard für Wiederverkäufer
 import Windows from "~/components/platform/Windows.astro"
 import MacOS from "~/components/platform/MacOS.astro"
 
-Wenn Ihre Organisation als Wiederverkäufer eingerichtet ist, sehen Sie ein Wiederverkäufer-Dashboard im Navigationsmenü der Landing Page Ihres Kontos. Dieses Dashboard ermöglicht Ihnen die Verwaltung der untergeordneten Organisationen Ihrer Organisation.  
-Sobald Sie sich auf dem Dashboard befinden, erhalten Sie einen Überblick darüber, wie viele Credits sich auf Ihrem Hauptkonto befinden und wie viele übertragen wurden.
+Wenn Ihre Organisation als Wiederverkäufer eingerichtet ist, sehen Sie im Navigationsmenü der Startseite Ihres Kontos ein Wiederverkäufer-Dashboard. Über dieses Dashboard können Sie die untergeordneten Organisationen Ihrer Organisation verwalten.  
+Sobald Sie sich im Dashboard befinden, erhalten Sie einen Überblick darüber, wie viele Credits sich in Ihrem Hauptkonto befinden und wie viele davon übertragen wurden.
 
 ### Hinzufügen einer Organisation
 
-Bevor Sie Credits übertragen können, müssen Sie eine untergeordnete Organisation hinzufügen. Klicken Sie auf den Link "Organisation hinzufügen", um den Vorgang zu starten.  
-Wenn Sie eine Organisation hinzufügen, müssen Sie deren Namen, die Domäne und die E-Mail-Adresse der Hauptkontaktperson angeben. Optional können Sie den Vor- und Nachnamen des Hauptansprechpartners hinzufügen. Nachdem Sie die Sprache der Organisation festgelegt haben, klicken Sie auf "Speichern".  
-Beachten Sie, dass Scribe for Documents nicht automatisch eine E-Mail an die primäre Kontaktperson sendet. Das System geht davon aus, dass Sie als Hauptkontoinhaber die Kommunikation mit der primären Kontaktperson der Organisation, an die Sie weiterverkaufen, übernehmen. Daher müssen Sie diese Person bezüglich ihres neuen Kontos kontaktieren.
+Bevor Sie Credits übertragen können, müssen Sie eine untergeordnete Organisation hinzufügen. Klicken Sie auf den Link „Organisation hinzufügen”, um den Vorgang zu starten.
+Beim Hinzufügen einer Organisation müssen Sie deren Namen, die Domain und die E-Mail-Adresse der Hauptkontaktperson angeben. Optional können Sie den Vor- und Nachnamen der Hauptkontaktperson hinzufügen. Nachdem Sie die Sprache der Organisation festgelegt haben, klicken Sie auf „Speichern“.  
+Beachten Sie, dass Scribe for Documents nicht automatisch eine E-Mail an die Hauptkontaktperson sendet. Das System geht davon aus, dass Sie als Hauptkontoinhaber die Kommunikation mit der Hauptkontaktperson der Organisation, an die Sie weiterverkaufen, übernehmen. Daher müssen Sie diese bezüglich ihres neuen Kontos kontaktieren.
 
-### Organisationen verwalten
+### Verwalten von Organisationen
 
-Sobald Sie mindestens eine untergeordnete Organisation hinzugefügt haben, sehen Sie einen Abschnitt "Kundenorganisationen" mit einer Liste der Organisationen unter Ihrem Dach. Klicken Sie auf eine Organisation, um sie zu verwalten.   
+Sobald Sie mindestens eine untergeordnete Organisation hinzugefügt haben, wird der Abschnitt „Kundenorganisationen“ mit einer Tabelle der Organisationen unter Ihrem Dach angezeigt. Jede Organisation enthält die folgenden Attribute:
+* Der Titel der Organisation, dargestellt als Link zu ihrer Verwaltungsseite
+* Eine Statusspalte (Informationen zum Status der Organisation finden Sie weiter unten)
+* Verbleibende Guthaben
+* Konvertierte Seiten
+* Teststatus (falls vorhanden)
+* Eine Schaltfläche zum Archivieren oder Entarchivieren der Organisation (aktivieren Sie das Kontrollkästchen „Archivierte anzeigen” in den Filtersteuerelementen, um archivierte Organisationen anzuzeigen)
 
-#### Kredite verwalten
 
-Sie können der Organisation Seitenguthaben hinzufügen oder entfernen, indem Sie auf die entsprechenden Links klicken. Beim Hinzufügen oder Entfernen von Seitenguthaben werden Sie aufgefordert, den gewünschten Betrag über die Drehsteuerung einzugeben. Sobald der Vorgang abgeschlossen ist, wird Ihnen angezeigt, wie viele Credits die untergeordnete Organisation jetzt hat und wie viele Credits auf Ihrem Hauptkonto verbleiben.  
+### Organisationsseite
 
-#### Versuche
 
-Wenn Sie auf den Link "Testversion starten" klicken, können Sie eine Testphase für Ihre untergeordnete Organisation einrichten. Wenn Sie einen Testzeitraum gewähren, werden Sie nach der Anzahl der Seiten gefragt, die Sie auf das Konto der Organisation einzahlen möchten, sowie nach der Länge des Testzeitraums. Stellen Sie die Werte nach Ihren Wünschen ein und klicken Sie dann auf die Schaltfläche "Seiten hinzufügen", um den Aktivierungsprozess abzuschließen.  
-Eine Testversion kann bis zu 30 Tage dauern, entweder anfänglich oder durch eine Verlängerung. Sie können bis zu 200 Seiten kostenlos hinterlegen, d. h. sie werden nicht vom Guthaben Ihres Kontos abgezogen. Alle Seiten, die diese Grenze überschreiten, werden von Ihrem Guthaben abgezogen, aber alle ungenutzten Seiten werden nach Ablauf des Testzeitraums wieder auf Ihr Konto eingezahlt. Nehmen wir an, Sie gewähren einer Kinderorganisation eine 15-tägige Testphase mit 500 Seiten. Die ersten 200 Seiten sind kostenlos, und die restlichen 300 werden von Ihrem Konto abgezogen. Wenn die Kinderorganisation 300 Seiten nutzt und nach Ablauf der Testphase noch 200 Seiten übrig sind, werden die restlichen 200 Seiten der 300 abgehobenen Guthaben auf Ihr Konto zurücküberwiesen.  
-Wenn Sie die Testphase einer Organisation verlängern möchten, können Sie dies über den Link "Testphase verlängern" tun. Sie können die Testphase jedoch nur bis zu einer Gesamtdauer von 30 Tagen verlängern.
+Wenn Sie auf den Link einer Organisation klicken, wird die Seite der Organisation angezeigt, auf der Sie verschiedene Verwaltungsaufgaben für die jeweilige Organisation ausführen können.
 
-### Zeitrahmen für Seitenguthaben
 
-Die Verfallsdaten der Seitenguthaben für Ihr Konto und die Ihrer untergeordneten Organisationen sind in Ihrem Wiederverkäufervertrag festgelegt.  
-Bei jeder Testversion, deren Guthaben 200 übersteigt und die somit Guthaben von Ihrem Konto abzieht, wird das ungenutzte Guthaben nach Ablauf der Frist an das Hauptkonto Ihrer Organisation zurückerstattet.
+#### Bearbeiten einer Organisation
 
-### Support für Wiederverkäufer
+Wenn Sie auf den Link „Organisationsdetails bearbeiten“ klicken, können Sie den Namen der Organisation sowie deren Domain bearbeiten.
 
-Anfragen zum Dashboard oder zu Ihrer Wiederverkäufervereinbarung können Sie über unser [Kontaktformular](https://pneumasolutions.com/contact/) stellen
+#### Status einer Organisation ändern
+
+Es wird eine Dropdown-Liste mit Kundenstatus angeboten, um Organisationen entsprechend ihrem Onboarding-Status einfach zu kategorisieren und zu filtern. Der Status jeder Organisation ist zunächst nicht festgelegt, sodass Sie den Status in den verschiedenen Phasen festlegen können. Folgende Status sind verfügbar:
+* Interessent
+* Testphase
+* Beachten Sie, dass die Auswahl dieses Status nicht tatsächlich eine Testphase für die Organisation auslöst.
+* Kunde
+* Abgewandert
+
+Wie oben erwähnt, dient die Spalte „Kundenstatus“ dazu, das Filtern und die Datenerfassung zu erleichtern. Daher ändert sich der Status nicht aufgrund von Aktionen, die für eine Organisation durchgeführt werden, und die Auswahl eines Status führt auch nicht zu Aktionen für eine Organisation.
+
+#### Credits verwalten
+
+Sie können Seiten-Credits zur Organisation hinzufügen oder daraus entfernen, indem Sie auf die entsprechenden Links klicken. Beim Hinzufügen oder Entfernen von Seiten-Credits werden Sie aufgefordert, die gewünschte Anzahl über das Drehfeld einzugeben. Nach Abschluss der Aktion erhalten Sie eine Aufschlüsselung der Credits, über die die untergeordnete Organisation nun verfügt, im Vergleich zu den Credits, die in Ihrem Hauptkonto verbleiben.  
+
+#### Testversionen
+
+Durch Klicken auf den Link „Testversion starten” können Sie eine Testphase für Ihre untergeordnete Organisation starten. Bei der Gewährung einer Testphase werden Sie nach der Anzahl der Seiten gefragt, die Sie auf das Konto der Organisation einzahlen möchten, sowie nach der Dauer der Testphase. Legen Sie die Werte nach Ihren Wünschen fest und klicken Sie dann auf die Schaltfläche „Seiten hinzufügen”, um den Aktivierungsvorgang abzuschließen.  
+Eine Testphase kann bis zu 30 Tage dauern, entweder von Anfang an oder durch Verlängerung. Sie können bis zu 200 Seiten kostenlos einzahlen, d. h. sie werden nicht vom Guthaben Ihres Kontos abgezogen. Alle Seiten, die diesen Schwellenwert überschreiten, werden von Ihrem Kontostand abgezogen, jedoch werden alle nicht genutzten Seiten nach Ablauf der Testphase wieder auf Ihr Konto zurückgebucht. Nehmen wir zum Beispiel an, Sie gewähren einer untergeordneten Organisation eine 15-tägige Testphase mit 500 Seiten. Die ersten 200 Seiten sind kostenlos, die restlichen 300 werden von Ihrem Konto abgezogen. Wenn die untergeordnete Organisation 300 Seiten nutzt und zum Ablauf der Testphase noch 200 Seiten übrig sind, werden die restlichen 200 Seiten der 300 abgezogenen Gutschriften wieder auf Ihr Konto zurückgebucht.  
+Wenn Sie die Testphase einer Organisation verlängern möchten, können Sie dies über den Link „Testphase verlängern” tun. Sie können sie jedoch nur bis zu insgesamt 30 Tagen verlängern.
+
+
+
+### Zeitrahmen für Seiten-Credits
+
+Die Ablaufdaten der Seiten-Credits für Ihr Konto sowie für Ihre untergeordneten Organisationen werden durch Ihre Reseller-Vereinbarung festgelegt.  
+Bei jeder Testphase mit einem Guthaben von mehr als 200 Credits, wodurch Credits von Ihrem Konto abgezogen werden, werden nicht genutzte Credits nach Ablauf der Testphase auf das Hauptkonto Ihrer Organisation zurückerstattet.
+
+### Reseller-Support
+
+Alle Anfragen zum Dashboard oder zu Ihrer Reseller-Vereinbarung können über unser [Kontaktformular](https://pneumasolutions.com/contact/) gesendet werden.
