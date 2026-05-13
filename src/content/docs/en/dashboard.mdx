@@ -10,6 +10,11 @@ Scribe  features a  settings panel to facilitate various document  remediation a
 ### Document Defaults 
 
 The Document Defaults page, located under the Settings menu, allows you to set global defaults that persist across all remediations. They include:
+* Document Retention
+    * can be set to a value between 1 to 30 days, or indefinite if a subscription is Active
+    * Note that this settings change only impacts future document uploads, I.E. if a document was uploaded when the retention was set to 30 days, setting the retention period to 15 days after the fact will not make that document expire in 15 days.
+    * Should your subscription lapse, Scribe will retain any documents uploaded with indefinite retention for a period of 90 days following subscription termination. Scribe will send an email both 30 and 60 days following subscription termination advising you of this fact. Reactivating your subscription within the 90 day window will immediately terminate the countdown, making your document retention indefinite once again.
+    * If your account belongs to an organization, Scribe will inform you of the value that is currently set, instructing you to contact your org admin should you wish for this to be changed.
 * Automatic image description preference
 * Mathematical content processing toggle
 * Language
@@ -20,11 +25,15 @@ The Document Defaults page, located under the Settings menu, allows you to set g
     * Default speed
 * Braille translation table
 
-### Managing Organization Members (Enterprise)
+### Organization Controls (Enterprise)
 
-Activating the "Organization" button in the dashboard's navigation bar will reveal a menu of options related to organization and member management. The "Members" page will list all the members in your organization. All members can have their role, department and name modified, and any member can be deactivated or removed from an organization except for the organization owner. Note that deactivating a member will render their account inoperable while retaining its record.
+Activating the "Organization" button in the dashboard's navigation bar will reveal a menu of options related to member management as well as organization-wide document defaults.
 
-#### Adding Members
+#### Managing Organization Members
+
+The "Members" page will list all the members in your organization. All members can have their role, department and name modified, and any member can be deactivated or removed from an organization except for the organization owner. Note that deactivating a member will render their account inoperable while retaining its record.
+
+##### Adding Members
 
 Adding members is as simple as entering their email address, selecting their role (user or administrator), optionally entering their name, and selecting their department if one has been created.
 If you have multiple members to add, you can use the "Members" edit field to perform a bulk add. This edit field accepts multiple lines of text, allowing you to enter each member's information on a separate line. On each line, you may enter either a single email address, or an email address and a name in the format:  
@@ -32,13 +41,13 @@ If you have multiple members to add, you can use the "Members" edit field to per
 
 Once you are finished, click the "Add" button. 
 
-#### Departments
+##### Departments
 
 Departments allow you to organize members according to the various groups of your organization.
 
 To add a department, enter its name in the "Name" edit box under the "Create department" heading.
 
-#### Member Data export
+##### Member Data export
 
 The member list in your organization can be exported as a CSV file. In order to download the export:
 1. Choose the field separator that will separate the columns of the file. The available options include:
@@ -47,3 +56,7 @@ The member list in your organization can be exported as a CSV file. In order to 
     * Tab
 1. Activate the "Download" button.
 
+#### Document Retention
+
+The "Document retention" page under the "Organization" menu allows you to control how long Scribe will retain documents uploaded by members within your organization. Accessing this page will allow you to set the value anywhere from 1 to 30 days.  
+Not that there is currently no way for an enterprise organization to set the value to indefinite.
