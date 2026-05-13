@@ -5,45 +5,89 @@ title: Gerenciamento e administração
 import Windows from "~/components/platform/Windows.astro"
 import MacOS from "~/components/platform/MacOS.astro"
 
-O Scribe apresenta um painel de configurações para facilitar vários ajustes de correção de documentos, bem como uma página de organização para gerenciar os membros de sua organização.
+O Scribe possui um painel de configurações para facilitar diversos ajustes na correção de documentos, bem como uma página de organização para gerenciar os membros da sua organização.
 
-### Padrões de documentos 
+### Padrões do documento 
 
-A página Padrões do documento, localizada no menu Configurações, permite que você defina padrões globais que persistem em todas as correções. Eles incluem:
-* Preferência de descrição automática de imagem
-* Alternância de processamento de conteúdo matemático
-* Idioma
-* Preferências de conversão de texto em fala (elas serão lembradas em todos os idiomas)
-    * Gênero (exibido quando o idioma está definido como Automático)
-    * Dialeto
-    * Voz padrão (é fornecido um botão de amostra)
-    * Velocidade padrão
-* Tabela de tradução em Braille
+A página Padrões do documento, localizada no menu Configurações, permite definir padrões globais que se aplicam a todas as correções. Eles incluem:
 
-### Gerenciando membros da organização (Enterprise)
+#### Retenção do documento
 
-A ativação do botão "Organization" (Organização) na barra de navegação do painel revelará um menu de opções relacionadas à organização e ao gerenciamento de membros. A página "Members" (Membros) listará todos os membros de sua organização. Todos os membros podem ter sua função, departamento e nome modificados, e qualquer membro pode ser desativado ou removido de uma organização, exceto o proprietário da organização. Observe que a desativação de um membro tornará a conta dele inoperante, mas manterá o registro.
+Isso pode ser definido para um valor entre 1 e 30 dias, ou indefinido se a assinatura estiver ativa.
+* Observe que, com exceção da configuração indefinida, essa alteração de configuração afeta igualmente os uploads atuais e futuros.
+    * Se você enviar um documento com retenção de 30 dias e, em seguida, definir o período de retenção para 15 dias no 16º dia da vida útil desse documento, ele será excluído prematuramente ao salvar a configuração.
+    * Por outro lado, se você enviar um documento com um período de retenção de 15 dias e, posteriormente, definir a retenção para um valor maior, esse documento permanecerá online até a data de expiração recém-configurada.
+    * Caso sua assinatura expire, o Scribe manterá quaisquer documentos enviados com retenção indefinida por um período de 90 dias após o término da assinatura. O Scribe enviará um e-mail 30 e 60 dias após o término da assinatura para informá-lo sobre isso. Reativar sua assinatura dentro do prazo de 90 dias interromperá imediatamente a contagem regressiva, tornando a retenção do seu documento indefinida novamente.
+* Se sua conta pertencer a uma organização, o Scribe informará o valor definido atualmente, orientando-o a entrar em contato com o administrador da organização caso deseje alterá-lo.
 
-#### Adição de membros
+#### Letras grandes
 
-Adicionar membros é tão simples quanto digitar o endereço de e-mail, selecionar a função (usuário ou administrador), opcionalmente digitar o nome e selecionar o departamento, caso tenha sido criado.
-Se você tiver vários membros para adicionar, poderá usar o campo de edição "Members" (Membros) para fazer uma adição em massa. Esse campo de edição aceita várias linhas de texto, permitindo que você insira as informações de cada membro em uma linha separada. Em cada linha, você pode inserir um único endereço de e-mail ou um endereço de e-mail e um nome no formato:  
+Esta opção permite que você determine se os documentos serão convertidos para letras grandes por padrão.
+
+#### Adicionar descrições de imagens
+
+Esta opção controla se o Scribe tentará ou não gerar texto alternativo para imagens.
+
+#### Processar notação matemática (Beta)
+
+Esta opção controla se a notação matemática será processada e convertida por padrão.
+
+#### Idioma
+
+Isso controla o idioma preferencial para os documentos. O Scribe tenta a detecção automática de idioma, a menos que um idioma seja especificamente escolhido.
+
+#### Preferências de conversão de texto em fala
+
+Essas preferências serão lembradas em todos os idiomas. As configurações disponíveis incluem:
+* Gênero (exibido quando o idioma está definido como Detecção automática)
+* Dialeto
+* Voz padrão (um botão de amostra é fornecido)
+* Velocidade padrão
+
+#### Opções de Braille
+
+Essas opções controlam o comportamento padrão para a formatação em Braille. As configurações disponíveis incluem:
+* Tabela de conversão para Braille
+* Células de Braille por linha (largura do papel)
+* Um botão para dividir o Braille em páginas
+    * A configuração “Linhas de Braille por página” aparece se esta opção for selecionada.
+
+
+### Controles da organização (Enterprise)
+
+Ao ativar o botão “Organização” na barra de navegação do painel, será exibido um menu de opções relacionadas ao gerenciamento de membros, bem como aos padrões de documentos para toda a organização.
+
+#### Gerenciamento de membros da organização
+
+A página “Membros” listará todos os membros da sua organização. É possível modificar a função, o departamento e o nome de todos os membros, e qualquer membro pode ser desativado ou removido da organização, exceto o proprietário da organização. Observe que desativar um membro tornará sua conta inoperante, mantendo, porém, seu registro.
+
+##### Adicionando membros
+
+Adicionar membros é tão simples quanto inserir o endereço de e-mail, selecionar a função (usuário ou administrador), inserir o nome (opcionalmente) e selecionar o departamento, caso tenha sido criado.
+Se você tiver vários membros para adicionar, pode usar o campo de edição “Membros” para realizar uma adição em massa. Esse campo de edição aceita várias linhas de texto, permitindo que você insira as informações de cada membro em uma linha separada. Em cada linha, você pode inserir um único endereço de e-mail ou um endereço de e-mail e um nome no formato:  
 *email@example.com John Doe*
 
-Quando terminar, clique no botão "Add" (Adicionar). 
+Quando terminar, clique no botão “Adicionar”. 
 
-#### Departamentos
+##### Departamentos
 
-Os departamentos permitem que você organize os membros de acordo com os vários grupos da sua organização.
+Os departamentos permitem que você organize os membros de acordo com os diversos grupos da sua organização.
 
-Para adicionar um departamento, digite seu nome na caixa de edição "Name" (Nome) sob o título "Create department" (Criar departamento).
+Para adicionar um departamento, insira seu nome na caixa de edição “Nome” sob o título “Criar departamento”.
 
-#### Exportação de dados de membros
+##### Exportação de dados de membros
 
-A lista de membros de sua organização pode ser exportada como um arquivo CSV. Para fazer o download da exportação:
-1. Escolha o separador de campos que separará as colunas do arquivo. As opções disponíveis incluem:
+A lista de membros da sua organização pode ser exportada como um arquivo CSV. Para baixar a exportação:
+1. Escolha o separador de campos que irá separar as colunas do arquivo. As opções disponíveis incluem:
     * vírgula
-    * Ponto e vírgula
-    * Tabulação
-1. Ativar o botão "Download".
+    * ponto-e-vírgula
+    * tabulação
+1. Ative o botão “Baixar”.
 
+#### Retenção de documentos
+
+A página “Retenção de documentos”, no menu “Organização”, permite que você controle por quanto tempo o Scribe manterá os documentos enviados pelos membros da sua organização. Ao acessar essa página, você poderá definir o valor entre 1 e 30 dias.
+
+##### Observações
+
+Observe que, no momento, não há como uma organização empresarial definir o valor como indefinido.

@@ -5,45 +5,88 @@ title: Beheer en administratie
 import Windows from "~/components/platform/Windows.astro"
 import MacOS from "~/components/platform/MacOS.astro"
 
-Scribe beschikt over een instellingenpaneel voor het aanpassen van documenten en een organisatiepagina voor het beheren van de leden van je organisatie.
+Scribe beschikt over een instellingenpaneel waarmee u diverse aanpassingen aan documentcorrecties kunt doorvoeren, evenals een organisatiepagina voor het beheer van de leden binnen uw organisatie.
 
-### Document Standaardinstellingen 
+### Documentstandaarden 
 
-Op de pagina Document Defaults, in het menu Instellingen, kunt u globale standaardwaarden instellen die blijven bestaan in alle remediaties. Deze omvatten:
-* Voorkeur voor automatische afbeeldingsbeschrijving
-* Schakelaar voor wiskundige inhoudsverwerking
-* Taal
-* Voorkeuren voor tekst-naar-spraak (deze worden in alle talen onthouden)
-    * Geslacht (wordt getoond wanneer de taal is ingesteld op Automatisch)
-    * Dialect
-    * Standaard stem (Er is een voorbeeldknop)
-    * Standaardsnelheid
-* Braille vertaaltabel
+Op de pagina Documentstandaarden, te vinden onder het menu Instellingen, kunt u algemene standaardinstellingen instellen die voor alle herstelbewerkingen gelden. Deze omvatten:
 
-### Organisatieleden beheren (Enterprise)
+#### Bewaartermijn documenten
 
-Als je de knop "Organisatie" in de navigatiebalk van het dashboard activeert, verschijnt er een menu met opties voor organisatie- en ledenbeheer. De pagina "Leden" geeft een overzicht van alle leden in je organisatie. Alle leden kunnen hun rol, afdeling en naam wijzigen en elk lid kan worden gedeactiveerd of verwijderd uit een organisatie, behalve de eigenaar van de organisatie. Merk op dat het deactiveren van een lid zijn account onbruikbaar maakt, terwijl de gegevens van het lid wel bewaard blijven.
+Dit kan worden ingesteld op een waarde tussen 1 en 30 dagen, of op onbepaalde tijd als er een actief abonnement is.
+* Houd er rekening mee dat, met uitzondering van de instelling &#x27;voor onbepaalde tijd&#x27;, deze wijziging in de instellingen zowel van invloed is op huidige als toekomstige uploads.
+    * Als u een document uploadt met een bewaartermijn van 30 dagen en vervolgens op dag 16 van de levensduur van dat document de bewaartermijn instelt op 15 dagen, wordt dat document voortijdig verwijderd zodra de instelling is opgeslagen.
+    * Aan de andere kant, als u een document uploadt met een bewaartermijn van 15 dagen en later de bewaartermijn instelt op een langere waarde, dan blijft dat document online tot de nieuw geconfigureerde vervaldatum.
+    * Mocht uw abonnement verlopen, dan bewaart Scribe alle documenten die zijn geüpload met een onbepaalde bewaartermijn gedurende een periode van 90 dagen na beëindiging van het abonnement. Scribe stuurt u zowel 30 als 60 dagen na beëindiging van het abonnement een e-mail om u hiervan op de hoogte te stellen. Als u uw abonnement binnen de periode van 90 dagen opnieuw activeert, wordt de aftelling onmiddellijk beëindigd, waardoor de bewaartermijn van uw documenten weer onbeperkt wordt.
+* Als uw account bij een organisatie hoort, zal Scribe u informeren over de waarde die momenteel is ingesteld en u verzoeken contact op te nemen met uw organisatiebeheerder als u dit wilt wijzigen.
 
-#### Leden toevoegen
+#### Grote letters
 
-Leden toevoegen is zo eenvoudig als het invoeren van hun e-mailadres, het selecteren van hun rol (gebruiker of beheerder), het optioneel invoeren van hun naam en het selecteren van hun afdeling als er een is aangemaakt.
-Als u meerdere leden wilt toevoegen, kunt u het bewerkingsveld "Leden" gebruiken om een bulktoevoeging uit te voeren. Dit bewerkingsveld accepteert meerdere regels tekst, zodat u de informatie van elk lid op een aparte regel kunt invoeren. Op elke regel kunt u één e-mailadres invoeren of een e-mailadres en een naam in de indeling:  
+Met deze schakelaar kunt u bepalen of documenten standaard worden geconverteerd naar grote letters.
+
+#### Afbeeldingsbeschrijvingen toevoegen
+
+Deze schakelaar bepaalt of Scribe al dan niet probeert alt-tekst voor afbeeldingen te genereren.
+
+#### Wiskundige notatie verwerken (Beta)
+
+Deze schakelaar bepaalt of wiskundige notatie standaard wordt verwerkt en geconverteerd.
+
+#### Taal
+
+Hiermee stelt u de voorkeurstaal voor documenten in. Scribe probeert de taal automatisch te detecteren, tenzij er specifiek een taal is gekozen.
+
+#### Voorkeuren voor tekst-naar-spraak
+
+Deze worden voor alle talen onthouden. Beschikbare instellingen zijn onder meer:
+* Geslacht (wordt weergegeven wanneer de taal is ingesteld op Automatisch detecteren)
+* Dialect
+* Standaardstem (er is een voorbeeldknop beschikbaar)
+* Standaardsnelheid
+
+#### Braille-opties
+
+Deze opties bepalen het standaardgedrag voor Braille-opmaak. Beschikbare instellingen zijn onder meer:
+* Braille-vertaaltabel
+* Braille-cellen per regel (papierbreedte)
+* Een schakelaar voor het opsplitsen van Braille in pagina&#x27;s
+    * De instelling &quot;Braille-regels per pagina&quot; verschijnt als deze optie is geselecteerd.
+
+
+### Organisatie-instellingen (Enterprise)
+
+Als u de knop &quot;Organisatie&quot; in de navigatiebalk van het dashboard activeert, verschijnt er een menu met opties met betrekking tot ledenbeheer en organisatiebrede documentstandaarden.
+
+#### Leden van de organisatie beheren
+
+Op de pagina &quot;Leden&quot; worden alle leden van uw organisatie weergegeven. De rol, afdeling en naam van alle leden kunnen worden gewijzigd, en elk lid kan worden gedeactiveerd of uit de organisatie worden verwijderd, met uitzondering van de eigenaar van de organisatie. Houd er rekening mee dat het deactiveren van een lid ervoor zorgt dat zijn of haar account niet meer bruikbaar is, terwijl het record behouden blijft.
+
+##### Leden toevoegen
+
+Leden toevoegen is heel eenvoudig: voer hun e-mailadres in, selecteer hun rol (gebruiker of beheerder), voer eventueel hun naam in en selecteer hun afdeling als die is aangemaakt.
+Als u meerdere leden wilt toevoegen, kunt u het bewerkingsveld &quot;Leden&quot; gebruiken om een bulktoevoeging uit te voeren. Dit bewerkingsveld accepteert meerdere regels tekst, zodat u de gegevens van elk lid op een aparte regel kunt invoeren. Op elke regel kunt u ofwel een enkel e-mailadres invoeren, ofwel een e-mailadres en een naam in de volgende indeling:  
 *email@example.com John Doe*
 
-Als je klaar bent, klik je op de knop "Toevoegen". 
+Zodra u klaar bent, klikt u op de knop &quot;Toevoegen&quot;. 
 
-#### Afdelingen
+##### Afdelingen
 
-Met afdelingen kun je leden indelen volgens de verschillende groepen van je organisatie.
+Met afdelingen kunt u leden indelen volgens de verschillende groepen binnen uw organisatie.
 
-Om een afdeling toe te voegen, voert u de naam in het bewerkingsvak "Naam" in onder de kop "Afdeling aanmaken".
+Om een afdeling toe te voegen, voert u de naam in het bewerkingsveld &quot;Naam&quot; in onder het kopje &quot;Afdeling aanmaken&quot;.
 
-#### Export van ledengegevens
+##### Ledengegevens exporteren
 
-De ledenlijst van uw organisatie kan worden geëxporteerd als CSV-bestand. Om de export te downloaden:
-1. Kies het veldscheidingsteken dat de kolommen van het bestand zal scheiden. De beschikbare opties zijn:
+De ledenlijst van uw organisatie kan worden geëxporteerd als een CSV-bestand. Om de export te downloaden:
+1. Kies het veldscheidingsteken waarmee de kolommen van het bestand worden gescheiden. De beschikbare opties zijn:
     * komma
-    * Puntkomma
-    * Tab
-1. Activeer de knop "Downloaden".
+    * puntkomma
+    * tabulator
 
+#### Documentbewaring
+
+Op de pagina &#x27;Documentbewaring&#x27; onder het menu &#x27;Organisatie&#x27; kunt u instellen hoe lang Scribe documenten bewaart die door leden binnen uw organisatie zijn geüpload. Op deze pagina kunt u een waarde instellen tussen 1 en 30 dagen.
+
+##### Opmerkingen
+
+Houd er rekening mee dat het momenteel voor een bedrijfsorganisatie niet mogelijk is om de waarde op onbepaald te zetten.

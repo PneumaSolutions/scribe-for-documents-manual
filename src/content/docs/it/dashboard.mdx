@@ -5,45 +5,88 @@ title: Gestione e amministrazione
 import Windows from "~/components/platform/Windows.astro"
 import MacOS from "~/components/platform/MacOS.astro"
 
-Scribe dispone di un pannello di impostazioni per facilitare le varie regolazioni della correzione dei documenti e di una pagina dell'organizzazione per gestire i membri dell'organizzazione.
+Scribe dispone di un pannello delle impostazioni che consente di effettuare varie regolazioni per la correzione dei documenti, oltre a una pagina dedicata all&#x27;organizzazione per la gestione dei membri della propria organizzazione.
 
 ### Impostazioni predefinite dei documenti 
 
-La pagina delle impostazioni predefinite del documento, che si trova nel menu Impostazioni, consente di impostare impostazioni predefinite globali che persistono in tutte le correzioni. Esse includono:
-* Preferenza per la descrizione automatica delle immagini
-* Selezione dell'elaborazione del contenuto matematico
-* Lingua
-* Preferenze di sintesi vocale (vengono ricordate in tutte le lingue)
-    * Genere (viene visualizzato quando la lingua è impostata su Automatico)
-    * Dialetto
-    * Voce predefinita (viene fornito un pulsante di esempio)
-    * Velocità predefinita
+La pagina Impostazioni predefinite dei documenti, situata nel menu Impostazioni, consente di impostare valori predefiniti globali che rimangono validi per tutte le correzioni. Questi includono:
+
+#### Conservazione dei documenti
+
+È possibile impostare un valore compreso tra 1 e 30 giorni, oppure indefinito se l&#x27;abbonamento è attivo.
+* Si noti che, ad eccezione della configurazione a tempo indeterminato, questa modifica delle impostazioni influisce in egual misura sui caricamenti attuali e futuri.
+    * Se si carica un documento con una conservazione di 30 giorni, quindi si imposta il periodo di conservazione a 15 giorni il 16° giorno della durata di quel documento, tale documento verrà eliminato prematuramente al momento del salvataggio dell&#x27;impostazione.
+    * D&#x27;altra parte, se carichi un documento con un periodo di conservazione di 15 giorni e successivamente imposti la conservazione su un valore maggiore, quel documento rimarrà online fino alla nuova data di scadenza configurata.
+    * Qualora il tuo abbonamento scada, Scribe conserverà tutti i documenti caricati con conservazione a tempo indeterminato per un periodo di 90 giorni dalla cessazione dell&#x27;abbonamento. Scribe invierà un&#x27;e-mail sia 30 che 60 giorni dopo la cessazione dell&#x27;abbonamento per informarti di questo fatto. Riattivando l&#x27;abbonamento entro il periodo di 90 giorni, il conto alla rovescia terminerà immediatamente, rendendo nuovamente indefinita la conservazione del documento.
+* Se il tuo account appartiene a un&#x27;organizzazione, Scribe ti informerà del valore attualmente impostato, invitandoti a contattare l&#x27;amministratore dell&#x27;organizzazione qualora desideri modificarlo.
+
+#### Caratteri grandi
+
+Questo pulsante ti permette di determinare se i documenti vengono convertiti in caratteri grandi per impostazione predefinita.
+
+#### Aggiungi descrizioni delle immagini
+
+Questo pulsante controlla se Scribe tenta o meno di generare un testo alternativo per le immagini.
+
+#### Elabora notazione matematica (Beta)
+
+Questo pulsante controlla se la notazione matematica viene elaborata e convertita per impostazione predefinita.
+
+#### Lingua
+
+Questo controllo determina la lingua preferita per i documenti. Scribe tenta il rilevamento automatico della lingua a meno che non venga specificatamente scelta una lingua.
+
+#### Preferenze di sintesi vocale
+
+Queste impostazioni verranno memorizzate per tutte le lingue. Le impostazioni disponibili includono:
+* Genere (visualizzato quando la lingua è impostata su Rilevamento automatico)
+* Dialetto
+* Voce predefinita (è disponibile un pulsante di anteprima)
+* Velocità predefinita
+
+#### Opzioni Braille
+
+Queste opzioni controllano il comportamento predefinito per la formattazione Braille. Le impostazioni disponibili includono:
 * Tabella di traduzione Braille
+* Celle Braille per riga (larghezza della carta)
+* Un pulsante per dividere il Braille in pagine
+    * L&#x27;impostazione &quot;Righe Braille per pagina&quot; appare se questa opzione è selezionata.
 
-### Gestione dei membri dell'organizzazione (Enterprise)
 
-Attivando il pulsante "Organizzazione" nella barra di navigazione della dashboard, si aprirà un menu di opzioni relative all'organizzazione e alla gestione dei membri. La pagina "Membri" elenca tutti i membri dell'organizzazione. Tutti i membri possono essere modificati nel ruolo, nel reparto e nel nome e tutti i membri possono essere disattivati o rimossi da un'organizzazione, tranne il proprietario dell'organizzazione. Si noti che la disattivazione di un membro renderà il suo account inutilizzabile, pur conservando il suo record.
+### Controlli dell&#x27;organizzazione (Enterprise)
 
-#### Aggiunta di membri
+Attivando il pulsante &quot;Organizzazione&quot; nella barra di navigazione della dashboard, verrà visualizzato un menu di opzioni relative alla gestione dei membri e alle impostazioni predefinite dei documenti a livello di organizzazione.
 
-Per aggiungere un membro è sufficiente inserire il suo indirizzo e-mail, selezionare il suo ruolo (utente o amministratore), inserire facoltativamente il suo nome e selezionare il suo reparto, se è stato creato.
-Se si devono aggiungere più membri, si può usare il campo di modifica "Membri" per eseguire un'aggiunta in blocco. Questo campo di modifica accetta più righe di testo, consentendo di inserire le informazioni di ciascun membro su una riga separata. Su ogni riga è possibile inserire un singolo indirizzo e-mail o un indirizzo e-mail e un nome nel formato:  
+#### Gestione dei membri dell&#x27;organizzazione
+
+La pagina &quot;Membri&quot; elencherà tutti i membri della tua organizzazione. È possibile modificare il ruolo, il reparto e il nome di tutti i membri, e qualsiasi membro può essere disattivato o rimosso da un&#x27;organizzazione, ad eccezione del proprietario dell&#x27;organizzazione. Si noti che la disattivazione di un membro renderà il suo account inoperativo, pur conservandone la registrazione.
+
+##### Aggiunta di membri
+
+Aggiungere membri è semplice: basta inserire il loro indirizzo e-mail, selezionare il loro ruolo (utente o amministratore), inserire facoltativamente il loro nome e selezionare il loro reparto, se ne è stato creato uno.
+Se si desidera aggiungere più membri, è possibile utilizzare il campo di modifica &quot;Membri&quot; per eseguire un&#x27;aggiunta in blocco. Questo campo di modifica accetta più righe di testo, consentendo di inserire le informazioni di ciascun membro su una riga separata. Su ogni riga è possibile inserire un singolo indirizzo e-mail oppure un indirizzo e-mail e un nome nel formato:  
 *email@example.com John Doe*
 
-Al termine, fare clic sul pulsante "Aggiungi". 
+Una volta terminato, clicca sul pulsante &quot;Aggiungi&quot;. 
 
-#### Reparti
+##### Reparti
 
-I dipartimenti consentono di organizzare i membri in base ai vari gruppi dell'organizzazione.
+I reparti ti consentono di organizzare i membri in base ai vari gruppi della tua organizzazione.
 
-Per aggiungere un reparto, inserire il suo nome nella casella di modifica "Nome" sotto la voce "Crea reparto".
+Per aggiungere un reparto, inserisci il suo nome nella casella di modifica &quot;Nome&quot; sotto l&#x27;intestazione &quot;Crea reparto&quot;.
 
-#### Esportazione dei dati dei soci
+##### Esportazione dei dati dei membri
 
-L'elenco dei membri dell'organizzazione può essere esportato come file CSV. Per scaricare l'esportazione:
-1. Scegliere il separatore di campo che separerà le colonne del file. Le opzioni disponibili sono:
+L&#x27;elenco dei membri della tua organizzazione può essere esportato come file CSV. Per scaricare l&#x27;esportazione:
+1. Scegli il separatore di campo che separerà le colonne del file. Le opzioni disponibili includono:
     * virgola
-    * Punto e virgola
-    * Tab
-1. Attivare il pulsante "Download".
+    * punto e virgola
+    * tabulazione
+1. Attiva il pulsante &quot;Scarica&quot;.
 
+#### Conservazione dei documenti
+
+La pagina &quot;Conservazione dei documenti&quot; nel menu &quot;Organizzazione&quot; consente di controllare per quanto tempo Scribe conserverà i documenti caricati dai membri all&#x27;interno della propria organizzazione. Accedendo a questa pagina sarà possibile impostare un valore compreso tra 1 e 30 giorni.
+##### Note
+
+Si noti che attualmente non è possibile per un&#x27;organizzazione aziendale impostare il valore su &quot;indefinito&quot;.

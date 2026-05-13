@@ -5,45 +5,88 @@ title: Gestion et administration
 import Windows from "~/components/platform/Windows.astro"
 import MacOS from "~/components/platform/MacOS.astro"
 
-Scribe dispose d'un panneau de configuration pour faciliter les différents ajustements de remédiation des documents, ainsi que d'une page d'organisation pour gérer les membres de votre organisation.
+Scribe dispose d&#x27;un panneau de paramètres permettant d&#x27;effectuer divers réglages pour la correction des documents, ainsi que d&#x27;une page dédiée à la gestion des membres de votre organisation.
 
-### Défauts des documents 
+### Paramètres par défaut des documents 
 
-La page Document Defaults, située dans le menu Settings, vous permet de définir des valeurs par défaut globales qui persistent dans toutes les remédiations. Il s'agit notamment des éléments suivants
-* Préférence de description automatique des images
-* Traitement du contenu mathématique
-* La langue
-* Préférences de synthèse vocale (elles seront mémorisées dans toutes les langues)
-    * Sexe (s'affiche lorsque la langue est réglée sur Automatique)
-    * Dialecte
-    * Voix par défaut (un bouton d'échantillonnage est fourni)
-    * Vitesse par défaut
-* Tableau de traduction en braille
+La page Paramètres par défaut des documents, située dans le menu Paramètres, vous permet de définir des paramètres par défaut globaux qui s&#x27;appliquent à toutes les corrections. Ils comprennent :
 
-### Gestion des membres d'une organisation (Entreprise)
+#### Conservation des documents
 
-En activant le bouton "Organisation" dans la barre de navigation du tableau de bord, vous accédez à un menu d'options relatives à la gestion de l'organisation et des membres. La page "Membres" répertorie tous les membres de votre organisation. Tous les membres peuvent voir leur rôle, leur département et leur nom modifiés, et tout membre peut être désactivé ou supprimé d'une organisation, à l'exception du propriétaire de l'organisation. Notez que la désactivation d'un membre rendra son compte inopérant tout en conservant son enregistrement.
+Ce paramètre peut être défini sur une valeur comprise entre 1 et 30 jours, ou sur « indéfini » si l&#x27;abonnement est actif.
+* Notez qu&#x27;à l&#x27;exception de la configuration « indéfinie », cette modification de paramètre affecte de la même manière les téléchargements actuels et futurs.
+    * Si vous téléchargez un document avec une durée de conservation de 30 jours, puis que vous définissez la durée de conservation à 15 jours au 16e jour de la durée de vie de ce document, ce document sera supprimé prématurément lors de l&#x27;enregistrement du paramètre.
+    * En revanche, si vous téléchargez un document avec une durée de conservation de 15 jours et que vous définissez par la suite une durée de conservation plus longue, ce document restera en ligne jusqu&#x27;à la nouvelle date d&#x27;expiration configurée.
+    * Si votre abonnement expire, Scribe conservera tous les documents téléchargés avec une durée de conservation indéterminée pendant une période de 90 jours suivant la résiliation de l&#x27;abonnement. Scribe vous enverra un e-mail 30 et 60 jours après la résiliation de l&#x27;abonnement pour vous en informer. La réactivation de votre abonnement au cours de cette période de 90 jours mettra immédiatement fin au compte à rebours, rendant à nouveau la conservation de vos documents illimitée.
+* Si votre compte appartient à une organisation, Scribe vous informera de la valeur actuellement définie et vous invitera à contacter l&#x27;administrateur de votre organisation si vous souhaitez la modifier.
 
-#### Ajouter des membres
+#### Gros caractères
 
-Pour ajouter des membres, il suffit de saisir leur adresse électronique, de sélectionner leur rôle (utilisateur ou administrateur), de saisir éventuellement leur nom et de sélectionner leur département s'il en a été créé un.
-Si vous avez plusieurs membres à ajouter, vous pouvez utiliser le champ d'édition "Membres" pour effectuer un ajout en masse. Ce champ d'édition accepte plusieurs lignes de texte, ce qui vous permet de saisir les informations relatives à chaque membre sur une ligne distincte. Sur chaque ligne, vous pouvez saisir soit une seule adresse électronique, soit une adresse électronique et un nom au format :  
+Ce bouton vous permet de déterminer si les documents sont convertis en gros caractères par défaut.
+
+#### Ajouter des descriptions d&#x27;images
+
+Ce bouton permet de contrôler si Scribe tente ou non de générer un texte alternatif pour les images.
+
+#### Traiter la notation mathématique (Bêta)
+
+Ce bouton permet de contrôler si la notation mathématique est traitée et convertie par défaut.
+
+#### Langue
+
+Ce paramètre permet de définir la langue préférée pour les documents. Scribe tente de détecter automatiquement la langue, sauf si une langue est spécifiquement choisie.
+
+#### Préférences de synthèse vocale
+
+Ces préférences seront mémorisées pour toutes les langues. Les paramètres disponibles sont les suivants :
+* Genre (affiché lorsque la langue est réglée sur « Détection automatique »)
+* Dialecte
+* Voix par défaut (un bouton d&#x27;écoute est fourni)
+* Vitesse par défaut
+
+#### Options Braille
+
+Ces options contrôlent le comportement par défaut pour la mise en forme en braille. Les paramètres disponibles sont les suivants :
+* Table de conversion en braille
+* Cellules braille par ligne (largeur du papier)
+* Un bouton pour diviser le braille en pages
+    * Le paramètre « Lignes braille par page » apparaît si cette option est sélectionnée.
+
+
+### Commandes d&#x27;organisation (Entreprise)
+
+L&#x27;activation du bouton « Organisation » dans la barre de navigation du tableau de bord fait apparaître un menu d&#x27;options liées à la gestion des membres ainsi qu&#x27;aux paramètres par défaut des documents à l&#x27;échelle de l&#x27;organisation.
+
+#### Gestion des membres de l&#x27;organisation
+
+La page « Membres » répertorie tous les membres de votre organisation. Le rôle, le service et le nom de tous les membres peuvent être modifiés, et tout membre peut être désactivé ou supprimé de l&#x27;organisation, à l&#x27;exception du propriétaire de l&#x27;organisation. Notez que la désactivation d&#x27;un membre rendra son compte inopérant tout en conservant son enregistrement.
+
+##### Ajouter des membres
+
+Pour ajouter des membres, il suffit de saisir leur adresse e-mail, de sélectionner leur rôle (utilisateur ou administrateur), de saisir éventuellement leur nom et de sélectionner leur service si celui-ci a été créé.
+Si vous avez plusieurs membres à ajouter, vous pouvez utiliser le champ d&#x27;édition « Membres » pour effectuer un ajout groupé. Ce champ d&#x27;édition accepte plusieurs lignes de texte, ce qui vous permet de saisir les informations de chaque membre sur une ligne distincte. Sur chaque ligne, vous pouvez saisir soit une seule adresse e-mail, soit une adresse e-mail et un nom au format :  
 *email@example.com John Doe*
 
-Une fois que vous avez terminé, cliquez sur le bouton "Ajouter". 
+Une fois que vous avez terminé, cliquez sur le bouton « Ajouter ». 
 
-#### Départements
+##### Services
 
-Les départements vous permettent d'organiser les membres en fonction des différents groupes de votre organisation.
+Les services vous permettent d&#x27;organiser les membres en fonction des différents groupes de votre organisation.
 
-Pour ajouter un département, saisissez son nom dans la boîte d'édition "Nom" sous la rubrique "Créer un département".
+Pour ajouter un service, saisissez son nom dans le champ « Nom » sous l&#x27;en-tête « Créer un service ».
 
-#### Exportation des données des membres
+##### Exportation des données des membres
 
-La liste des membres de votre organisation peut être exportée sous la forme d'un fichier CSV. Pour télécharger l'exportation :
-1. Choisissez le séparateur de champs qui séparera les colonnes du fichier. Les options disponibles sont les suivantes
+La liste des membres de votre organisation peut être exportée sous forme de fichier CSV. Pour télécharger l&#x27;exportation :
+1. Choisissez le séparateur de champs qui séparera les colonnes du fichier. Les options disponibles sont les suivantes :
     * virgule
-    * Point-virgule
-    * Tabulation
-1. Activer le bouton "Télécharger".
+    * point-virgule
+    * tabulation
 
+#### Conservation des documents
+
+La page « Conservation des documents » dans le menu « Organisation » vous permet de contrôler la durée pendant laquelle Scribe conservera les documents téléchargés par les membres de votre organisation. En accédant à cette page, vous pourrez définir une durée comprise entre 1 et 30 jours.
+
+##### Remarques
+
+Notez qu&#x27;il n&#x27;est actuellement pas possible pour une organisation d&#x27;entreprise de définir une durée indéterminée.

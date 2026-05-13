@@ -5,45 +5,88 @@ title: Gestión y administración
 import Windows from "~/components/platform/Windows.astro"
 import MacOS from "~/components/platform/MacOS.astro"
 
-Scribe cuenta con un panel de configuración para facilitar diversos ajustes de corrección de documentos, así como una página de organización para gestionar los miembros de su organización.
+Scribe cuenta con un panel de configuración que facilita diversos ajustes de corrección de documentos, así como una página de organización para gestionar a los miembros de tu organización.
 
 ### Valores predeterminados de los documentos 
 
-La página de valores predeterminados del documento, situada en el menú Configuración, le permite establecer valores predeterminados globales que persisten en todas las correcciones. Entre ellos se incluyen:
-* Preferencia de descripción automática de imágenes
-* Conmutación de procesamiento de contenido matemático
-* Idioma
-* Preferencias de texto a voz (se recordarán en todos los idiomas)
-    * Género (se muestra cuando el idioma está en Automático)
-    * Dialecto
-    * Voz predeterminada (Se proporciona un botón de muestra)
-    * Velocidad predeterminada
-* Tabla de traducción Braille
+La página «Valores predeterminados de los documentos», situada en el menú «Configuración», le permite establecer valores predeterminados globales que se aplican a todas las correcciones. Entre ellos se incluyen:
 
-### Gestión de los miembros de la organización (empresa)
+#### Retención de documentos
 
-Al activar el botón "Organización" en la barra de navegación del panel de control, aparecerá un menú de opciones relacionadas con la gestión de la organización y los miembros. La página "Miembros" mostrará una lista de todos los miembros de su organización. Todos los miembros pueden modificar su función, departamento y nombre, y cualquier miembro puede ser desactivado o eliminado de una organización, excepto el propietario de la organización. Tenga en cuenta que la desactivación de un miembro dejará inoperativa su cuenta, aunque conservará su registro.
+Se puede establecer un valor de entre 1 y 30 días, o indefinido si la suscripción está activa.
+* Tenga en cuenta que, con la excepción de la configuración indefinida, este cambio de configuración afecta por igual a las subidas actuales y futuras.
+    * Si sube un documento con una retención de 30 días y, posteriormente, establece el periodo de retención en 15 días en el día 16 de la vida útil de dicho documento, este se eliminará prematuramente al guardar la configuración.
+    * Por otro lado, si subes un documento con un periodo de retención de 15 días y posteriormente configuras la retención con un valor mayor, dicho documento permanecerá en línea hasta la nueva fecha de caducidad configurada.
+    * En caso de que tu suscripción caduque, Scribe conservará cualquier documento subido con retención indefinida durante un periodo de 90 días tras la finalización de la suscripción. Scribe te enviará un correo electrónico tanto a los 30 como a los 60 días tras la finalización de la suscripción para informarte de ello. Si reactiva su suscripción dentro del plazo de 90 días, la cuenta atrás se detendrá inmediatamente, haciendo que la retención de sus documentos vuelva a ser indefinida.
+* Si su cuenta pertenece a una organización, Scribe le informará del valor establecido actualmente y le indicará que se ponga en contacto con el administrador de su organización si desea cambiarlo.
 
-#### Añadir miembros
+#### Letra grande
 
-Añadir miembros es tan sencillo como introducir su dirección de correo electrónico, seleccionar su función (usuario o administrador), introducir opcionalmente su nombre y seleccionar su departamento si se ha creado uno.
-Si tiene que añadir varios miembros, puede utilizar el campo de edición "Miembros" para realizar una adición masiva. Este campo de edición acepta varias líneas de texto, lo que le permite introducir la información de cada miembro en una línea separada. En cada línea, puede introducir una sola dirección de correo electrónico, o una dirección de correo electrónico y un nombre en el formato:  
-*email@example.com Juan Pérez*
+Este interruptor le permite determinar si los documentos se convierten a letra grande de forma predeterminada.
 
-Cuando haya terminado, pulse el botón "Añadir". 
+#### Añadir descripciones de imágenes
 
-#### Departamentos
+Este interruptor controla si Scribe intenta generar texto alternativo para las imágenes.
+
+#### Procesar notación matemática (Beta)
+
+Este interruptor controla si la notación matemática se procesa y convierte de forma predeterminada.
+
+#### Idioma
+
+Esto controla el idioma preferido para los documentos. Scribe intenta la detección automática del idioma a menos que se elija uno específicamente.
+
+#### Preferencias de texto a voz
+
+Estas se recordarán en todos los idiomas. Los ajustes disponibles incluyen:
+* Género (se muestra cuando el idioma está configurado en «Detectar automáticamente»)
+* Dialecto
+* Voz predeterminada (se proporciona un botón de muestra)
+* Velocidad predeterminada
+
+#### Opciones de braille
+
+Estas opciones controlan el comportamiento predeterminado del formato en braille. Los ajustes disponibles incluyen:
+* Tabla de traducción a braille
+* Celdas de braille por línea (ancho del papel)
+* Un conmutador para dividir el braille en páginas
+    * El ajuste «Líneas de braille por página» aparece si se selecciona esta opción.
+
+
+### Controles de la organización (Enterprise)
+
+Al activar el botón «Organización» en la barra de navegación del panel de control, aparecerá un menú de opciones relacionadas con la gestión de miembros, así como con los valores predeterminados de los documentos para toda la organización.
+
+##### Gestión de miembros de la organización
+
+La página «Miembros» mostrará una lista de todos los miembros de su organización. Se puede modificar el rol, el departamento y el nombre de todos los miembros, y cualquier miembro puede ser desactivado o eliminado de la organización, excepto el propietario de la misma. Tenga en cuenta que desactivar a un miembro hará que su cuenta deje de funcionar, aunque se conservará su registro.
+
+##### Añadir miembros
+
+Añadir miembros es tan sencillo como introducir su dirección de correo electrónico, seleccionar su rol (usuario o administrador), introducir opcionalmente su nombre y seleccionar su departamento si se ha creado alguno.
+Si tiene varios miembros que añadir, puede utilizar el campo de edición «Miembros» para realizar una adición masiva. Este campo de edición admite varias líneas de texto, lo que le permite introducir la información de cada miembro en una línea separada. En cada línea, puede introducir una sola dirección de correo electrónico, o una dirección de correo electrónico y un nombre con el formato:  
+*email@example.com John Doe*
+
+Una vez que haya terminado, haga clic en el botón «Añadir». 
+
+##### Departamentos
 
 Los departamentos le permiten organizar a los miembros según los distintos grupos de su organización.
 
-Para añadir un departamento, introduzca su nombre en el cuadro de edición "Nombre" situado bajo el epígrafe "Crear departamento".
+Para añadir un departamento, introduzca su nombre en el cuadro de edición «Nombre» bajo el encabezado «Crear departamento».
 
-#### Exportación de datos de afiliados
+##### Exportación de datos de miembros
 
-La lista de miembros de su organización puede exportarse como archivo CSV. Para descargar la exportación:
-1. Elija el separador de campos que separará las columnas del archivo. Las opciones disponibles son
+La lista de miembros de su organización se puede exportar como un archivo CSV. Para descargar la exportación:
+1. Elija el separador de campos que separará las columnas del archivo. Las opciones disponibles incluyen:
     * coma
-    * Punto y coma
-    * Tabulación
-1. Activar el botón "Descargar".
+    * punto y coma
+    * tabulación
+1. Haga clic en el botón «Descargar».
 
+#### Retención de documentos
+
+La página «Retención de documentos», situada en el menú «Organización», le permite controlar durante cuánto tiempo Scribe conservará los documentos subidos por los miembros de su organización. Al acceder a esta página, podrá establecer un valor comprendido entre 1 y 30 días.
+##### Notas
+
+Tenga en cuenta que, actualmente, las organizaciones empresariales no pueden establecer un valor indefinido.

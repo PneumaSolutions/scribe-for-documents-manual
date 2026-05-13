@@ -5,45 +5,88 @@ title: Management und Verwaltung
 import Windows from "~/components/platform/Windows.astro"
 import MacOS from "~/components/platform/MacOS.astro"
 
-Scribe verfügt über ein Einstellungsfeld zur Erleichterung verschiedener Anpassungen bei der Dokumentenwiederherstellung sowie über eine Organisationsseite zur Verwaltung der Mitglieder Ihrer Organisation.
+Scribe verfügt über ein Einstellungsfenster, über das Sie verschiedene Anpassungen zur Dokumentkorrektur vornehmen können, sowie über eine Organisationsseite zur Verwaltung der Mitglieder Ihrer Organisation.
 
-### Dokument-Standards 
+### Dokument-Standardeinstellungen 
 
-Auf der Seite Dokumentvorgaben, die sich im Menü Einstellungen befindet, können Sie globale Vorgaben festlegen, die für alle Korrekturen gelten. Dazu gehören:
-* Automatische Bildbeschreibungspräferenz
-* Umschalten zwischen mathematischer Inhaltsverarbeitung
-* Sprache
-* Voreinstellungen für Text in Sprache (diese werden für alle Sprachen gespeichert)
-    * Geschlecht (wird angezeigt, wenn die Sprache auf Automatisch eingestellt ist)
-    * Dialekt
-    * Standardstimme (eine Beispieltaste ist vorhanden)
-    * Standard-Geschwindigkeit
+Auf der Seite „Dokument-Standardeinstellungen“ im Menü „Einstellungen“ können Sie globale Standardeinstellungen festlegen, die für alle Korrekturen gelten. Dazu gehören:
+
+#### Dokumentaufbewahrung
+
+Dieser Wert kann auf einen Zeitraum zwischen 1 und 30 Tagen festgelegt werden oder auf „unbegrenzt“, wenn ein Abonnement aktiv ist.
+* Beachten Sie, dass diese Einstellungsänderung – mit Ausnahme der Konfiguration auf „unbegrenzt“ – aktuelle und zukünftige Uploads gleichermaßen betrifft.
+    * Wenn Sie ein Dokument mit einer Aufbewahrungsdauer von 30 Tagen hochladen und dann am 16. Tag der Lebensdauer dieses Dokuments die Aufbewahrungsdauer auf 15 Tage festlegen, wird dieses Dokument beim Speichern der Einstellung vorzeitig gelöscht.
+    * Wenn Sie hingegen ein Dokument mit einer Aufbewahrungsdauer von 15 Tagen hochladen und die Aufbewahrungsdauer später auf einen höheren Wert setzen, bleibt dieses Dokument bis zum neu konfigurierten Ablaufdatum online.
+    * Sollte Ihr Abonnement auslaufen, bewahrt Scribe alle Dokumente, die mit unbefristeter Aufbewahrung hochgeladen wurden, für einen Zeitraum von 90 Tagen nach Beendigung des Abonnements auf. Scribe sendet Ihnen sowohl 30 als auch 60 Tage nach Beendigung des Abonnements eine E-Mail, um Sie darüber zu informieren. Wenn Sie Ihr Abonnement innerhalb dieses 90-Tage-Zeitraums reaktivieren, wird der Countdown sofort beendet, sodass die Aufbewahrungsdauer Ihrer Dokumente wieder unbegrenzt ist.
+* Wenn Ihr Konto zu einer Organisation gehört, informiert Scribe Sie über den aktuell eingestellten Wert und weist Sie an, sich an Ihren Organisationsadministrator zu wenden, falls Sie eine Änderung wünschen.
+
+#### Großdruck
+
+Mit diesem Schalter können Sie festlegen, ob Dokumente standardmäßig in Großdruck umgewandelt werden.
+
+#### Bildbeschreibungen hinzufügen
+
+Dieser Schalter steuert, ob Scribe versucht, Alternativtext für Bilder zu generieren.
+
+#### Mathematische Notation verarbeiten (Beta)
+
+Dieser Schalter steuert, ob mathematische Notation standardmäßig verarbeitet und umgewandelt wird.
+
+#### Sprache
+
+Hiermit wird die bevorzugte Sprache für Dokumente festgelegt. Scribe versucht eine automatische Spracherkennung, sofern keine Sprache ausdrücklich ausgewählt wurde.
+
+#### Einstellungen für Text-zu-Sprache
+
+Diese Einstellungen werden sprachübergreifend gespeichert. Zu den verfügbaren Einstellungen gehören:
+* Geschlecht (wird angezeigt, wenn die Sprache auf „Automatisch erkennen“ eingestellt ist)
+* Dialekt
+* Standardstimme (eine Hörprobe ist verfügbar)
+* Standardgeschwindigkeit
+
+#### Braille-Optionen
+
+Diese Optionen steuern das Standardverhalten bei der Braille-Formatierung. Zu den verfügbaren Einstellungen gehören:
 * Braille-Übersetzungstabelle
+* Braille-Zellen pro Zeile (Papierbreite)
+* Ein Schalter zum Aufteilen von Braille in Seiten
+    * Die Einstellung „Braille-Zeilen pro Seite“ wird angezeigt, wenn diese Option ausgewählt ist.
 
-### Verwaltung von Organisationsmitgliedern (Unternehmen)
 
-Wenn Sie die Schaltfläche "Organisation" in der Navigationsleiste des Dashboards aktivieren, wird ein Menü mit Optionen für die Verwaltung von Organisationen und Mitgliedern angezeigt. Auf der Seite "Mitglieder" werden alle Mitglieder Ihrer Organisation aufgelistet. Alle Mitglieder können ihre Rolle, Abteilung und ihren Namen ändern, und jedes Mitglied kann deaktiviert oder aus einer Organisation entfernt werden, mit Ausnahme des Eigentümers der Organisation. Beachten Sie, dass die Deaktivierung eines Mitglieds dazu führt, dass sein Konto nicht mehr funktionsfähig ist, während sein Datensatz erhalten bleibt.
+### Organisationssteuerung (Enterprise)
 
-#### Hinzufügen von Mitgliedern
+Durch Aktivieren der Schaltfläche „Organisation“ in der Navigationsleiste des Dashboards wird ein Menü mit Optionen zur Mitgliederverwaltung sowie zu organisationsweiten Dokumentstandardwerten angezeigt.
 
-Das Hinzufügen von Mitgliedern ist so einfach wie das Eingeben ihrer E-Mail-Adresse, das Auswählen ihrer Rolle (Benutzer oder Administrator), das optionale Eingeben ihres Namens und das Auswählen ihrer Abteilung, falls eine solche erstellt wurde.
-Wenn Sie mehrere Mitglieder hinzufügen möchten, können Sie das Bearbeitungsfeld "Mitglieder" verwenden, um eine Massenaddition durchzuführen. Dieses Feld kann mehrere Textzeilen enthalten, so dass Sie die Informationen zu jedem Mitglied in eine eigene Zeile eingeben können. In jeder Zeile können Sie entweder eine einzelne E-Mail-Adresse oder eine E-Mail-Adresse und einen Namen in dem Format eingeben:  
-*email@example.com Unbekannter*
+#### Mitglieder der Organisation verwalten
 
-Wenn Sie fertig sind, klicken Sie auf die Schaltfläche "Hinzufügen". 
+Auf der Seite „Mitglieder“ werden alle Mitglieder Ihrer Organisation aufgelistet. Bei allen Mitgliedern können Rolle, Abteilung und Name geändert werden, und jedes Mitglied kann deaktiviert oder aus der Organisation entfernt werden, mit Ausnahme des Organisationsinhabers. Beachten Sie, dass durch die Deaktivierung eines Mitglieds dessen Konto unbrauchbar wird, der Datensatz jedoch erhalten bleibt.
 
-#### Abteilungen
+##### Mitglieder hinzufügen
 
-Abteilungen ermöglichen es Ihnen, Mitglieder nach den verschiedenen Gruppen Ihrer Organisation zu organisieren.
+Das Hinzufügen von Mitgliedern ist ganz einfach: Geben Sie deren E-Mail-Adresse ein, wählen Sie die Rolle (Benutzer oder Administrator) aus, geben Sie optional den Namen ein und wählen Sie die Abteilung aus, sofern eine angelegt wurde.
+Wenn Sie mehrere Mitglieder hinzufügen möchten, können Sie das Bearbeitungsfeld „Mitglieder“ für eine Massenhinzufügung nutzen. Dieses Bearbeitungsfeld akzeptiert mehrere Textzeilen, sodass Sie die Informationen jedes Mitglieds in einer separaten Zeile eingeben können. In jeder Zeile können Sie entweder eine einzelne E-Mail-Adresse oder eine E-Mail-Adresse und einen Namen im folgenden Format eingeben:  
+*email@example.com John Doe*
 
-Um eine Abteilung hinzuzufügen, geben Sie ihren Namen in das Eingabefeld "Name" unter der Überschrift "Abteilung erstellen" ein.
+Wenn Sie fertig sind, klicken Sie auf die Schaltfläche „Hinzufügen“. 
 
-#### Mitgliederdaten exportieren
+##### Abteilungen
 
-Die Mitgliederliste in Ihrer Organisation kann als CSV-Datei exportiert werden. Um den Export herunterzuladen:
-1. Wählen Sie das Feldtrennzeichen, das die Spalten der Datei trennen soll. Die verfügbaren Optionen sind:
-    * komma
+Abteilungen ermöglichen es Ihnen, Mitglieder entsprechend den verschiedenen Gruppen Ihrer Organisation zu organisieren.
+
+Um eine Abteilung hinzuzufügen, geben Sie deren Namen in das Bearbeitungsfeld „Name“ unter der Überschrift „Abteilung erstellen“ ein.
+
+##### Export von Mitgliederdaten
+
+Die Mitgliederliste Ihrer Organisation kann als CSV-Datei exportiert werden. So laden Sie den Export herunter:
+1. Wählen Sie das Feldtrennzeichen, das die Spalten der Datei trennen soll. Zu den verfügbaren Optionen gehören:
+    * Komma
     * Semikolon
     * Tabulator
-1. Aktivieren Sie die Schaltfläche "Herunterladen".
 
+#### Dokumentenaufbewahrung
+
+Auf der Seite „Dokumentenaufbewahrung“ im Menü „Organisation“ können Sie festlegen, wie lange Scribe Dokumente aufbewahrt, die von Mitgliedern Ihrer Organisation hochgeladen wurden. Auf dieser Seite können Sie einen Wert zwischen 1 und 30 Tagen einstellen.
+
+##### Hinweise
+
+Beachten Sie, dass es für Unternehmensorganisationen derzeit keine Möglichkeit gibt, den Wert auf „unbegrenzt“ zu setzen.

@@ -5,45 +5,88 @@ title: Ledning och administration
 import Windows from "~/components/platform/Windows.astro"
 import MacOS from "~/components/platform/MacOS.astro"
 
-Scribe har en inställningspanel för att underlätta olika justeringar av dokumenthantering, samt en organisationssida för att hantera medlemmarna under din organisation.
+Scribe har en inställningspanel som underlättar olika justeringar av dokumentkorrigeringar, samt en organisationssida för hantering av medlemmarna i din organisation.
 
-### Standardinställningar för dokument 
+### Dokumentinställningar 
 
-På sidan Dokumentförval, som finns under menyn Inställningar, kan du ange globala standardvärden som gäller för alla åtgärder. De inkluderar:
-* Inställning för automatisk bildbeskrivning
-* Växla för matematisk bearbetning av innehåll
-* Språk
-* Inställningar för text-till-tal (dessa kommer att sparas för alla språk)
-    * Kön (visas när språket är inställt på Automatiskt)
-    * Dialekt
-    * Standardröst (en provknapp tillhandahålls)
-    * Standardhastighet
-* Tabell för översättning av punktskrift
+På sidan Dokumentinställningar, som finns under menyn Inställningar, kan du ställa in globala standardinställningar som gäller för alla korrigeringar. De inkluderar:
 
-### Hantera organisationsmedlemmar (företag)
+#### Dokumentlagring
 
-Om du aktiverar knappen "Organisation" i instrumentpanelens navigeringsfält visas en meny med alternativ relaterade till organisations- och medlemshantering. På sidan "Members" visas en lista över alla medlemmar i din organisation. Alla medlemmar kan få sin roll, sin avdelning och sitt namn ändrade, och alla medlemmar kan inaktiveras eller tas bort från en organisation, förutom organisationens ägare. Observera att om du avaktiverar en medlem kommer kontot att bli obrukbart, men registreringen kommer att finnas kvar.
+Detta kan ställas in på ett värde mellan 1 och 30 dagar, eller på obestämd tid om ett abonnemang är aktivt.
+* Observera att med undantag för inställningen ”obegränsad” påverkar denna ändring av inställningarna både nuvarande och framtida uppladdningar.
+    * Om du laddar upp ett dokument med en lagringstid på 30 dagar och sedan ställer in lagringstiden till 15 dagar på dag 16 av dokumentets livslängd, kommer det dokumentet att raderas i förtid när inställningen sparas.
+    * Å andra sidan, om du laddar upp ett dokument med en lagringstid på 15 dagar och senare ställer in lagringstiden till ett högre värde, kommer det dokumentet att finnas kvar online fram till det nykonfigurerade utgångsdatumet.
+    * Om ditt abonnemang upphör kommer Scribe att behålla alla dokument som laddats upp med obegränsad lagringstid under en period av 90 dagar efter att abonnemanget har upphört. Scribe kommer att skicka ett e-postmeddelande både 30 och 60 dagar efter att abonnemanget har upphört för att informera dig om detta. Om du återaktiverar ditt abonnemang inom 90-dagarsperioden avbryts nedräkningen omedelbart, vilket gör att lagringstiden för dina dokument återigen blir obegränsad.
+* Om ditt konto tillhör en organisation kommer Scribe att informera dig om det värde som för närvarande är inställt och uppmana dig att kontakta din organisationsadministratör om du vill ändra detta.
 
-#### Lägga till medlemmar
+#### Stor stil
 
-Att lägga till medlemmar är så enkelt som att ange deras e-postadress, välja deras roll (användare eller administratör), eventuellt ange deras namn och välja deras avdelning om en sådan har skapats.
-Om du har flera medlemmar att lägga till kan du använda redigeringsfältet "Members" för att göra ett masstillägg. Det här redigeringsfältet accepterar flera rader med text, så att du kan ange varje medlems information på en separat rad. På varje rad kan du ange antingen en enda e-postadress eller en e-postadress och ett namn i formatet:  
+Med denna knapp kan du bestämma om dokument ska konverteras till stor stil som standard.
+
+#### Lägg till bildbeskrivningar
+
+Denna knapp styr om Scribe ska försöka generera alt-text för bilder eller inte.
+
+#### Bearbeta matematisk notation (Beta)
+
+Denna knapp styr om matematisk notation ska bearbetas och konverteras som standard.
+
+#### Språk
+
+Detta styr vilket språk som ska användas för dokument. Scribe försöker automatiskt identifiera språket om inget språk har valts specifikt.
+
+#### Inställningar för text-till-tal
+
+Dessa inställningar sparas oavsett vilket språk som används. Tillgängliga inställningar är:
+* Kön (visas när språket är inställt på Automatisk identifiering)
+* Dialekt
+* Standardröst (en provknapp finns)
+* Standardhastighet
+
+#### Punktskriftsalternativ
+
+Dessa alternativ styr standardbeteendet för punktskriftsformatering. Tillgängliga inställningar inkluderar:
+* Punktskriftsöversättningstabell
+* Punktskriftsceller per rad (pappersbredd)
+* En växlingsknapp för att dela upp punktskrift i sidor
+    * Inställningen &quot;Punktskriftsrader per sida&quot; visas om detta alternativ är valt.
+
+
+### Organisationskontroller (Enterprise)
+
+Om du aktiverar knappen ”Organisation” i navigeringsfältet på instrumentpanelen visas en meny med alternativ relaterade till medlemshantering samt organisationsomfattande dokumentinställningar.
+
+#### Hantera organisationsmedlemmar
+
+På sidan ”Medlemmar” visas en lista över alla medlemmar i din organisation. Alla medlemmars roll, avdelning och namn kan ändras, och alla medlemmar kan inaktiveras eller tas bort från organisationen, med undantag för organisationens ägare. Observera att inaktivering av en medlem gör att deras konto inte längre kan användas, men att deras uppgifter sparas.
+
+##### Lägga till medlemmar
+
+Att lägga till medlemmar är enkelt: ange deras e-postadress, välj deras roll (användare eller administratör), ange eventuellt deras namn och välj deras avdelning om en sådan har skapats.
+Om du har flera medlemmar att lägga till kan du använda redigeringsfältet &quot;Medlemmar&quot; för att lägga till flera samtidigt. Detta redigeringsfält accepterar flera rader text, vilket gör att du kan ange varje medlems information på en separat rad. På varje rad kan du ange antingen en enda e-postadress eller en e-postadress och ett namn i formatet:  
 *email@example.com John Doe*
 
-När du är klar klickar du på knappen "Lägg till". 
+När du är klar klickar du på knappen &quot;Lägg till&quot;. 
 
-#### Avdelningar
+##### Avdelningar
 
-Med hjälp av avdelningar kan du organisera medlemmarna efter de olika grupperna i din organisation.
+Avdelningar gör det möjligt för dig att organisera medlemmar enligt de olika grupperna i din organisation.
 
-Du lägger till en avdelning genom att ange dess namn i redigeringsrutan "Namn" under rubriken "Skapa avdelning".
+För att lägga till en avdelning anger du dess namn i redigeringsrutan &quot;Namn&quot; under rubriken &quot;Skapa avdelning&quot;.
 
-#### Export av medlemsdata
+##### Export av medlemsdata
 
 Medlemslistan i din organisation kan exporteras som en CSV-fil. För att ladda ner exporten:
-1. Välj den fältavskiljare som ska separera kolumnerna i filen. De tillgängliga alternativen inkluderar:
-    * komma
-    * Semikolon
-    * Flik
-1. Aktivera knappen "Ladda ner".
+1. Välj det fältavgränsningstecken som ska separera kolumnerna i filen. De tillgängliga alternativen är:
+    * kommatecken
+    * semikolon
+    * tabbtecken
 
+#### Dokumentlagring
+
+På sidan &quot;Dokumentlagring&quot; under menyn &quot;Organisation&quot; kan du styra hur länge Scribe ska lagra dokument som laddats upp av medlemmar inom din organisation. På denna sida kan du ställa in värdet mellan 1 och 30 dagar.
+
+##### Anmärkningar
+
+Observera att det för närvarande inte finns något sätt för en företagsorganisation att ställa in värdet till obegränsad tid.
